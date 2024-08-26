@@ -1,0 +1,6 @@
+[submodule "src/themes/lekh"]
+	path = src/themes/lekh
+	url = https://github.com/ba11b0y/lekh.git
+[submodule "src/themes/hugo-bearcub"]
+	path = src/themes/hugo-bearcub
+	url = https://github.com/clente/hugo-bearcub
