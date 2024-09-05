@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Stefan Mikolajczyk</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Stefan Mikolajczyk</description>
+    <title>blog on Stefan Mikolajczyk</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in blog on Stefan Mikolajczyk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <managingEditor>stefan@mikolajczyk.fr (Stefan Mikolajczyk)</managingEditor>
     <webMaster>stefan@mikolajczyk.fr (Stefan Mikolajczyk)</webMaster>
-    <lastBuildDate>Sun, 25 Aug 2024 21:20:14 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Sep 2024 13:25:04 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fiction aspirer</title>
       <link>http://localhost:1313/blog/fiction/</link>
@@ -23,16 +23,6 @@ You delete.</p>
 But I also aspire to write fiction, which requires the fluff (I think).</p>
 <p>I’m spending my days writing in a way that can’t be used for my other projects.<br>
 It’s hard to reconcile, sometimes.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Blog</title>
-      <link>http://localhost:1313/blog/</link>
-      <pubDate>Thu, 05 Sep 2024 13:22:36 +0200</pubDate><author>stefan@mikolajczyk.fr (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/blog/</guid>
-      <description>2024.09.05 · fiction&#xA;2024.08.26 · not for me</description>
-      <content:encoded><![CDATA[<p>2024.09.05 · <a href="/blog/fiction/">fiction</a><br>
-2024.08.26 · <a href="/blog/notforme/">not for me</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -52,22 +42,6 @@ This time it felt a bit different. I saw myself finishing the first contract, ma
 <p>Trusted my gut and said “I won’t continue”.<br>
 The yes man of the rat race died that day.</p>
 <p>Odd and liberating.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Visusolis</title>
-      <link>http://localhost:1313/visusolis/</link>
-      <pubDate>Sun, 25 Aug 2024 21:05:58 +0200</pubDate><author>stefan@mikolajczyk.fr (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/visusolis/</guid>
-      <description>some recent work:&#xA;Returnless: Documentation, QA Orq.ai: Documentation Bloom Credit: Documentation NX1: Blog Post The Morning Circle: Newsletter </description>
-      <content:encoded><![CDATA[<p>some recent work:</p>
-<ul>
-<li><a href="https://returnless.com">Returnless</a>: Documentation, QA</li>
-<li><a href="https://orq.ai">Orq.ai</a>: Documentation</li>
-<li><a href="https://bloomcredit.io">Bloom Credit</a>: Documentation</li>
-<li><a href="nx1.io">NX1</a>: Blog Post</li>
-<li><a href="themorning.nl">The Morning Circle</a>: Newsletter</li>
-</ul>
 ]]></content:encoded>
     </item>
   </channel>

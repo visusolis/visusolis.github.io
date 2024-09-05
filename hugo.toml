@@ -29,6 +29,9 @@ enableRobotsTXT = true
     [languages.en.params]
       madeWith = "<3"
 
+[markup.goldmark.renderer]
+hardWraps = true
+
 [params]
   # The description of your website
   description = "Stefan Mikolajczyk"
