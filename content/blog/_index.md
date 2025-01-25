@@ -1,5 +1,5 @@
 +++
 title = 'blog'
 menu = 'main'
-weight = 2
+weight = 3
 +++

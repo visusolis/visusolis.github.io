@@ -5,10 +5,13 @@ menu = 'main'
 weight = 1
 +++
 
-I'm an engineer turned [writer](visusolis.md).
+I [work](work) as an engineer and technical writer.
+I moved on from the corporate world and work independently.
 
-I have [thoughts](blog.md), sometimes.
+Here's [what I'm up to these days](currently) -- updated January '25.
 
-I also [make music](http://dawnsight.stefanmiko.com).
+I have [thoughts](blog), sometimes.
 
-[reach out](mailto:stefan@mikolajczyk.fr)
+I also [make music](https://dawnsight.bandcamp.com) and one day there might be some place for some visual arts somewhere? 
+
+[i'm happy to chat](mailto:hey@stefanmiko.com)

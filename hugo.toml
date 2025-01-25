@@ -81,4 +81,4 @@ hardWraps = true
   # link by using a `hideReply` param in front matter.
   [params.author]
     name = "Stefan Mikolajczyk" # Your name as shown in the RSS feed metadata
-    email = "stefan@mikolajczyk.fr" # Added to the footer so readers can reply to posts
+    email = "hey@stefanmiko.com" # Added to the footer so readers can reply to posts
