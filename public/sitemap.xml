@@ -8,11 +8,14 @@
     <loc>http://localhost:1313/currently/</loc>
     <lastmod>2025-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-12-05T13:25:04+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/work/</loc>
     <lastmod>2024-08-25T21:05:58+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2024-09-05T13:22:36+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/music/</loc>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/buildingahouse/</loc>
     <lastmod>2024-12-05T13:25:04+02:00</lastmod>

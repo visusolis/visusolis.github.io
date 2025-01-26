@@ -15,8 +15,8 @@
       <link>http://localhost:1313/currently/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/currently/</guid>
-      <description>Updated January 25 2025 I&amp;rsquo;m currently in Vietnam, arrived at the beginning of the year and will stay mostly in Ho Chi Minh City until spring.&#xA;I&amp;rsquo;ve been focused on getting work started great this year, doubling down on relationships with certain clients while moving away from others.&#xA;I&amp;rsquo;m writing much more and have this ambition of building this site as a repository for all things not necesserally work related.</description>
-      <content:encoded><![CDATA[<h3 id="_updated-january-25-2025_"><em>Updated January 25 2025</em></h3>
+      <description>Updated January 25 2025&#xA;I&amp;rsquo;m currently in Vietnam, arrived at the beginning of the year and will stay mostly in Ho Chi Minh City until spring.&#xA;I&amp;rsquo;ve been focused on getting work started great this year, doubling down on relationships with certain clients while moving away from others.&#xA;I&amp;rsquo;m writing much more and have this ambition of building this site as a repository for all things not necesserally work related.</description>
+      <content:encoded><![CDATA[<p><em>Updated January 25 2025</em></p>
 <p>I&rsquo;m currently in Vietnam, arrived at the beginning of the year and will stay mostly in Ho Chi Minh City until spring.</p>
 <p>I&rsquo;ve been focused on getting work started great this year, doubling down on relationships with certain clients while moving away from others.</p>
 <p>I&rsquo;m writing much more and have this ambition of building this site as a repository for all things not necesserally work related.<br>
@@ -40,6 +40,49 @@ Building documentation, guides, references, articles.</p>
 <li><a href="https://bloomcredit.io">Bloom Credit</a>: Documentation</li>
 <li><a href="https://nx1.io">NX1</a>: Blog</li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>thoughts</title>
+      <link>http://localhost:1313/blog/</link>
+      <pubDate>Thu, 05 Sep 2024 13:22:36 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/blog/</guid>
+      <description>2025.12.27 · building a house&#xA;2024.09.05 · fiction&#xA;2024.08.26 · not for me</description>
+      <content:encoded><![CDATA[<p>2025.12.27 · <a href="/blog/buildingahouse/">building a house</a><br>
+2024.09.05 · <a href="/blog/fiction/">fiction</a><br>
+2024.08.26 · <a href="/blog/notforme/">not for me</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>music</title>
+      <link>http://localhost:1313/music/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/music/</guid>
+      <description> recursion rue biacée keep it de dawnsight point seven nine de dawnsight kin de dawnsight atroph - slow flip de dawnsight lux de dawnsight Malus Domestica de dawnsight, Theo DGL flare de dawnsight proverbs de dawnsight com.m.a de dawnsight </description>
+      <content:encoded><![CDATA[
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1183506731/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/recursion">recursion</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=729783225/size=large/bgcol=333333/linkcol=ffffff/transparent=true/minimal=true/" seamless><a href="https://dawnsight.bandcamp.com/album/rue-biac-e">rue biacée</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1705694674/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/keep-it">keep it de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1194812265/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/point-seven-nine">point seven nine de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=166518096/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/kin">kin de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=2687540075/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/atroph-slow-flip">atroph - slow flip de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1796535373/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/lux">lux de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1560712922/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/malus-domestica">Malus Domestica de dawnsight, Theo DGL</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1239039534/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/flare">flare de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1693271297/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/proverbs">proverbs de dawnsight</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=3850195376/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/com-m-a">com.m.a de dawnsight</a></iframe>
+
+
 ]]></content:encoded>
     </item>
     <item>

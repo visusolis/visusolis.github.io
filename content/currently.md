@@ -5,9 +5,7 @@ menu = 'main'
 weight = '2'
 +++
 
-### _Updated January 25 2025_
-
-
+_Updated January 25 2025_
 
 I'm currently in Vietnam, arrived at the beginning of the year and will stay mostly in Ho Chi Minh City until spring. 
 

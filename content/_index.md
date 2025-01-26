@@ -12,6 +12,6 @@ Here's [what I'm up to these days](currently) -- updated January '25.
 
 I have [thoughts](blog), sometimes.
 
-I also [make music](https://dawnsight.bandcamp.com) and one day there might be some place for some visual arts somewhere? 
+I also [make music](music) and one day there might be some place for some visual arts somewhere? 
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)
