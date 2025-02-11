@@ -8,12 +8,27 @@
     <language>en-US</language>
     <managingEditor>hey@stefanmiko.com (Stefan Mikolajczyk)</managingEditor>
     <webMaster>hey@stefanmiko.com (Stefan Mikolajczyk)</webMaster>
-    <lastBuildDate>Thu, 05 Dec 2024 13:25:04 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2025 13:25:04 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>in a cafe</title>
+      <link>http://localhost:1313/blog/inacafe/</link>
+      <pubDate>Tue, 04 Feb 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/blog/inacafe/</guid>
+      <description>We’re in the week after the new year (têt) holiday in Vietnam.&#xA;The city is calm, restful. Streets are breathing, enjoying a pause for a few days before life comes at them again.&#xA;Most places are closed, people are spending time with their family and enjoying time off work. Some cafés are still open and stay the best place to get a feeling for the city, its people, get inspired and work a bit.</description>
+      <content:encoded><![CDATA[<p>We’re in the week after the new year (têt) holiday in Vietnam.</p>
+<p>The city is calm, restful. Streets are breathing, enjoying a pause for a few days before life comes at them again.</p>
+<p>Most places are closed, people are spending time with their family and enjoying time off work. Some cafés are still open and stay the best place to get a feeling for the city, its people, get inspired and work a bit.</p>
+<p>I’m sitting on a table surrounded by others around me. This position could feel vulnerable, but it feels great here. In front of me I see people studying on their own, sipping away at a fruity tea. On my left is a couple of younger teens, dressed almost identically, studying but also talking a lot with one another. It’s hard for them to keep studying when the appeal of looking into each other’s eyes is here. They decide that they should maybe go, it’s been a few hours they are here and they’re obviously not advancing on their original objective anymore.</p>
+<p>Behind me I hear a conversation, louder than the usual very quiet cafe crowd. I glance over and it looks like a teacher and their students working on their Vietnamese pronunciation. They’re repeating the same few words over and over.</p>
+<p>Meanwhile the staff is preparing, serving and cleaning various drinks, while it’s late afternoon now, coffee seems to still be a favourite choice and embalms the room into a motivating aroma.</p>
+<p>Today doesn’t really feel like a holiday but it feels like a great day.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>building a house</title>
       <link>http://localhost:1313/blog/buildingahouse/</link>
-      <pubDate>Thu, 05 Dec 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <pubDate>Fri, 27 Dec 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/blog/buildingahouse/</guid>
       <description>Reading through Kening Zhu&amp;rsquo;s journal was a flash in the mirror moment.&#xA;Seeing someone confidently develop their own space on the internet. Finding myself curious and passionate about exploring all pages, taking in ideas and inspiration. I hadn&amp;rsquo;t experienced that on the internet in a while.&#xA;At one point I probably had 25 tabs opened trying to take it all in, but also getting excited to not, not wanting to spoil it all, and just browsing at my own pace.</description>
       <content:encoded><![CDATA[<p>Reading through <a href="https://keningzhu.com/journal">Kening Zhu&rsquo;s journal</a> was a flash in the mirror moment.</p>

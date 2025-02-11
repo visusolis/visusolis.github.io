@@ -43,14 +43,17 @@ Building documentation, guides, references, articles.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>thoughts</title>
+      <title>writings</title>
       <link>http://localhost:1313/blog/</link>
       <pubDate>Thu, 05 Sep 2024 13:22:36 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/blog/</guid>
-      <description>2025.12.27 · building a house&#xA;2024.09.05 · fiction&#xA;2024.08.26 · not for me</description>
-      <content:encoded><![CDATA[<p>2025.12.27 · <a href="/blog/buildingahouse/">building a house</a><br>
-2024.09.05 · <a href="/blog/fiction/">fiction</a><br>
-2024.08.26 · <a href="/blog/notforme/">not for me</a></p>
+      <description>2025 in a cafe&#xA;2024 building a house&#xA;fiction&#xA;not for me</description>
+      <content:encoded><![CDATA[<h3 id="2025">2025</h3>
+<p><a href="/w/inacafe/">in a cafe</a></p>
+<h3 id="2024">2024</h3>
+<p><a href="/w/buildingahouse/">building a house</a><br>
+<a href="/w/fiction/">fiction</a><br>
+<a href="/w/notforme/">not for me</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -58,38 +61,66 @@ Building documentation, guides, references, articles.</p>
       <link>http://localhost:1313/music/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/music/</guid>
-      <description> recursion rue biacée keep it de dawnsight point seven nine de dawnsight kin de dawnsight atroph - slow flip de dawnsight lux de dawnsight Malus Domestica de dawnsight, Theo DGL flare de dawnsight proverbs de dawnsight com.m.a de dawnsight </description>
-      <content:encoded><![CDATA[
+      <description>2025 nothing but a call by dawnsight 2024 recursion rue biacée keep it 2023 point seven nine kin atroph - slow flip lux Malus Domestica w/ Theo DGL flare proverbs com.m.a </description>
+      <content:encoded><![CDATA[<h2 id="2025">2025</h2>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=4222974627/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/nothing-but-a-call-2">nothing but a call by dawnsight</a></iframe>
+
+
+<h2 id="2024">2024</h2>
+
 <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1183506731/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/recursion">recursion</a></iframe>
 
 <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=729783225/size=large/bgcol=333333/linkcol=ffffff/transparent=true/minimal=true/" seamless><a href="https://dawnsight.bandcamp.com/album/rue-biac-e">rue biacée</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1705694674/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/keep-it">keep it de dawnsight</a></iframe>
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1705694674/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/keep-it">keep it</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1194812265/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/point-seven-nine">point seven nine de dawnsight</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=166518096/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/kin">kin de dawnsight</a></iframe>
+<h2 id="2023">2023</h2>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=2687540075/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/atroph-slow-flip">atroph - slow flip de dawnsight</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1796535373/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/lux">lux de dawnsight</a></iframe>
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1194812265/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/point-seven-nine">point seven nine</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1560712922/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/malus-domestica">Malus Domestica de dawnsight, Theo DGL</a></iframe>
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=166518096/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/kin">kin</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1239039534/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/flare">flare de dawnsight</a></iframe>
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=2687540075/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/atroph-slow-flip">atroph - slow flip</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1693271297/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/proverbs">proverbs de dawnsight</a></iframe>
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1796535373/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/album/lux">lux</a></iframe>
 
-<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=3850195376/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/com-m-a">com.m.a de dawnsight</a></iframe>
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1560712922/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/malus-domestica">Malus Domestica w/ Theo DGL</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1239039534/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/flare">flare</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=1693271297/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/proverbs">proverbs</a></iframe>
+
+<iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=3850195376/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://dawnsight.bandcamp.com/track/com-m-a">com.m.a</a></iframe>
+
 
 
 ]]></content:encoded>
     </item>
     <item>
+      <title>in a cafe</title>
+      <link>http://localhost:1313/w/inacafe/</link>
+      <pubDate>Tue, 04 Feb 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/inacafe/</guid>
+      <description>We’re in the week after the new year (Têt) holiday in Vietnam.&#xA;The city is calm, restful. Streets are breathing, pause for a few days before life comes bursting again.&#xA;Most places are closed, people are off work and spending time with family.&#xA;Some rare cafés are still open. They are the place where I spend most of my time in Vietnam.&#xA;Why do they feel so welcoming while I&amp;rsquo;m so far from home ?</description>
+      <content:encoded><![CDATA[<p>We’re in the week after the new year (Têt) holiday in Vietnam.</p>
+<p>The city is calm, restful. Streets are breathing, pause for a few days before life comes bursting again.</p>
+<p>Most places are closed, people are off work and spending time with family.</p>
+<p>Some rare cafés are still open. They are the place where I spend most of my time in Vietnam.</p>
+<p>Why do they feel so welcoming while I&rsquo;m so far from home ?</p>
+<p>They are to me the best place to get a pulse on the city. Coming again and again into the same places, seeing different faces and sharing space with locals, going on about their life. Being a witness to small moments.</p>
+<p>Seeing, hearing, sensing, senses are ablaze within these places. It has become my favourite spot to get to know a new place. Far from attractions, this is where life goes. Truth comes to light within a shared space. Bubbles of conversation and calm live peacefully alongside on another. Slowing down and observing tell you more about a place than any tour guide will.</p>
+<p>Getting to know Vietnam was first having a handshake with its cafés.</p>
+<p>Today didn&rsquo;t really feel like a holiday, still it was a great day.</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>building a house</title>
-      <link>http://localhost:1313/blog/buildingahouse/</link>
-      <pubDate>Thu, 05 Dec 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/blog/buildingahouse/</guid>
+      <link>http://localhost:1313/w/buildingahouse/</link>
+      <pubDate>Fri, 27 Dec 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/buildingahouse/</guid>
       <description>Reading through Kening Zhu&amp;rsquo;s journal was a flash in the mirror moment.&#xA;Seeing someone confidently develop their own space on the internet. Finding myself curious and passionate about exploring all pages, taking in ideas and inspiration. I hadn&amp;rsquo;t experienced that on the internet in a while.&#xA;At one point I probably had 25 tabs opened trying to take it all in, but also getting excited to not, not wanting to spoil it all, and just browsing at my own pace.</description>
       <content:encoded><![CDATA[<p>Reading through <a href="https://keningzhu.com/journal">Kening Zhu&rsquo;s journal</a> was a flash in the mirror moment.</p>
 <p>Seeing someone confidently develop their own space on the internet. Finding myself curious and passionate about exploring all pages, taking in ideas and inspiration. I hadn&rsquo;t experienced that on the internet in a while.</p>
@@ -102,9 +133,9 @@ Building documentation, guides, references, articles.</p>
     </item>
     <item>
       <title>fiction aspirer</title>
-      <link>http://localhost:1313/blog/fiction/</link>
+      <link>http://localhost:1313/w/fiction/</link>
       <pubDate>Thu, 05 Sep 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/blog/fiction/</guid>
+      <guid>http://localhost:1313/w/fiction/</guid>
       <description>Writing documentation makes you shed all the fluff.&#xA;Any words unnecessary to a description, any words unnecessary to make you understood.&#xA;You delete.&#xA;I like this writing style, it’s pragmatic, it’s very in line with coding, simple is better.&#xA;But I also aspire to write fiction, which requires the fluff (I think).&#xA;I’m spending my days writing in a way that can’t be used for my other projects.&#xA;It’s hard to reconcile, sometimes.</description>
       <content:encoded><![CDATA[<p>Writing documentation makes you shed all the fluff.<br>
 Any words unnecessary to a description, any words unnecessary to make you understood.<br>
@@ -117,9 +148,9 @@ It’s hard to reconcile, sometimes.</p>
     </item>
     <item>
       <title>not for me</title>
-      <link>http://localhost:1313/blog/notforme/</link>
+      <link>http://localhost:1313/w/notforme/</link>
       <pubDate>Mon, 26 Aug 2024 13:19:44 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/blog/notforme/</guid>
+      <guid>http://localhost:1313/w/notforme/</guid>
       <description>After almost two years of contract work.&#xA;This is the first time that I have said no to work.&#xA;The first client I am okay not building a relationship with.&#xA;There’s nothing inherently wrong with what was proposed nor the interaction we had.&#xA;I’ve delivered a first project.&#xA;There was a lot of work ahead, a promise of a regular income and a long term client.&#xA;Clients like them I usually sought.</description>
       <content:encoded><![CDATA[<p>After almost two years of contract work.<br>
 This is the first time that I have said no to work.</p>
