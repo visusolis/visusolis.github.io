@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Freelance on Stefan Mikolajczyk</title>
+    <link>http://localhost:1313/tags/freelance/</link>
+    <description>Recent content in Freelance on Stefan Mikolajczyk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>hey@stefanmiko.com (Stefan Mikolajczyk)</managingEditor>
+    <webMaster>hey@stefanmiko.com (Stefan Mikolajczyk)</webMaster>
+    <lastBuildDate>Mon, 26 Aug 2024 13:19:44 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/freelance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>not for me</title>
+      <link>http://localhost:1313/w/notforme/</link>
+      <pubDate>Mon, 26 Aug 2024 13:19:44 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/notforme/</guid>
+      <description>After almost two years of contract work.&#xA;This is the first time that I have said no to work.&#xA;The first client I am okay not building a relationship with.&#xA;There’s nothing inherently wrong with what was proposed nor the interaction we had.&#xA;I’ve delivered a first project.&#xA;There was a lot of work ahead, a promise of a regular income and a long term client.&#xA;Clients like them I usually sought.</description>
+      <content:encoded><![CDATA[<p>After almost two years of contract work.<br>
+This is the first time that I have said no to work.</p>
+<p>The first client I am okay not building a relationship with.<br>
+There’s nothing inherently wrong with what was proposed nor the interaction we had.</p>
+<p>I’ve delivered a first project.<br>
+There was a lot of work ahead, a promise of a regular income and a long term client.</p>
+<p>Clients like them I usually sought. Their stability reassuring me while I kept whatever freedom this is.<br>
+This time it felt a bit different. I saw myself finishing the first contract, marking a pause, not rushing to the next.</p>
+<p>Trusted my gut and said “I won’t continue”.<br>
+The yes man of the rat race died that day.</p>
+<p>Odd and liberating.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

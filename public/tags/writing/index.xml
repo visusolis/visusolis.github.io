@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Writing on Stefan Mikolajczyk</title>
+    <link>http://localhost:1313/tags/writing/</link>
+    <description>Recent content in Writing on Stefan Mikolajczyk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>hey@stefanmiko.com (Stefan Mikolajczyk)</managingEditor>
+    <webMaster>hey@stefanmiko.com (Stefan Mikolajczyk)</webMaster>
+    <lastBuildDate>Thu, 05 Sep 2024 13:25:04 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fiction aspirer</title>
+      <link>http://localhost:1313/w/fiction/</link>
+      <pubDate>Thu, 05 Sep 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/fiction/</guid>
+      <description>Writing documentation makes you shed all the fluff.&#xA;Any words unnecessary to a description, any words unnecessary to make you understood.&#xA;You delete.&#xA;I like this writing style, it’s pragmatic, it’s very in line with coding, simple is better.&#xA;But I also aspire to write fiction, which requires the fluff (I think).&#xA;I’m spending my days writing in a way that can’t be used for my other projects.&#xA;It’s hard to reconcile, sometimes.</description>
+      <content:encoded><![CDATA[<p>Writing documentation makes you shed all the fluff.<br>
+Any words unnecessary to a description, any words unnecessary to make you understood.<br>
+You delete.</p>
+<p>I like this writing style, it’s pragmatic, it’s very in line with coding, simple is better.<br>
+But I also aspire to write fiction, which requires the fluff (I think).</p>
+<p>I’m spending my days writing in a way that can’t be used for my other projects.<br>
+It’s hard to reconcile, sometimes.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
