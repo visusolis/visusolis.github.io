@@ -29,17 +29,27 @@ I want to share some thoughts and other things that are central in my life like 
       <link>http://localhost:1313/work/</link>
       <pubDate>Sun, 25 Aug 2024 21:05:58 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/work/</guid>
-      <description>I write, mostly.&#xA;I like working with early-stage tech companies.&#xA;Building documentation, guides, references, articles.&#xA;some recent work:&#xA;Returnless: Documentation, QA Orq.ai: Documentation Bloom Credit: Documentation NX1: Blog </description>
-      <content:encoded><![CDATA[<p>I write, mostly.</p>
-<p>I like working with early-stage tech companies.<br>
-Building documentation, guides, references, articles.</p>
-<p>some recent work:</p>
-<ul>
-<li><a href="https://returnless.com">Returnless</a>: Documentation, QA</li>
-<li><a href="https://orq.ai">Orq.ai</a>: Documentation</li>
-<li><a href="https://bloomcredit.io">Bloom Credit</a>: Documentation</li>
-<li><a href="https://nx1.io">NX1</a>: Blog</li>
-</ul>
+      <description>I write mostly, and also like all things engineering.&#xA;Since 2022 I run a small agency: Visusolis.&#xA;Reach out for work&#xA;Building documentation, guides, references, articles.&#xA;Offering product management consulting, development, quality.&#xA;Working with startups/scaleups usually, on public and private products.&#xA;Themes are varied: e-com, banking, llm, network, web3, infra, ops.&#xA;Before that, I was in corporate for a while, some highlights.&#xA;2019 - 2022 at WeTransfer&#xA;Managed the Platform Team, running Infrastructure and Developer Experience.</description>
+      <content:encoded><![CDATA[<p>I write mostly, and also like all things engineering.</p>
+<p>Since 2022 I run a small agency: <strong>Visusolis</strong>.</p>
+<p><a href="mailto:visusolis@stefanmiko.com">Reach out for work</a></p>
+<p>Building documentation, guides, references, articles.<br>
+Offering product management consulting, development, quality.</p>
+<p>Working with startups/scaleups usually, on public and private products.<br>
+Themes are varied: e-com, banking, llm, network, web3, infra, ops.</p>
+<p>Before that, I was in corporate for a while, some highlights.</p>
+<p>2019 - 2022 at <a href="https://wetransfer.com">WeTransfer</a></p>
+<pre><code>Managed the Platform Team, running Infrastructure and Developer Experience.
+Worked with a lean team to manage infrastructure and enable 60+ engineers.
+Standardized product build, test and delivery.
+Built impactful tooling while improving infrastructure day-to-day.     
+</code></pre>
+<p>2014 - 2019 at <a href="https://ovhcloud.com">OVHcloud</a></p>
+<pre><code>Backend Software Engineer turned Technical Team Lead.
+Designed and ran customer, invoicing and subscription management.
+Worked on renovating and improving existing systems.
+Build and delivered with distributed, international teams.
+</code></pre>
 ]]></content:encoded>
     </item>
     <item>
@@ -83,6 +93,20 @@ Building documentation, guides, references, articles.</p>
 
 
 
+]]></content:encoded>
+    </item>
+    <item>
+      <title>learning to write in the age of llm</title>
+      <link>http://localhost:1313/w/writinginai/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/writinginai/</guid>
+      <description>Shifting career and getting into writing is hard. Doing so during the everlasting dawn of large language models is an interesting choice.&#xA;It hovers my mind that this might be on paper a short-sighted decision. An unwise one to make this jump in an era where writing is delegated to tools.&#xA;Now more than ever, writing skills are not needed for those having access to the internet. What used to sometimes be a chore, can be solved by prompting a machine.</description>
+      <content:encoded><![CDATA[<p>Shifting career and getting into writing is hard. Doing so during the everlasting dawn of large language models is an interesting choice.</p>
+<p>It hovers my mind that this might be on paper a short-sighted decision. An unwise one to make this jump in an era where writing is delegated to tools.</p>
+<p>Now more than ever, writing skills are not needed for those having access to the internet. What used to sometimes be a chore, can be solved by prompting a machine.</p>
+<p>It felt uneasy. I often justified my choices by telling myself that technical writing, the one that needs to hold truth, is not replaceable yet. I&rsquo;m realizing that repeating that to myself is a way to keep this door open. This door to keep on writing and making it an every day craft.</p>
+<p>If I believe in the technology, I lose aspirations of the future I desire. The belief that writing will stay alive is ever so necessary.</p>
+<p>And though I aspire to learn without a reason, learning as a career decision is good enough to keep myself going.</p>
 ]]></content:encoded>
     </item>
     <item>

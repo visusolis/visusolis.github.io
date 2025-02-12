@@ -10,7 +10,7 @@ I moved on from the corporate world and work independently.
 
 Here's [what I'm up to these days](currently) -- updated January '25.
 
-I have [thoughts](blog), sometimes.
+I have [thoughts](w), sometimes.
 
 I also [make music](music) and one day there might be some place for some visual arts somewhere? 
 
