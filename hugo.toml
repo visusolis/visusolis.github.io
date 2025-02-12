@@ -34,7 +34,7 @@ hardWraps = true
 
 [params]
   # The description of your website
-  description = "Stefan Mikolajczyk"
+  description = "stefan mikolajczyk"
 
   # The path to your favicon
   favicon = "images/favicon.png"
@@ -47,11 +47,11 @@ hardWraps = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Stefan Mikolajczyk"
+  title = "stefan mikolajczyk"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-02"
+  dateFormat = "Jan '06"
 
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can

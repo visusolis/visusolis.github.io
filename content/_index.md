@@ -5,13 +5,12 @@ menu = 'main'
 weight = 1
 +++
 
-I [work](work) as an engineer and technical writer.
-I moved on from the corporate world and work independently.
+Hi, I'm Stefan. 
 
-Here's [what I'm up to these days](currently) -- updated January '25.
+Here's [what I'm up to currently](currently) _-- updated January '25_.
 
-I have [thoughts](w), sometimes.
+Here's [what I do for work](work).
 
-I also [make music](music) and one day there might be some place for some visual arts somewhere? 
+I have [thoughts](w), sometimes, and I [make music](music) also.
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)
