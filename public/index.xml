@@ -43,20 +43,6 @@ Building documentation, guides, references, articles.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>writings</title>
-      <link>http://localhost:1313/blog/</link>
-      <pubDate>Thu, 05 Sep 2024 13:22:36 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/blog/</guid>
-      <description>2025 in a cafe&#xA;2024 building a house&#xA;fiction&#xA;not for me</description>
-      <content:encoded><![CDATA[<h3 id="2025">2025</h3>
-<p><a href="/w/inacafe/">in a cafe</a></p>
-<h3 id="2024">2024</h3>
-<p><a href="/w/buildingahouse/">building a house</a><br>
-<a href="/w/fiction/">fiction</a><br>
-<a href="/w/notforme/">not for me</a></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>music</title>
       <link>http://localhost:1313/music/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
