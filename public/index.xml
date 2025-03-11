@@ -29,10 +29,10 @@ I want to share some thoughts and other things that are central in my life like 
       <link>http://localhost:1313/work/</link>
       <pubDate>Sun, 25 Aug 2024 21:05:58 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/work/</guid>
-      <description>I write mostly, and also like all things engineering.&#xA;Since 2022 I run a small agency: Visusolis.&#xA;Reach out for work&#xA;Building documentation, guides, references, articles.&#xA;Offering product management consulting, development, quality.&#xA;Working with startups/scaleups usually, on public and private products.&#xA;Themes are varied: e-com, banking, llm, network, web3, infra, ops.&#xA;Before that, I was in corporate for a while, some highlights.&#xA;2019 - 2022 at WeTransfer&#xA;Managed the Platform Team, running Infrastructure and Developer Experience.</description>
-      <content:encoded><![CDATA[<p>I write mostly, and also like all things engineering.</p>
+      <description>I&amp;rsquo;m a software engineer that can write.&#xA;Here are some words to describe my career, if you prefer a little story&#xA;Since 2022 I run a small agency: Visusolis.&#xA;Building documentation, guides, references, articles.&#xA;Offering product management consulting, development, quality.&#xA;Working with startups/scaleups usually, on public and private products.&#xA;Themes are varied: e-com, banking, llm, network, web3, infra, ops.&#xA;Before that, I was in corporate for a while, some highlights.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;m a software engineer that can write.</p>
+<p>Here are some words to describe my career, <a href="/w/whatsacareer/">if you prefer a little story</a></p>
 <p>Since 2022 I run a small agency: <strong>Visusolis</strong>.</p>
-<p><a href="mailto:visusolis@stefanmiko.com">Reach out for work</a></p>
 <p>Building documentation, guides, references, articles.<br>
 Offering product management consulting, development, quality.</p>
 <p>Working with startups/scaleups usually, on public and private products.<br>
@@ -50,6 +50,7 @@ Designed and ran customer, invoicing and subscription management.
 Worked on renovating and improving existing systems.
 Build and delivered with distributed, international teams.
 </code></pre>
+<h3 id="reach-out-for-workmailtovisusolisstefanmikocom"><a href="mailto:visusolis@stefanmiko.com">Reach out for work</a></h3>
 ]]></content:encoded>
     </item>
     <item>
@@ -93,6 +94,40 @@ Build and delivered with distributed, international teams.
 
 
 
+]]></content:encoded>
+    </item>
+    <item>
+      <title>explaining my career</title>
+      <link>http://localhost:1313/w/whatsacareer/</link>
+      <pubDate>Tue, 11 Mar 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/whatsacareer/</guid>
+      <description>It’s hard to build a portfolio and put it on the internet.&#xA;When freelancing, this is a mandatory step (actually, I’m not sure, is it?).&#xA;It would be easy to list out this portfolio as a CV, listing achievements year after year, patting myself on the back for each company I’ve worked for. Please see LinkedIn or UpWork if that’s really what floats your boat.&#xA;Sharing my career as a CV feels uninteresting.</description>
+      <content:encoded><![CDATA[<p>It’s hard to build a portfolio and put it on the internet.</p>
+<p>When freelancing, this is a mandatory step (actually, I’m not sure, is it?).</p>
+<p>It would be easy to list out this portfolio as a CV, listing achievements year after year, patting myself on the back for each company I’ve worked for. Please see <a href="https://www.linkedin.com/in/stefan-mikolajczyk/">LinkedIn</a> or <a href="https://www.upwork.com/freelancers/~01efc50bcd1365e4e7">UpWork</a> if that’s really what floats your boat.</p>
+<p>Sharing my career as a CV feels uninteresting. What I’m discussing with clients on calls is somewhat fun (at least for me).</p>
+<p>The story I tell prospects is the one I would tell friends, explaining how those past fifteen years have been and what I’ve been through then.<br>
+Accrued shareholders of past companies don’t matter when you’re explaining your career and discussing what’s next.</p>
+<p>My path, trajectory, and aspiration are essential and sufficient to get whether you want to work with me.</p>
+<p>There is only one message that needs to be shared: I am a software engineer that can write.</p>
+<h1 id="the-boring-details">the boring details</h1>
+<p>You might want to know more, so here is a glimpse of my journey through tech. If that’s really not your thing, then please skip ahead.</p>
+<p>For the software engineering part, I worked as a backend engineer working with large teams serving millions of users. Evolving in this environment eventually made me lead projects and teams, working on increasingly complex efforts for the next 10+ years.<br>
+I got excited about backend, infrastructure, network, cloud, and security. Surprisingly, I got more excited about working with people and learning along the way.</p>
+<p>Through the latter half of my corporate stint, I was in a managerial role, ironing out communication skills way more than technical skills. Communication as an engineering manager is a quarter conversational, three-quarters written. This is where technical writing solidified as a tool I was using and perfecting.</p>
+<p>Just like re-organizing and cleaning up my room, re-organizing and cleaning up documentation was something I thoroughly enjoyed doing (weirdo). To be honest, at that time this felt like the work an engineer should do. I didn’t see how this could be a job on its own. It took a few years for me to come to that realization. To get there, I first had to burn myself out on the corporate grind. I decided to take a break from the day-to-day of a scaling and financially contrived environment.</p>
+<p>Breathing the fresh air of a post-burnout sabbatical, sensations came back quickly that I had to figure out a way to move forward. Working independently was a logical way to make this happen. I could control the flow of work and make the discipline evolve as I see fit. It was only after a few steps that I landed my first gig as a technical writer. We were in a pre-LLM world and I got lucky to get a foot in the door of a few clients for tangentially technical (with much marketing) writings.</p>
+<p>Soon after, I was feeling ready to get more work done and landed the gig that would make things go on rails, being responsible for documentation for a startup.</p>
+<p>This is where it clicked. The job made sense, both its existence and why I was excited to do it.</p>
+<h1 id="so-what-do-i-do-now">so what do I do now</h1>
+<p>I love working with <strong>small tech companies</strong>.</p>
+<p>Their speed is their best attribute. They have small teams of hyper-focused engineers, lean processes, and an appetite for shipping.</p>
+<p>Customers, though, don’t care whether a company is small or big. They need to <em>understand the product</em>, they need <em>documentation</em>.</p>
+<p>This is where I come in. I understand tech companies inside and out. I know firsthand that engineers don’t have time nor desire to build user docs.<br>
+Product move fast and needs someone dedicated to understand its changes and make them digestible to users. <strong>That’s my favourite place to be</strong>.</p>
+<p>I’m low maintenance. I understand quickly what your product is about and what your users want to read. <strong>Just keep me in the loop with what you’re shipping, and I’ll take care of the rest</strong>.</p>
+<p>That’s what I’ve been doing for the past 3 years, and <em>it’s been fun</em>.</p>
+<p><a href="mailto:work@stefanmiko.com">Get in touch for work</a></p>
 ]]></content:encoded>
     </item>
     <item>

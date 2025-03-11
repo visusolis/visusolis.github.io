@@ -5,11 +5,11 @@ menu = 'main'
 weight = 3
 +++
 
-I write mostly, and also like all things engineering.
+I'm a software engineer that can write.
+
+Here are some words to describe my career, [if you prefer a little story](w/whatsacareer.md)
 
 Since 2022 I run a small agency: **Visusolis**.
-
-[Reach out for work](mailto:visusolis@stefanmiko.com)
 
 Building documentation, guides, references, articles.
 Offering product management consulting, development, quality.
@@ -33,4 +33,4 @@ Before that, I was in corporate for a while, some highlights.
     Worked on renovating and improving existing systems.
     Build and delivered with distributed, international teams.
 
-
+### [Reach out for work](mailto:visusolis@stefanmiko.com)
