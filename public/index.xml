@@ -29,27 +29,28 @@ I want to share some thoughts and other things that are central in my life like 
       <link>http://localhost:1313/work/</link>
       <pubDate>Sun, 25 Aug 2024 21:05:58 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/work/</guid>
-      <description>I&amp;rsquo;m a software engineer that can write.&#xA;Here are some words to describe my career, if you prefer a little story&#xA;Since 2022 I run a small agency: Visusolis.&#xA;Building documentation, guides, references, articles.&#xA;Offering product management consulting, development, quality.&#xA;Working with startups/scaleups usually, on public and private products.&#xA;Themes are varied: e-com, banking, llm, network, web3, infra, ops.&#xA;Before that, I was in corporate for a while, some highlights.</description>
-      <content:encoded><![CDATA[<p>I&rsquo;m a software engineer that can write.</p>
+      <description>I&amp;rsquo;m a software engineer who can write.&#xA;Here are some words to describe my career, if you prefer a little story&#xA;Since 2022 I run a small agency called Visusolis.&#xA;I build documentation, guides, references, articles.&#xA;I also offer more some engineering expertise around product management, engineering management, or quality.&#xA;I like working with startups/scaleups usually, on interesting products hopefully.&#xA;Themes are varied: e-com, banking, llm, network, web3, infra, ops.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;m a software engineer who can write.</p>
 <p>Here are some words to describe my career, <a href="/w/whatsacareer/">if you prefer a little story</a></p>
-<p>Since 2022 I run a small agency: <strong>Visusolis</strong>.</p>
-<p>Building documentation, guides, references, articles.<br>
-Offering product management consulting, development, quality.</p>
-<p>Working with startups/scaleups usually, on public and private products.<br>
+<p>Since 2022 I run a small agency called <em><strong>Visusolis</strong></em>.</p>
+<p>I build documentation, guides, references, articles.<br>
+I also offer more some engineering expertise around product management, engineering management, or quality.</p>
+<p>I like working with startups/scaleups usually, on interesting products hopefully.<br>
 Themes are varied: e-com, banking, llm, network, web3, infra, ops.</p>
 <p>Before that, I was in corporate for a while, some highlights.</p>
-<p>2019 - 2022 at <a href="https://wetransfer.com">WeTransfer</a></p>
+<p><em>2019 - 2022 at <a href="https://wetransfer.com">WeTransfer</a></em></p>
 <pre><code>Managed the Platform Team, running Infrastructure and Developer Experience.
 Worked with a lean team to manage infrastructure and enable 60+ engineers.
 Standardized product build, test and delivery.
 Built impactful tooling while improving infrastructure day-to-day.     
 </code></pre>
-<p>2014 - 2019 at <a href="https://ovhcloud.com">OVHcloud</a></p>
+<p><em>2014 - 2019 at <a href="https://ovhcloud.com">OVHcloud</a></em></p>
 <pre><code>Backend Software Engineer turned Technical Team Lead.
 Designed and ran customer, invoicing and subscription management.
 Worked on renovating and improving existing systems.
 Build and delivered with distributed, international teams.
 </code></pre>
+<p>I&rsquo;m always open for opportunities.</p>
 <h3 id="reach-out-for-workmailtovisusolisstefanmikocom"><a href="mailto:visusolis@stefanmiko.com">Reach out for work</a></h3>
 ]]></content:encoded>
     </item>

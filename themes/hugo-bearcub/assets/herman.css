@@ -1,10 +1,10 @@
 :root {
-  font-size: 62.5%; /* 10px */
+  font-size: 50.5%; /* 10px */
   --color-dark: #181a20;
-  --color-light: #fafafa;
+  --color-light: #e5e5e5;
   --color-primary: #1a8fe3;
-  --size: 1rem;
-  --spacing: calc(var(--size) * 2.4);
+  --size: 0.9rem;
+  --spacing: calc(var(--size) * 2.3);
 }
 
 body {

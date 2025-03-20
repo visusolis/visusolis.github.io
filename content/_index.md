@@ -5,12 +5,19 @@ menu = 'main'
 weight = 1
 +++
 
-Hi, I'm Stefan. 
+## Hi, 
 
-Here's [what I'm up to currently](currently) _-- updated January '25_.
+I'm Stefan.
 
-Here's [what I do for work](work).
+Get to know me more by seeing [what I've been up to recently](currently).
 
-I have [thoughts](w), sometimes, and I [make music](music) also.
+I like [technical writing and engineering](work).
+
+I have [thoughts](w), sometimes.
+
+I also [make music](music).
+
+So far, that's only what I've been willing to put online, but [I am aspiring to do more](w/buildingahouse.md)
+
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)
