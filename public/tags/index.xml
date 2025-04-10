@@ -43,9 +43,17 @@
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
+      <title>Currently</title>
+      <link>http://localhost:1313/tags/currently/</link>
+      <pubDate>Wed, 29 Jan 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/tags/currently/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
       <title>Meta</title>
       <link>http://localhost:1313/tags/meta/</link>
-      <pubDate>Wed, 29 Jan 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <pubDate>Fri, 27 Dec 2024 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/tags/meta/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>

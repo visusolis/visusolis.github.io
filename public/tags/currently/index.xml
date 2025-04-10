@@ -11,7 +11,7 @@
     <lastBuildDate>Wed, 29 Jan 2025 13:25:04 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/currently/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>currently - january 2025 edition</title>
+      <title>currently - january 2025</title>
       <link>http://localhost:1313/w/currently0125/</link>
       <pubDate>Wed, 29 Jan 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/w/currently0125/</guid>
@@ -20,7 +20,7 @@
 <p>I&rsquo;ve been focused on getting work started great this year, doubling down on relationships with certain clients while moving away from others.</p>
 <p>I&rsquo;m writing much more and have this ambition of building this site as a repository for all things not necesserally work related.<br>
 I want to share some thoughts and other things that are central in my life like living abroad, living sober, staying creative and and the intersectionality of it all.</p>
-<p>#<img alt="A hazy morning" src="assets/vietnam.jpeg"></p>
+<p><img alt="A hazy morning" src="../../assets/vietnam.jpeg"></p>
 ]]></content:encoded>
     </item>
   </channel>

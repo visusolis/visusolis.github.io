@@ -9,7 +9,7 @@ weight = 1
 
 I'm Stefan.
 
-Get to know me more by seeing [what I've been up to recently](currently).
+Get to know me more, see [what I've been up to recently](currently).
 
 I like [technical writing and engineering](work).
 
@@ -18,6 +18,5 @@ I have [thoughts](w), sometimes.
 I also [make music](music).
 
 So far, that's only what I've been willing to put online, but [I am aspiring to do more](w/buildingahouse.md)
-
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)
