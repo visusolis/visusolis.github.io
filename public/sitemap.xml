@@ -20,6 +20,9 @@
     <loc>http://localhost:1313/w/noise/</loc>
     <lastmod>2025-04-15T13:25:04+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/meta/</loc>
+    <lastmod>2025-04-15T13:25:04+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/self/</loc>
     <lastmod>2025-04-15T13:25:04+02:00</lastmod>
   </url><url>
@@ -54,9 +57,6 @@
     <lastmod>2025-01-29T13:25:04+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/w/buildingahouse/</loc>
-    <lastmod>2024-12-27T13:25:04+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/meta/</loc>
     <lastmod>2024-12-27T13:25:04+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/w/fiction/</loc>
