@@ -17,6 +17,6 @@ I have [thoughts](w), sometimes.
 
 I also [make music](music).
 
-So far, that's only what I've been willing to put online, but [I am aspiring to do more](w/buildingahouse.md)
+So far, that's only what I've been willing to put online, but [I am aspiring to do more](w/buildingahouse.md).
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)

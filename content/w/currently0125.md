@@ -1,5 +1,5 @@
 ---
-title: 'currently - january 2025'
+title: 'currently in january 2025'
 date: '2025-01-29T13:25:04+02:00'
 tags: ['currently']
 ---
