@@ -4,6 +4,8 @@ date: '2025-01-29T13:25:04+02:00'
 tags: ['currently']
 ---
 
+[_More recently, in April 2025._](../currently.md)
+
 I'm currently in Vietnam, arrived at the beginning of the year and will stay mostly in Ho Chi Minh City until spring. 
 
 I've been focused on getting work started great this year, doubling down on relationships with certain clients while moving away from others.

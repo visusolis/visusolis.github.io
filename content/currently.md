@@ -7,7 +7,7 @@ weight = '2'
 
 _Updated April 10 2025_
 
-[_Previously, in January 25 2025._](w/currently0125)
+[_Previously, in January 2025._](w/currently0125)
 
 Hey! 
 
