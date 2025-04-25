@@ -1,5 +1,5 @@
 ---
-title: 'staying connected with world politics while being far away'
+title: 'staying connected'
 date: '2025-04-22T13:19:44+02:00'
 tags: ['self']
 ---
