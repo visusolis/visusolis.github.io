@@ -1,7 +1,7 @@
 ---
 title: 'hiring juniors'
 date: '2025-05-21T13:25:04+02:00'
-tags: ['tech', 'llm ']
+tags: ['tech', 'ai']
 ---
 
 Since [burning out and becoming a freelancer](whatsacareer.md), I have become akin to an outsider to the tech industry. Out of necessity and self-preservation, I didn’t want to belong anymore. I felt helpless with the game it became. Despite it all, I still keep an eye on it. These days I feel mostly sorry for it.
