@@ -8,22 +8,31 @@
     <loc>http://localhost:1313/currently/</loc>
     <lastmod>2025-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/w/</loc>
-    <lastmod>2025-05-13T13:25:04+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/work/</loc>
     <lastmod>2024-08-25T21:05:58+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/w/</loc>
+    <lastmod>2025-05-21T13:25:04+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/music/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/w/junior/</loc>
+    <lastmod>2025-05-21T13:25:04+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llm-/</loc>
+    <lastmod>2025-05-21T13:25:04+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-05-21T13:25:04+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech/</loc>
+    <lastmod>2025-05-21T13:25:04+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/w/iamsober/</loc>
     <lastmod>2025-05-13T13:25:04+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sobriety/</loc>
-    <lastmod>2025-05-13T13:25:04+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-05-13T13:25:04+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/drums/</loc>
