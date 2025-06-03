@@ -5,10 +5,6 @@ menu = 'main'
 weight = 1
 +++
 
-## Hi, 
-
-I'm Stefan.
-
 Get to know me more, see [what I've been up to recently](currently).
 
 I like [technical writing and engineering](work).

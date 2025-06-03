@@ -17,10 +17,10 @@
     <loc>http://localhost:1313/music/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/w/junior/</loc>
+    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2025-05-21T13:25:04+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/llm-/</loc>
+    <loc>http://localhost:1313/w/junior/</loc>
     <lastmod>2025-05-21T13:25:04+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -59,9 +59,6 @@
     <loc>http://localhost:1313/tags/freelance/</loc>
     <lastmod>2025-03-11T13:25:04+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2025-02-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/w/writinginai/</loc>
     <lastmod>2025-02-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -90,5 +87,7 @@
     <lastmod>2024-08-26T13:19:44+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/w/outoftheloop/</loc>
   </url>
 </urlset>
