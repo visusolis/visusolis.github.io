@@ -4,8 +4,6 @@ date: '2025-06-29T13:19:44+02:00'
 tags: ['writing']
 ---
 
-You’re writing a lot, now what. 
-
 Today, while hoping into this weekly writing circle, I said something funny while stating my intentions for the day.
 
 It is now 15:00 in Lyon (I’ll update my now page soon, but I’ve been moving around a lot in the past month). I’m only staying here for a couple days and this is the only full day I have, however, I have a lot of work on my hands today and will be stuck in front of the computer for the whole day. It honestly kinda sucks that some days have to be like that, but knowing that most days aren’t, this is okay. 
