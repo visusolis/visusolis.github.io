@@ -5,14 +5,31 @@ menu = 'main'
 weight = 1
 +++
 
-Get to know me more, see [what I've been up to recently](currently).
+###### ✿
 
-I like [technical writing and engineering](work).
+_This is a little garden where things grow on their own pace._
 
-I have [thoughts](w), sometimes.
+_I try to keep everything hydrated,_
+
+_but there's only so much a watering can can hold._
+
+###### ❀
+
+There are some [thoughts](w) here and there.
+If knowing what I'm up to is interesting to you, here's my [most recent update](now).
+
+###### ✳
+
+I like technical writing, and engineering, [luckily that's what I do for work](work).
+
+###### ❂
 
 I also [make music](music).
 
-So far, that's only what I've been willing to put online, but [I am aspiring to do more](w/buildingahouse.md).
+###### ❆
+
+So far, that's the only thing that have been able to grow here, but [I hope some more will join later](w/buildingahouse.md).
+
+###### ❁
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)
