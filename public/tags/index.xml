@@ -8,8 +8,16 @@
     <language>en-US</language>
     <managingEditor>hey@stefanmiko.com (Stefan Mikolajczyk)</managingEditor>
     <webMaster>hey@stefanmiko.com (Stefan Mikolajczyk)</webMaster>
-    <lastBuildDate>Sun, 29 Jun 2025 13:19:44 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jul 2025 06:25:04 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobriety</title>
+      <link>http://localhost:1313/tags/sobriety/</link>
+      <pubDate>Mon, 21 Jul 2025 06:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/tags/sobriety/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
     <item>
       <title>Writing</title>
       <link>http://localhost:1313/tags/writing/</link>
@@ -39,14 +47,6 @@
       <link>http://localhost:1313/tags/tech/</link>
       <pubDate>Wed, 21 May 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/tags/tech/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    <item>
-      <title>Sobriety</title>
-      <link>http://localhost:1313/tags/sobriety/</link>
-      <pubDate>Tue, 13 May 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/tags/sobriety/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -87,14 +87,6 @@
       <link>http://localhost:1313/tags/vietnam/</link>
       <pubDate>Tue, 04 Feb 2025 13:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
       <guid>http://localhost:1313/tags/vietnam/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    <item>
-      <title>Currently</title>
-      <link>http://localhost:1313/tags/currently/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
-      <guid>http://localhost:1313/tags/currently/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
