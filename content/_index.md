@@ -22,6 +22,10 @@ If knowing what I'm up to is interesting to you, here's my [most recent update](
 
 I like technical writing, and engineering, [luckily that's what I do for work](work).
 
+###### ❁
+
+Recently i started building [small software](apps) again.
+
 ###### ❂
 
 I also [make music](music).

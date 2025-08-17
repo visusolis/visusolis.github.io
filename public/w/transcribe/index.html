@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>a first summer tech experiment | Stefan Mikolajczyk</title>
+<meta name="title" content="a first summer tech experiment" />
+<meta name="description" content="I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like music or writing, I got back into some tech work.
+This is unusual, as my disconnect from this world has been present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them." />
+<meta name="author" content="" />
+<meta name="keywords" content="tech,llm," />
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="a first summer tech experiment" />
+<meta property="og:description" content="I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like music or writing, I got back into some tech work.
+This is unusual, as my disconnect from this world has been present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/w/transcribe/" />
+
+<meta property="og:image" content="http://localhost:1313/images/social_card_bg_hu6940840403582178469.webp"/><meta property="article:section" content="w" />
+<meta property="article:published_time" content="2025-08-16T06:25:04+02:00" />
+<meta property="article:modified_time" content="2025-08-16T06:25:04+02:00" /><meta property="og:site_name" content="stefan mikolajczyk" />
+<meta property="fb:admins" content="0000000000" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/images/social_card_bg_hu6940840403582178469.webp"/>
+<meta name="twitter:title" content="a first summer tech experiment"/>
+<meta name="twitter:description" content="I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like music or writing, I got back into some tech work.
+This is unusual, as my disconnect from this world has been present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them."/>
+<meta name="twitter:site" content="@example"/>
+
+
+
+<meta itemprop="name" content="a first summer tech experiment">
+<meta itemprop="description" content="I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like music or writing, I got back into some tech work.
+This is unusual, as my disconnect from this world has been present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them."><meta itemprop="datePublished" content="2025-08-16T06:25:04+02:00" />
+<meta itemprop="dateModified" content="2025-08-16T06:25:04+02:00" />
+<meta itemprop="wordCount" content="906">
+
+<meta itemprop="image" content="http://localhost:1313/images/social_card_bg_hu6940840403582178469.webp"/>
+
+
+<meta itemprop="keywords" content="tech,llm," />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  
+  <link href="/original.min.css" rel="stylesheet">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<a href="/" class="title"><h1>Stefan Mikolajczyk</h1></a>
+<nav>
+  <a href="/">home</a>
+
+  <a href="/now/">now</a>
+
+  <a href="/work/">work</a>
+
+  <a href="/w/">read</a>
+
+  <a href="/apps/">run</a>
+
+  <a href="/music/">listen</a>
+
+
+
+
+
+
+
+
+
+</nav>
+</header>
+  <main id="main-content">
+
+<h1>a first summer tech experiment</h1>
+<p class="byline">
+  <time datetime='2025-08-16' pubdate>
+    August 2025
+  </time>
+  
+</p>
+
+<content>
+  <p>I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like <a href="/music/">music</a> or <a href="/w/">writing</a>, I got back into some tech work.</p>
+<p>This is unusual, as my disconnect from this world has been present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them.</p>
+<p>This is fascinatingly different from other creative endeavors.</p>
+<p>With tech stuff, I can&rsquo;t wait for inspiration to come and try to latch onto it. Either there is an idea ready to work on or I don&rsquo;t have anything to do. It felt great to have stuff I could finally unpack, so I want to share some words on a project around video transcription and translation.</p>
+<h2 id="a-long-interview">A long interview</h2>
+<p>There is a 2,5 hour interview my grandmother did online about the life of her family during the war. The issue (for me) is that it is in Polish. While I can follow a basic conversation, I can’t understand that long of an interview. I needed a way to get transcriptions and translations going.</p>
+<p>After some research, it seems like whisper is the library/CLI I should use to try to transcribe the video. I had heard of the library a while back, but was really surprised that it was now runnable on a home laptop, I daily drive a Macbook M1 air, I was sceptic, but willing to try.</p>
+<h2 id="first-instinct">First instinct</h2>
+<p>My first direction was trying to transcribe the video in Polish and run the text through translation, while I would lose on the interactivity of watching her speak, but this would give me something to read.</p>
+<p>To start, I had to five .mp4 videos to transcribe. My first inclination was to convert the .mp4 to .mp3, which was a quick ffmpeg run.</p>
+<blockquote>
+<h4 id="-ffmpeg--i-inputmp4-outputmp3">$ ffmpeg -i input.mp4 output.mp3</h4>
+</blockquote>
+<p>I first installed whisper through <code>pip</code> and tried an initial run using default modes.</p>
+<blockquote>
+<h4 id="-venvbinwhisper-model-medium-language-polish-videomp4">$ ./venv/bin/whisper —model medium —language Polish video.mp4</h4>
+<h4 id="sslsslcertverificationerror-ssl-certificate_verify_failed-certificate-verify-failed-self-signed-certificate-in-certificate-chain-_sslc992">ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)</h4>
+</blockquote>
+<p>As you can see, some SSL issues came on. I quickly understood that the binary was attempting to download the <code>medium</code> model locally for use and was struggling to connect wherever it had to.</p>
+<p>Downloading the model was just a curl away. I started with the base model (smaller) just to get a whiff if things were going to work.</p>
+<blockquote>
+<h4 id="-curl--k--l-httpsopenaipublicazureedgenetmainwhispermodelsed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34ebasept--o-cachewhisperbasept">$ curl -k -L <a href="https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt">https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt</a> -o ~/.cache/whisper/base.pt</h4>
+</blockquote>
+<p>Then retrying setting the —model base values produced some polish output!</p>
+<p><img alt="firstoutput" src="../../assets/firstoutput.jpeg"></p>
+<h2 id="good-enough-">Good enough ?</h2>
+<p>Immediately there were two problems that came up, the output felt off, the generated text didn&rsquo;t feel clear enough and it felt quite slow.</p>
+<p>I laughed while realizing that a NLP model was running on my MacBook Air M1.</p>
+<p>This was incredible result already but I was keen on prematurely optimizing (as one does). A few searches yielded a very popular CPP rewrite of Whisper. I honestly don’t know if that changed anything, but I was happy ditching python at this stage.</p>
+<blockquote>
+<h4 id="brew-install-whisper-cpp">brew install whisper-cpp</h4>
+</blockquote>
+<p>We were away.</p>
+<p>Digging in the CLI options, I saw a way to visualize how confident the model was for each transcription: using <code>-pc</code> outputs the confidence as color for each word. Running it once again, I realized everything was in red/orange, it didn&rsquo;t look good, I was probably asking too much from the base model.</p>
+<p>After downloading the medium model, which was recommended for Polish interpretation. The output was looking way better.</p>
+<p><img alt="betteroutput" src="../../assets/betteroutput.jpeg"></p>
+<h2 id="translation">Translation</h2>
+<p>So now I was able to produce the transcript in Polish, no problem. I could then feed that into any translation and run with it. However, looking at the CLI options earlier, I could see a <code>-tr</code> option, offering direct translation to English within the model. A few minutes later the output was green, and in English, I still can’t believe it was this simple.</p>
+<p>I realized then that I wouldn’t have to completely rely on text, whisper was capable of generating .srt from the audio and could generate the translations easily.</p>
+<blockquote>
+<h4 id="whisper-cli--l-pl--tr-audiomp3--osrt--m-modelsmediumpt">whisper-cli -l pl -tr audio.mp3 -osrt -m models/medium.pt</h4>
+</blockquote>
+<p>Subtitle files were generated correctly, I could open them nicely with VLC and watch along with the interview, at last.</p>
+<h2 id="this-felt-too-easy">This felt too easy</h2>
+<p>Just for my comfort, I ended up merging all videos and burning the subtitles into them, FFmpeg once again proves it’s one of the best libraries and cli ever made.</p>
+<p>This felt like magic.</p>
+<p>Running such a model locally on a small laptop felt unachievable a couple of years ago, yet it is now so accessible and easy to get started. Being able to run this felt surreal.</p>
+<p>It feels good to see powerful models being really useful here, it also felt funny to see FFmpeg <a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/commit/13ce36fef98a3f4e6d8360c24d6b8434cbb8869b">integrate whisper in their codebase</a>, right after I finished this little project.</p>
+<h2 id="quick-reflections">Quick reflections</h2>
+<p>All this made me reflect on the LLM revolution. It mostly feel awful and tainted by the corpos shoveling uninteresting solutions in our faces.</p>
+<p>All the while, jewel libraries coming out of the mud give me a sense that this is not all lost, open software will benefit and keep progress open and accessible.</p>
+<p>Not relying on altman and co to run llm and making all the magic available locally is a beacon of light in the current fog of war, and I am happy to see it.</p>
+
+</content>
+<p>
+  
+    <a class="blog-tags" href="/tags/tech/">#tech</a>
+  
+    <a class="blog-tags" href="/tags/llm/">#llm</a>
+  
+</p>
+
+  </main>
+  <footer><small>
+  &lt;3
+</small>
+</footer>
+
+    
+</body>
+
+</html>

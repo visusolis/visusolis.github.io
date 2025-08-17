@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Llm on Stefan Mikolajczyk</title>
+    <link>http://localhost:1313/tags/llm/</link>
+    <description>Recent content in Llm on Stefan Mikolajczyk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>hey@stefanmiko.com (Stefan Mikolajczyk)</managingEditor>
+    <webMaster>hey@stefanmiko.com (Stefan Mikolajczyk)</webMaster>
+    <lastBuildDate>Sat, 16 Aug 2025 06:25:04 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>transcribe</title>
+      <link>http://localhost:1313/w/transcribe/</link>
+      <pubDate>Sat, 16 Aug 2025 06:25:04 +0200</pubDate><author>hey@stefanmiko.com (Stefan Mikolajczyk)</author>
+      <guid>http://localhost:1313/w/transcribe/</guid>
+      <description>Some technical experiments.&#xA;After I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like this (music, writing), I got back into some tech work for fun (this feels very unusual to write out and think this way, my disconnect from the tech world in the past few years has been present, but that’s another topic for later).</description>
+      <content:encoded><![CDATA[<p>Some technical experiments.</p>
+<p>After I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like this (music, writing), I got back into some tech work for fun (this feels very unusual to write out and think this way, my disconnect from the tech world in the past few years has been present, but that’s another topic for later). The interesting part is that both projects I tackled were something that originated a while back in my mind but never took time to act on them. This is fascinating how different it feels from other creative endeavors.</p>
+<p>With any tech stuff, I don’t just wait for inspiration to come and try to latch onto said inspiration. Either there is an idea ready to work on or you don’t have anything to do. It felt great to have stuff I could finally unpack, so I want to share some words on a project around video transcription and translation.</p>
+<p>There is a 2,5 hour interview my grandmother did online about the life of her family during the war. The issue (for me) is that it is in Polish. While I can follow a basic conversation, I can’t understand that long of an interview. Therefore, I needed a way to get transcriptions and translations going.</p>
+<p>After some research, it seems like whisper is the library/CLI I should use to try to transcribe the video.</p>
+<p>My first direction was trying to transcribe the video in Polish and run the text through translation, while I would lose on the interactivity of watching her speak, this would give me something to read.</p>
+<p>Once my files were downloaded, I got access to 5 .mp4 videos to transcribe. My first inclination was to convert the .mp4 to .mp3, which was a quick ffmpeg run.</p>
+<blockquote>
+<p>ffmpeg -i input.mp4 output.mp3</p>
+</blockquote>
+<p>I first installed whisper through <code>pip</code> and tried an initial run using default modes.</p>
+<blockquote>
+<p>$ ./venv/bin/whisper —model medium —language Polish video.mp4<br>
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)</p>
+</blockquote>
+<p>As you can see, some SSL issues came on. I quickly understood that the binary was attempting to download the <code>medium</code> model locally for use and was struggling to connect wherever it had to.</p>
+<p>Downloading the model was just a curl away. I started with the base model (smaller) just to get a whiff if things were going to work.</p>
+<blockquote>
+<p>$ curl -k -L <a href="https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt">https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt</a> -o ~/.cache/whisper/base.pt</p>
+</blockquote>
+<p>Then retrying setting the —model base values produced some polish output!</p>
+<p>It was hard for me to judge the quality of what was created, my main reaction was, “Wow, this is slow! it must be Python.”. I laughed while realizing that a NLP model was running on my MacBook Air M1. This was the future, and I wanted it optimized you know. After a couple of searches, it seems like there’s a CPP rewriting of Whisper that is very popular. I honestly don’t know if that changed anything, but that’s fine with me.</p>
+<blockquote>
+<p>brew install whisper-cpp</p>
+</blockquote>
+<p>And we were away.</p>
+<p>Looking at the options for the CLI, I saw a way to visualize how certain the model was for each transcription: using <code>-pc</code> prints the model confidence for each word. Running it once again, I realized everything was in red/orange, it was not sure of what it was doing, at all. I needed to pick up the medium model, which was better recommended for Polish interpretation. We were looking better</p>
+<p>So now I was able to produce the transcript in Polish, no problem. I could then feed that into any translation and run with it. However, looking at the CLI options earlier, I could see a <code>-tr</code> option, offering direct translation to English within the model. A few minutes later the output was green, and in English, I still can’t believe it was this simple.</p>
+<p>I realized then that I wouldn’t have to completely rely on text, whisper was capable of generating .srt from the audio and could generate the translations easily.</p>
+<blockquote>
+<p>whisper-cli -l pl -tr audio.mp3 -osrt -m models/medium.pt</p>
+</blockquote>
+<p>Subtitle files were generated correctly, I could open them nicely with VLC and watch along with the interview, at last.</p>
+<p>Just for my comfort, I ended up merging all videos and burning the subtitles into them, FFmpeg once again proves it’s one of the best libraries and cli ever made.</p>
+<p>This felt like magic.<br>
+Running such a model locally on a small laptop felt unachievable a couple of years ago, yet it is now so accessible and easy to get started. The possibilities of transcribing automatically video are really wonderful, it feels good to see LLM efforts being really useful here, especially after seeing FFmpeg integrate whisper in their codebase: <a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/commit/13ce36fef98a3f4e6d8360c24d6b8434cbb8869b">https://code.ffmpeg.org/FFmpeg/FFmpeg/commit/13ce36fef98a3f4e6d8360c24d6b8434cbb8869b</a> it feels like it will be here for long.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
