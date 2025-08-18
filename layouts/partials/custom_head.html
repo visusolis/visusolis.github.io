@@ -1,0 +1,4 @@
+{{ with .Params.script }}
+  {{ $js := resources.Get . | minify }}
+  <script src="{{ $js.RelPermalink }}"></script>
+{{ end }}

@@ -3,6 +3,8 @@ title = 'home'
 date = 2024-08-25T21:20:14+02:00
 menu = 'main'
 weight = 1
+style = "flowers.css"
+script = "flower-propagation.js"
 +++
 
 ###### ✿
@@ -34,6 +36,6 @@ I also [make music](music).
 
 So far, that's the only thing that have been able to grow here, but [I hope some more will join later](w/buildingahouse.md).
 
-###### ❁
+###### ✿
 
 [i'm happy to chat](mailto:hey@stefanmiko.com)

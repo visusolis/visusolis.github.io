@@ -1,0 +1,10 @@
+/* Simple spawned flower styling */
+.flower {
+  position: absolute;
+  color: #718054;
+  font-size: 0.67em;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
