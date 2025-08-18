@@ -4,9 +4,9 @@ date: '2025-08-16T06:25:04+02:00'
 tags: ['tech', 'llm']
 ---
 
-I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts I like to focus on during times like [music](music) or [writing](w), I got back into some tech work. 
+I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts ([music](music) or [writing](w)), I got back into some tech work. 
 
-This is unusual, as my disconnect from this world has been present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them. 
+This is unusual, as my disconnect from that world has been ever so present. The interesting part is that the recent projects I tackled were birthed a while back in my mind, though I never took time to act on them. 
 
 This is fascinatingly different from other creative endeavors.
 
