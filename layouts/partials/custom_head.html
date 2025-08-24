@@ -2,3 +2,16 @@
   {{ $js := resources.Get . | minify }}
   <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}
+
+<!-- Google Fonts: Source Serif Pro -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+
+<!-- Custom font override -->
+<style>
+body {
+  font-family: 'Source Serif 4', serif !important;
+  font-size: 22px !important;
+}
+</style>
