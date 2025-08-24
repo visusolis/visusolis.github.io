@@ -30,11 +30,7 @@ Recently i started building [small software](apps) again.
 
 ###### ❂
 
-I also [make music](music).
-
-###### ❆
-
-And watch [movies](watched).
+I also [make music](music), and sometimes [watch movies](watched).
 
 ###### ❀
 
