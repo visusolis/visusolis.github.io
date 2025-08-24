@@ -1,0 +1,139 @@
+{{- $username := .Get "username" | default "ebua" -}}
+{{- $url := printf "https://letterboxd.com/%s/rss/" $username -}}
+{{- $feed := resources.GetRemote $url -}}
+
+{{- if $feed -}}
+  {{- $xml := $feed | transform.Unmarshal -}}
+  
+  <style>
+  .letterboxd-movies {
+    margin: 2rem 0;
+  }
+  
+  .movie-entry {
+    margin-bottom: 1.5rem;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  .movie-entry:last-child {
+    margin-bottom: 0;
+  }
+  
+  .movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+  }
+  
+  .movie-title {
+    margin: 0;
+    flex: 1;
+    font-size: 18px;
+    color: #718054;
+    min-width: 0;
+  }
+  
+  .movie-title a {
+    text-decoration: none;
+    color: #B2C78B;
+    word-break: break-word;
+  }
+  
+  .movie-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .movie-date {
+    font-size: 12px;
+    color: #ccc;
+    font-family: Monaco;
+    flex-shrink: 0;
+  }
+  
+  .movie-description {
+    margin-top: 0.5rem;
+    color: #ccc;
+    font-family: Monaco;
+    line-height: 1.4;
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    font-style: italic;
+    overflow: hidden;
+  }
+  
+  .movie-rating {
+    font-weight: bold;
+    color: #A7A73F;
+  }
+  
+  .movie-poster {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+  
+  .movie-poster img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 3px;
+  }
+  
+  @media (max-width: 600px) {
+    .movie-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .movie-date {
+      margin-top: 0.5rem;
+    }
+  }
+  </style>
+
+  <div class="letterboxd-movies">
+    {{- range $xml.channel.item -}}
+      {{- $filmTitle := index . "letterboxd:filmTitle" -}}
+      {{- $memberRating := index . "letterboxd:memberRating" -}}
+      {{- $dateOnly := .pubDate | replaceRE " [0-9]{2}:[0-9]{2}:[0-9]{2} .*" "" -}}
+      {{- $ratingMatch := findRE "★+" .title -}}
+      {{- $extractedRating := "" -}}
+      {{- if $ratingMatch -}}
+        {{- $extractedRating = index $ratingMatch 0 -}}
+      {{- end -}}
+      {{- $cleanTitle := .title | replaceRE " - ★+.*$" "" | replaceRE " - $" "" -}}
+      
+      <div class="movie-entry">
+        <div class="movie-header">
+          <h4 class="movie-title">
+            <a href="{{ .link }}" target="_blank" rel="noopener">{{ $filmTitle | default $cleanTitle }}</a>
+          </h4>
+          <span class="movie-date">{{ $dateOnly }}</span>
+        </div>
+        
+        {{- if .description -}}
+          {{- $descWithoutImg := .description | replaceRE "<img[^>]*>" "" -}}
+          {{- $imgMatch := findRE "<img[^>]*>" .description -}}
+          {{- if $imgMatch -}}
+            <div class="movie-poster">
+              {{ index $imgMatch 0 | safeHTML }}
+            </div>
+          {{- end -}}
+          <div class="movie-description">
+            {{- if $extractedRating -}}
+              <span class="movie-rating">{{ $extractedRating }}</span>
+              {{- if $descWithoutImg -}}<br>{{- end -}}
+            {{- else if $memberRating -}}
+              <span class="movie-rating">{{ $memberRating }}★</span>
+              {{- if $descWithoutImg -}}<br>{{- end -}}
+            {{- end -}}
+            {{ $descWithoutImg | safeHTML }}
+          </div>
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+{{- else -}}
+  <p>Unable to load movie feed.</p>
+{{- end -}}

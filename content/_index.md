@@ -34,6 +34,10 @@ I also [make music](music).
 
 ###### ❆
 
+And watch [movies](watched).
+
+###### ❀
+
 So far, that's the only thing that have been able to grow here, but [I hope some more will join later](w/buildingahouse.md).
 
 ###### ✿
