@@ -38,7 +38,7 @@ unsafe = true
   description = "stefan mikolajczyk"
 
   # The path to your favicon
-  favicon = "images/favicon.png"
+  favicon = "images/favicon.svg"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information

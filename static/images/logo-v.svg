@@ -1,0 +1,22 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @font-face {
+      font-family: 'Orangerie';
+      src: url('/fonts/orangerie.otf') format('opentype');
+    }
+    .letter {
+      font-family: 'Orangerie', serif;
+      font-size: 840px;
+      font-weight: normal;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      fill: #C5D1A8;
+    }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="#011D1B" rx="100" ry="100"/>
+  
+  <!-- Letter V -->
+  <text x="470" y="575" class="letter">V</text>
+</svg>
