@@ -1,0 +1,146 @@
+[
+  {
+    "scientificName": "Rosa rubiginosa",
+    "commonNames": ["Rose", "Garden rose", "Wild rose"],
+    "region": "Europe, Asia, North America",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Rosa_rubiginosa_1.jpg/512px-Rosa_rubiginosa_1.jpg",
+    "alternativeName": "Dog rose",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Rose"
+  },
+  {
+    "scientificName": "Tulipa gesneriana",
+    "commonNames": ["Tulip", "Garden tulip", "Didier's tulip"],
+    "region": "Central Asia, Turkey, Netherlands",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/512px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG",
+    "alternativeName": "Lale",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Tulip"
+  },
+  {
+    "scientificName": "Helianthus annuus",
+    "commonNames": ["Sunflower", "Common sunflower", "Annual sunflower"],
+    "region": "North America, Mexico",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/512px-Sunflower_sky_backdrop.jpg",
+    "alternativeName": "Mirasol",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Sunflower"
+  },
+  {
+    "scientificName": "Bellis perennis",
+    "commonNames": ["Common daisy", "English daisy", "Lawn daisy"],
+    "region": "Europe, temperate regions worldwide",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bellis_perennis_sl1.jpg/512px-Bellis_perennis_sl1.jpg",
+    "alternativeName": "Bruisewort",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Bellis_perennis"
+  },
+  {
+    "scientificName": "Viola tricolor",
+    "commonNames": ["Wild pansy", "Heartsease", "Johnny Jump up"],
+    "region": "Europe, Asia",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Violatricolorarvensis.jpg/512px-Violatricolorarvensis.jpg",
+    "alternativeName": "Love-in-idleness",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Viola_tricolor"
+  },
+  {
+    "scientificName": "Tagetes erecta",
+    "commonNames": ["African marigold", "Aztec marigold", "Mexican marigold"],
+    "region": "Mexico, Central America",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Tagetes_erecta_chendumalli_chedi.jpg/512px-Tagetes_erecta_chendumalli_chedi.jpg",
+    "alternativeName": "Cempasuchil",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Tagetes"
+  },
+  {
+    "scientificName": "Petunia x atkinsiana",
+    "commonNames": ["Garden petunia", "Common petunia", "Hybrid petunia"],
+    "region": "South America, worldwide cultivation",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Petunia_exserta_by_Scott_Zona_-_004_(1).jpg/512px-Petunia_exserta_by_Scott_Zona_-_004_(1).jpg",
+    "alternativeName": "Surfinia",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Petunia"
+  },
+  {
+    "scientificName": "Epipremnum aureum",
+    "commonNames": ["Golden pothos", "Devil's ivy", "Money plant"],
+    "region": "Society Islands, Southeast Asia",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/512px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "alternativeName": "Ceylon creeper",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Epipremnum_aureum"
+  },
+  {
+    "scientificName": "Monstera deliciosa",
+    "commonNames": ["Swiss cheese plant", "Split-leaf philodendron", "Delicious monster"],
+    "region": "Central America, Mexico",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/512px-Monstera_deliciosa2.jpg",
+    "alternativeName": "Fruit salad plant",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Monstera_deliciosa"
+  },
+  {
+    "scientificName": "Dracaena trifasciata",
+    "commonNames": ["Snake plant", "Mother-in-law's tongue", "Saint George's sword"],
+    "region": "West Africa, Nigeria to Congo",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29/512px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg",
+    "alternativeName": "Viper's bowstring hemp",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Dracaena_trifasciata"
+  },
+  {
+    "scientificName": "Spathiphyllum wallisii",
+    "commonNames": ["Peace lily", "White sails", "Spathe flower"],
+    "region": "Central America, South America",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Spathiphyllum_cochlearispathum_RTBG.jpg/512px-Spathiphyllum_cochlearispathum_RTBG.jpg",
+    "alternativeName": "Spath",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Spathiphyllum"
+  },
+  {
+    "scientificName": "Quercus robur",
+    "commonNames": ["English oak", "Common oak", "European oak"],
+    "region": "Europe, Western Asia",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Quercus_robur.jpg/512px-Quercus_robur.jpg",
+    "alternativeName": "Pedunculate oak",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Quercus"
+  },
+  {
+    "scientificName": "Acer saccharum",
+    "commonNames": ["Sugar maple", "Hard maple", "Rock maple"],
+    "region": "Eastern North America",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Acer_pseudoplatanus_002.jpg/512px-Acer_pseudoplatanus_002.jpg",
+    "alternativeName": "Canadian maple",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Maple"
+  },
+  {
+    "scientificName": "Ocimum basilicum",
+    "commonNames": ["Sweet basil", "Great basil", "Common basil"],
+    "region": "Central Africa, Southeast Asia",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/512px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg",
+    "alternativeName": "Genovese basil",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Ocimum_basilicum"
+  },
+  {
+    "scientificName": "Salvia rosmarinus",
+    "commonNames": ["Rosemary", "Garden rosemary", "Common rosemary"],
+    "region": "Mediterranean region",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/512px-Rosemary_in_bloom.JPG",
+    "alternativeName": "Anthos",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Rosmarinus_officinalis"
+  },
+  {
+    "scientificName": "Solanum lycopersicum",
+    "commonNames": ["Tomato", "Garden tomato", "Love apple"],
+    "region": "South America, Mexico",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/512px-Tomato_je.jpg",
+    "alternativeName": "Tomate",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Solanum_lycopersicum"
+  },
+  {
+    "scientificName": "Taraxacum officinale",
+    "commonNames": ["Dandelion", "Common dandelion", "Blowball"],
+    "region": "Eurasia, North America",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg/512px-Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg",
+    "alternativeName": "Lion's tooth",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Taraxacum_officinale"
+  },
+  {
+    "scientificName": "Aloe vera",
+    "commonNames": ["Aloe vera", "Barbados aloe", "True aloe"],
+    "region": "Arabian Peninsula, North Africa",
+    "wikipediaImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/512px-Aloe_vera_flower_inset.png",
+    "alternativeName": "Burn plant",
+    "wikipediaPage": "https://en.wikipedia.org/wiki/Aloe_vera"
+  }
+]
