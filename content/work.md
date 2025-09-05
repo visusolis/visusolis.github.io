@@ -33,6 +33,13 @@ _2014 - 2019 at [OVHcloud](https://ovhcloud.com)_
     Worked on renovating and improving existing systems.
     Build and delivered with distributed, international teams.
 
+## Case Studies
+
+### [Returnless](work/returnless/)
+E-commerce returns management platform - Documentation overhaul, QA leadership, and product management.
+
+---
+
 I'm always open for opportunities.
 
 ### [Reach out for work](mailto:visusolis@stefanmiko.com)
