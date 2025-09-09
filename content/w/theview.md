@@ -13,7 +13,7 @@ Loudness is okay here, I remember, as long as it is very early in the morning.
 
 Three dogs are chasing one another down the road, playfully. I see them every day, always running happily. 
 
-I look up, someone is putting out their clothes, quite ambitious given the dark clouds coming up. 
+I look up, someone is putting out their clothes to dry, quite ambitious given the dark clouds coming up. 
 
 I stretch my back on the balcony. It’s been a good night, but my back is still aching a little bit.
 
