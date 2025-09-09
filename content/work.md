@@ -5,7 +5,7 @@ menu = 'main'
 weight = 3
 +++
 
-I'm a software engineer who can write.
+I'm a software engineer and I write.
 
 Here are some words to describe my career, [if you prefer a little story](w/whatsacareer.md)
 
