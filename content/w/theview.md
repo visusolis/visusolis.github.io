@@ -15,7 +15,7 @@ Three dogs are chasing one another down the road, playfully. I see them every da
 
 I look up, someone is putting out their clothes to dry, quite ambitious given the dark clouds coming up. 
 
-I stretch my back on the balcony. It’s been a good night, but my back is still aching a little bit.
+I stretch using the balcony. It’s been a good night, but my back is still aching a little bit.
 
 I turn my head to the left, and today, I see you, looking ahead, and smiling as always.
 
