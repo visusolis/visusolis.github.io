@@ -93,7 +93,7 @@ Seiya offers some words of advice for the path ahead before closing the conversa
 ![Whisper10](../../assets/whisper11.jpeg)
 > Seiya: "But it's not easy when you walk your own road."
 
-## Gut reaction. 
+## Gut reaction 
 
 This scene is a small moment of the film, yet it brings great emotions in. 
 Shizuku is an artist trying to find herself and struggling to write this story that she deeply wants to write.
