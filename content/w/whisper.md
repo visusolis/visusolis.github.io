@@ -4,7 +4,7 @@ date: '2025-09-26T10:25:04+02:00'
 tags: ['anime']
 ---
 
-After watching Whisper of the Heart recently, I wanted to find an excuse to write about it.
+After [watching Whisper of the Heart](../watched.md) recently, I wanted to find an excuse to write about it.
 Turns out this excuse I didn’t really need to search for. Since its viewing, one particular scene cannot leave my mind.
 
 It is a scene that is quite minor in the story, yet surprisingly left a big mark on my mind. 
