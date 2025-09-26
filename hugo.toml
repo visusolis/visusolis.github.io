@@ -6,6 +6,15 @@ theme = "hugo-bearcub"
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
+# RSS feed configuration - make feed accessible at /feed
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
+    
+[outputs]
+  home = ["HTML", "RSS"]
+
 # Setup syntax highlighting without inline styles. For more information about
 # why you'd want to avoid inline styles, see
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
