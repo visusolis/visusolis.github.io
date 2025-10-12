@@ -1,15 +1,15 @@
 {
-  "generated_at": "2025-10-12T12:30:34.174616",
+  "generated_at": "2025-10-12T18:23:37.167454",
   "summary": {
-    "total_reviews": 517,
+    "total_reviews": 554,
     "total_study_days": 5,
-    "total_time_hours": 1.6,
-    "retention_rate": 91.5,
+    "total_time_hours": 1.7,
+    "retention_rate": 90.6,
     "current_streak_days": 5,
-    "cards_total": 4368,
-    "cards_new": 4288,
+    "cards_total": 4582,
+    "cards_new": 4497,
     "cards_learning": 0,
-    "cards_review": 80
+    "cards_review": 85
   },
   "daily_stats": [
     {
@@ -66,13 +66,13 @@
     },
     {
       "date": "2025-10-12",
-      "reviews": 128,
-      "time_seconds": 1484.6589999999999,
-      "again": 1,
-      "hard": 64,
-      "good": 55,
-      "easy": 8,
-      "learning": 98,
+      "reviews": 165,
+      "time_seconds": 1763.2129999999995,
+      "again": 9,
+      "hard": 71,
+      "good": 76,
+      "easy": 9,
+      "learning": 135,
       "relearning": 0,
       "young": 30,
       "mature": 0
@@ -85,7 +85,7 @@
     },
     {
       "date": "2025-10-13",
-      "count": 31
+      "count": 36
     },
     {
       "date": "2025-10-14",
