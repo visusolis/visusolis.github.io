@@ -1,0 +1,203 @@
+{
+  "generated_at": "2025-10-12T12:30:34.174616",
+  "summary": {
+    "total_reviews": 517,
+    "total_study_days": 5,
+    "total_time_hours": 1.6,
+    "retention_rate": 91.5,
+    "current_streak_days": 5,
+    "cards_total": 4368,
+    "cards_new": 4288,
+    "cards_learning": 0,
+    "cards_review": 80
+  },
+  "daily_stats": [
+    {
+      "date": "2025-10-08",
+      "reviews": 4,
+      "time_seconds": 53.669,
+      "again": 0,
+      "hard": 1,
+      "good": 3,
+      "easy": 0,
+      "learning": 4,
+      "relearning": 0,
+      "young": 0,
+      "mature": 0
+    },
+    {
+      "date": "2025-10-09",
+      "reviews": 52,
+      "time_seconds": 672.711,
+      "again": 3,
+      "hard": 14,
+      "good": 21,
+      "easy": 14,
+      "learning": 52,
+      "relearning": 0,
+      "young": 0,
+      "mature": 0
+    },
+    {
+      "date": "2025-10-10",
+      "reviews": 196,
+      "time_seconds": 1958.849,
+      "again": 40,
+      "hard": 66,
+      "good": 81,
+      "easy": 9,
+      "learning": 190,
+      "relearning": 0,
+      "young": 6,
+      "mature": 0
+    },
+    {
+      "date": "2025-10-11",
+      "reviews": 137,
+      "time_seconds": 1678.7399999999996,
+      "again": 0,
+      "hard": 73,
+      "good": 64,
+      "easy": 0,
+      "learning": 106,
+      "relearning": 0,
+      "young": 31,
+      "mature": 0
+    },
+    {
+      "date": "2025-10-12",
+      "reviews": 128,
+      "time_seconds": 1484.6589999999999,
+      "again": 1,
+      "hard": 64,
+      "good": 55,
+      "easy": 8,
+      "learning": 98,
+      "relearning": 0,
+      "young": 30,
+      "mature": 0
+    }
+  ],
+  "forecast": [
+    {
+      "date": "2025-10-12",
+      "count": 0
+    },
+    {
+      "date": "2025-10-13",
+      "count": 31
+    },
+    {
+      "date": "2025-10-14",
+      "count": 19
+    },
+    {
+      "date": "2025-10-15",
+      "count": 10
+    },
+    {
+      "date": "2025-10-16",
+      "count": 8
+    },
+    {
+      "date": "2025-10-17",
+      "count": 2
+    },
+    {
+      "date": "2025-10-18",
+      "count": 2
+    },
+    {
+      "date": "2025-10-19",
+      "count": 2
+    },
+    {
+      "date": "2025-10-20",
+      "count": 2
+    },
+    {
+      "date": "2025-10-21",
+      "count": 1
+    },
+    {
+      "date": "2025-10-22",
+      "count": 1
+    },
+    {
+      "date": "2025-10-23",
+      "count": 1
+    },
+    {
+      "date": "2025-10-24",
+      "count": 1
+    },
+    {
+      "date": "2025-10-25",
+      "count": 0
+    },
+    {
+      "date": "2025-10-26",
+      "count": 0
+    },
+    {
+      "date": "2025-10-27",
+      "count": 0
+    },
+    {
+      "date": "2025-10-28",
+      "count": 0
+    },
+    {
+      "date": "2025-10-29",
+      "count": 0
+    },
+    {
+      "date": "2025-10-30",
+      "count": 0
+    },
+    {
+      "date": "2025-10-31",
+      "count": 0
+    },
+    {
+      "date": "2025-11-01",
+      "count": 0
+    },
+    {
+      "date": "2025-11-02",
+      "count": 0
+    },
+    {
+      "date": "2025-11-03",
+      "count": 0
+    },
+    {
+      "date": "2025-11-04",
+      "count": 0
+    },
+    {
+      "date": "2025-11-05",
+      "count": 0
+    },
+    {
+      "date": "2025-11-06",
+      "count": 0
+    },
+    {
+      "date": "2025-11-07",
+      "count": 0
+    },
+    {
+      "date": "2025-11-08",
+      "count": 0
+    },
+    {
+      "date": "2025-11-09",
+      "count": 0
+    },
+    {
+      "date": "2025-11-10",
+      "count": 0
+    }
+  ]
+}

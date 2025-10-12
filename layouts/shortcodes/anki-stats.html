@@ -1,0 +1,458 @@
+{{ $data := .Site.Data.anki_stats }}
+
+<style>
+/* Container */
+.anki-container {
+  max-width: 860px;
+  margin: 2rem auto;
+  font-family: Monaco, monospace;
+  line-height: 1.7;
+}
+
+.anki-header {
+  font-size: 0.875rem;
+  color: #E5E5E5;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Common section styles */
+.anki-calendar, .anki-reviews, .anki-forecast {
+  margin-bottom: 3rem;
+}
+
+.anki-calendar h3, .anki-reviews h3, .anki-forecast h3 {
+  margin-bottom: 1rem;
+  color: #718054;
+}
+
+/* Shared graph styles */
+.reviews-graph, .forecast-graph {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  border-bottom: 1px solid #718054;
+  padding-bottom: 1rem;
+  max-width: 100%;
+}
+
+.reviews-graph { justify-content: space-between; gap: 4px; }
+.forecast-graph { justify-content: space-between; gap: 1px; }
+
+/* Shared tooltip styles */
+.calendar-day:hover::after,
+.reviews-day:hover::after,
+.forecast-bar:hover::after {
+  content: attr(title);
+  position: absolute;
+  background: rgba(1, 29, 27, 0.95);
+  color: #E5E5E5;
+  padding: 6px 10px;
+  font-size: 11px;
+  white-space: nowrap;
+  z-index: 1000;
+  border: 1px solid #718054;
+  pointer-events: none;
+}
+
+.calendar-day:hover::after {
+  position: fixed;
+  transform: translateX(-50%) translateY(-100%);
+  margin-top: -10px;
+}
+
+.reviews-day:hover::after,
+.forecast-bar:hover::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+}
+
+/* Summary Stats */
+.anki-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.anki-stat {
+  padding: 0.5rem;
+  border: 1px solid #718054;
+  text-align: center;
+}
+
+.anki-stat-value {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #A7A73F;
+}
+
+.anki-stat-label {
+  font-size: 0.65rem;
+  color: #E5E5E5;
+  line-height: 1.2;
+}
+
+/* Calendar */
+.calendar-wrapper {
+  overflow-y: visible;
+  margin: 1rem 0;
+  padding: 1.5rem 0;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.calendar-days-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.75rem;
+  color: #E5E5E5;
+  flex-shrink: 0;
+}
+
+.calendar-day-label {
+  height: 11px;
+  line-height: 11px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-auto-flow: column;
+  grid-gap: 3px;
+  position: relative;
+  width: 100%;
+  height: 110px;
+}
+
+.calendar-day {
+  background: #1a3a38;
+  position: relative;
+}
+
+.calendar-day[data-level="1"] { background: #4a5a3a; }
+.calendar-day[data-level="2"] { background: #5a6a3f; }
+.calendar-day[data-level="3"] { background: #718054; }
+.calendar-day[data-level="4"] { background: #8a9a64; }
+
+.calendar-day[data-future="true"] {
+  background: #0f2523;
+  opacity: 0.5;
+}
+
+/* Reviews Graph */
+.reviews-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  max-width: 150px;
+}
+
+.reviews-bar {
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.reviews-day:hover .reviews-bar { opacity: 0.7; }
+
+.reviews-bar-learning { background: #8a9a64; }
+.reviews-bar-young { background: #718054; }
+.reviews-bar-mature { background: #5a6a3f; }
+.reviews-bar-relearning { background: #4a5a3a; }
+
+.reviews-legend {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.reviews-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.reviews-legend-color {
+  width: 10px;
+  height: 10px;
+}
+
+/* Forecast Graph */
+.forecast-bar {
+  flex: 1;
+  background: #718054;
+  min-width: 2px;
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+.forecast-bar:hover { opacity: 0.7; }
+
+.forecast-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #E5E5E5;
+}
+
+/* Shared stats box styles */
+.reviews-stats, .forecast-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #718054;
+}
+
+.reviews-stat-item, .forecast-stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews-stat-label, .forecast-stat-label {
+  font-size: 0.75rem;
+  color: #E5E5E5;
+}
+
+.reviews-stat-value, .forecast-stat-value {
+  font-size: 0.75rem;
+  color: #A7A73F;
+}
+</style>
+
+<div class="anki-container">
+  <div class="anki-header">
+    Last updated: {{ dateFormat "January 2, 2006 at 3:04 PM" $data.generated_at }}
+  </div>
+
+  <!-- Calendar -->
+  <div class="anki-calendar">
+    <h3>Calendar</h3>
+    {{ $maxReviews := 0 }}
+    {{ range $data.daily_stats }}
+      {{ if gt .reviews $maxReviews }}{{ $maxReviews = .reviews }}{{ end }}
+    {{ end }}
+
+    {{ $dailyStatsMap := dict }}
+    {{ range $data.daily_stats }}
+      {{ $dailyStatsMap = merge $dailyStatsMap (dict .date .) }}
+    {{ end }}
+
+    {{ $year2025Start := time.AsTime "2025-01-01T00:00:00Z" }}
+    {{ $now := now }}
+    {{ $todayStr := $now.Format "2006-01-02" }}
+    {{ $weekday := $year2025Start.Weekday }}
+    {{ $offset := 0 }}
+    {{ if eq $weekday 1 }}{{ $offset = -1 }}{{ end }}
+    {{ if eq $weekday 2 }}{{ $offset = -2 }}{{ end }}
+    {{ if eq $weekday 3 }}{{ $offset = -3 }}{{ end }}
+    {{ if eq $weekday 4 }}{{ $offset = -4 }}{{ end }}
+    {{ if eq $weekday 5 }}{{ $offset = -5 }}{{ end }}
+    {{ if eq $weekday 6 }}{{ $offset = -6 }}{{ end }}
+    {{ $startDate := $year2025Start.AddDate 0 0 $offset }}
+    {{ $year2025End := time.AsTime "2025-12-31T23:59:59Z" }}
+    {{ $endDate := $year2025End }}
+
+    <div class="calendar-wrapper">
+      <div class="calendar-days-labels">
+        {{ range slice "S" "M" "T" "W" "T" "F" "S" }}
+          <div class="calendar-day-label">{{ . }}</div>
+        {{ end }}
+      </div>
+      <div class="calendar-grid">
+        {{ $currentDate := $startDate }}
+        {{ range seq 0 370 }}
+          {{ if le ($currentDate.Format "2006-01-02") ($endDate.Format "2006-01-02") }}
+            {{ $dateStr := $currentDate.Format "2006-01-02" }}
+            {{ $isFuture := gt $dateStr $todayStr }}
+            {{ $dayData := index $dailyStatsMap $dateStr }}
+            {{ $level := 0 }}
+            {{ $reviews := 0 }}
+            {{ $timeMin := 0 }}
+            {{ if $dayData }}
+              {{ $reviews = $dayData.reviews }}
+              {{ $timeMin = div $dayData.time_seconds 60 | math.Round }}
+              {{ if gt $reviews 0 }}
+                {{ $percent := div (mul $reviews 100.0) $maxReviews }}
+                {{ if gt $percent 75 }}{{ $level = 4 }}
+                {{ else if gt $percent 50 }}{{ $level = 3 }}
+                {{ else if gt $percent 25 }}{{ $level = 2 }}
+                {{ else }}{{ $level = 1 }}{{ end }}
+              {{ end }}
+            {{ end }}
+            <div class="calendar-day" data-level="{{ $level }}" data-future="{{ $isFuture }}"
+                 title="{{ $dateStr }}{{ if $isFuture }} (future){{ else }}: {{ $reviews }} reviews{{ if gt $reviews 0 }} ({{ $timeMin }}m){{ end }}{{ end }}">
+            </div>
+            {{ $currentDate = $currentDate.AddDate 0 0 1 }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary Stats -->
+  <div class="anki-summary">
+    {{ $stats := slice
+      (dict "value" $data.summary.total_reviews "label" "Total Reviews")
+      (dict "value" $data.summary.total_study_days "label" "Study Days")
+      (dict "value" (printf "%vh" $data.summary.total_time_hours) "label" "Time Studied")
+      (dict "value" (printf "%v%%" $data.summary.retention_rate) "label" "Retention Rate")
+      (dict "value" $data.summary.current_streak_days "label" "Current Streak")
+      (dict "value" $data.summary.cards_total "label" "Total Cards")
+    }}
+    {{ range $stats }}
+      <div class="anki-stat">
+        <span class="anki-stat-value">{{ .value }}</span>
+        <span class="anki-stat-label">{{ .label }}</span>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- Activity -->
+  <div class="anki-reviews">
+    <h3>Activity</h3>
+    {{ $maxDailyReviews := 0 }}
+    {{ range $data.daily_stats }}
+      {{ if gt .reviews $maxDailyReviews }}{{ $maxDailyReviews = .reviews }}{{ end }}
+    {{ end }}
+
+    <div class="reviews-graph">
+      {{ range $data.daily_stats }}
+        {{ $totalHeight := 0 }}
+        {{ if gt $maxDailyReviews 0 }}
+          {{ $totalHeight = div (mul .reviews 100.0) $maxDailyReviews }}
+        {{ end }}
+
+        {{ $dayReviews := .reviews }}
+        {{ $types := slice
+          (dict "key" "learning" "count" .learning "class" "reviews-bar-learning")
+          (dict "key" "young" "count" .young "class" "reviews-bar-young")
+          (dict "key" "mature" "count" .mature "class" "reviews-bar-mature")
+          (dict "key" "relearning" "count" .relearning "class" "reviews-bar-relearning")
+        }}
+
+        <div class="reviews-day"
+             title="{{ .date }}: {{ .reviews }} reviews (L:{{ .learning }} Y:{{ .young }} M:{{ .mature }} R:{{ .relearning }})">
+          {{ range $types }}
+            {{ if gt .count 0 }}
+              {{ $percent := div (mul .count 100.0) $dayReviews }}
+              {{ $height := div (mul $totalHeight $percent) 100.0 }}
+              <div class="reviews-bar {{ .class }}" style="height: {{ $height }}%;"></div>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="reviews-legend">
+      {{ $legend := slice
+        (dict "class" "reviews-bar-learning" "label" "Learning")
+        (dict "class" "reviews-bar-young" "label" "Young")
+        (dict "class" "reviews-bar-mature" "label" "Mature")
+        (dict "class" "reviews-bar-relearning" "label" "Relearning")
+      }}
+      {{ range $legend }}
+        <div class="reviews-legend-item">
+          <div class="reviews-legend-color {{ .class }}"></div>
+          <span>{{ .label }}</span>
+        </div>
+      {{ end }}
+    </div>
+
+    {{ $totalLearning := 0 }}
+    {{ $totalYoung := 0 }}
+    {{ $totalMature := 0 }}
+    {{ $totalRelearning := 0 }}
+    {{ $studyDays := 0 }}
+    {{ $totalReviews := 0 }}
+    {{ range $data.daily_stats }}
+      {{ if gt .reviews 0 }}{{ $studyDays = add $studyDays 1 }}{{ end }}
+      {{ $totalLearning = add $totalLearning .learning }}
+      {{ $totalYoung = add $totalYoung .young }}
+      {{ $totalMature = add $totalMature .mature }}
+      {{ $totalRelearning = add $totalRelearning .relearning }}
+      {{ $totalReviews = add $totalReviews .reviews }}
+    {{ end }}
+    {{ $avgPerDay := 0.0 }}
+    {{ if gt $studyDays 0 }}
+      {{ $avgPerDay = div (mul $totalReviews 1.0) $studyDays }}
+    {{ end }}
+
+    <div class="reviews-stats">
+      {{ $reviewStats := slice
+        (dict "label" "Learning:" "value" (printf "%v reviews" $totalLearning))
+        (dict "label" "Young:" "value" (printf "%v reviews" $totalYoung))
+        (dict "label" "Mature:" "value" (printf "%v reviews" $totalMature))
+        (dict "label" "Relearning:" "value" (printf "%v reviews" $totalRelearning))
+        (dict "label" "Study days:" "value" (printf "%v days" $studyDays))
+        (dict "label" "Average per day:" "value" (printf "%v reviews" (math.Round $avgPerDay)))
+      }}
+      {{ range $reviewStats }}
+        <div class="reviews-stat-item">
+          <span class="reviews-stat-label">{{ .label }}</span>
+          <span class="reviews-stat-value">{{ .value }}</span>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Upcoming Reviews -->
+  <div class="anki-forecast">
+    <h3>Upcoming Reviews (Next 30 Days)</h3>
+    {{ $maxForecast := 0 }}
+    {{ $totalForecast := 0 }}
+    {{ range $data.forecast }}
+      {{ if gt .count $maxForecast }}{{ $maxForecast = .count }}{{ end }}
+      {{ $totalForecast = add $totalForecast .count }}
+    {{ end }}
+
+    <div class="forecast-graph">
+      {{ range $data.forecast }}
+        {{ $height := 0 }}
+        {{ if gt $maxForecast 0 }}
+          {{ $height = div (mul .count 100.0) $maxForecast }}
+        {{ end }}
+        <div class="forecast-bar" style="height: {{ $height }}%;" title="{{ .date }}: {{ .count }} cards"></div>
+      {{ end }}
+    </div>
+
+    <div class="forecast-labels">
+      <span>Today</span>
+      <span>+30 days</span>
+    </div>
+
+    {{ $dueTomorrow := 0 }}
+    {{ if gt (len $data.forecast) 1 }}{{ $dueTomorrow = (index $data.forecast 1).count }}{{ end }}
+    {{ $avgPerDay := 0.0 }}
+    {{ if gt (len $data.forecast) 0 }}
+      {{ $avgPerDay = div (mul $totalForecast 1.0) (len $data.forecast) }}
+    {{ end }}
+
+    <div class="forecast-stats">
+      {{ $forecastStats := slice
+        (dict "label" "Total:" "value" (printf "%v reviews" $totalForecast))
+        (dict "label" "Average:" "value" (printf "%v reviews/day" (math.Round $avgPerDay)))
+        (dict "label" "Due tomorrow:" "value" (printf "%v reviews" $dueTomorrow))
+        (dict "label" "Daily load:" "value" (printf "%v reviews/day" (math.Round $avgPerDay)))
+      }}
+      {{ range $forecastStats }}
+        <div class="forecast-stat-item">
+          <span class="forecast-stat-label">{{ .label }}</span>
+          <span class="forecast-stat-value">{{ .value }}</span>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
