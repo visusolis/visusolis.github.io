@@ -43,7 +43,7 @@ All that ends up on an easy access $10.99/mo easy subscription streamlined to pa
 
 I tried daydreaming about the norm flipping to support only the smallest acts. 
 More of them would be able to develop to reach self-sustainability.
-Bigger artists wouldn’t get too big (and boring also)
+Bigger artists wouldn’t get too big (or boring also).
 
 Art would get better, more people would see it is a viable lifestyle.
 The so called pie would get bigger and so would its slices. 
