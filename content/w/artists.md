@@ -15,7 +15,7 @@ Moving money earned from a job towards anything artistic or cultural is a social
 For years I spent money on art mindlessly.
 I funneled it back to an evil conglomerate pocketing its vast majority for the better health of their shareholders. 
 
-Yes, when I picture this devil, I see Spotify, which I finally left back in 2024, after about a decade of use.
+Yes, when I picture this devil, I see Spotify. I finally left the platform back in 2023, after about a decade of use.
 I remember having this discussion with a friend after deleting my account, justifying the choice.
 I felt like I was consuming music like fast food. 
 Not caring really what I was listening to as long as it sounded good, sometimes not even knowing who the artist was, as long as the playlist curator (a disguised paid ad) did its job right. 
