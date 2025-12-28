@@ -1,8 +1,3 @@
-/* Force flowers to display as text, not emoji */
-h6 {
-  font-variant-emoji: text;
-}
-
 /* Simple spawned flower styling */
 .flower {
   position: absolute;
@@ -12,5 +7,4 @@ h6 {
   user-select: none;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  font-variant-emoji: text;
 }

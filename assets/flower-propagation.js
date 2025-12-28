@@ -1,5 +1,5 @@
 // Simple Flower Propagation
-const flowers = ['✿', '❀', '✳', '❁', '❂', '❆'];
+const flowers = ['✾', '✽', '❉', '⚜'];
 let flowerCount = 0;
 
 function spawn(x, y) {
