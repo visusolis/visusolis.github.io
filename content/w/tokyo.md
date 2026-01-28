@@ -4,7 +4,7 @@ date: '2026-01-20T13:25:04+02:00'
 tags: ['travel', 'tokyo']
 ---
 
-The cold isn’t as bitting as I thought it would be.
+The cold isn't as biting as I thought it would be.
 I haven’t seen a sky this clear in so long. Yet it feels almost gray. 
 Time is frozen by this embalming white light.
 Stills of once greener views, left to desaturate for the season. 
