@@ -20,8 +20,6 @@ _but there's only so much a watering can can hold._
 There are some [thoughts](w) here and there.
 If knowing what I'm up to is interesting to you, here's my [most recent update](now).
 
-{{< recent-articles >}}
-
 ###### ❉
 
 I like technical writing, and engineering, [luckily that's what I do for work](work).
