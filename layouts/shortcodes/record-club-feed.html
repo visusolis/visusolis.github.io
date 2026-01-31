@@ -1,6 +1,6 @@
 {{- $username := .Get "username" | default "nm" -}}
 {{- $url := printf "https://record.club/%s/reviews/rss" $username -}}
-{{- $opts := dict "method" "get" -}}
+{{- $opts := dict "method" "get" "headers" (dict "User-Agent" "Mozilla/5.0") -}}
 {{- $feed := resources.GetRemote $url $opts -}}
 
 {{- if $feed -}}
