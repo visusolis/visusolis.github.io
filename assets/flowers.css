@@ -24,6 +24,12 @@ header {
   padding: 2rem;
 }
 
+@media (max-width: 600px) {
+  .garden-container {
+    padding: 0.5rem;
+  }
+}
+
 .section-link {
   position: absolute;
   text-align: center;

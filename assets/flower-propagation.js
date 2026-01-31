@@ -1,5 +1,5 @@
 // Garden Flower Propagation System
-const flowers = ['✾', '✽', '❉', '⚜'];
+const flowers = ['◦', '◉', '◈', '⁕'];
 let flowerCount = 0;
 const MAX_FLOWERS = 500; // Way more flowers
 
@@ -67,7 +67,8 @@ function randomizePositions() {
     const viewportCenterY = 160;
 
     const positionedElements = [];
-    const minDistance = 420; // Minimum distance between elements
+    // Responsive minimum distance based on viewport size
+    const minDistance = window.innerWidth < 600 ? 200 : 420;
 
     // Create SVG for stem lines (fixed to viewport)
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -96,8 +97,8 @@ function randomizePositions() {
     sections.forEach(section => {
         let x, y, attempts = 0;
         const maxAttempts = 50;
-        const margin = 60; // Margin from edges
-        const bottomMargin = 140; // Extra padding at bottom
+        const margin = window.innerWidth < 600 ? 40 : 60;
+        const bottomMargin = window.innerWidth < 600 ? 100 : 140;
 
         // Get actual element dimensions from computed style
         const computed = window.getComputedStyle(section);
@@ -194,9 +195,9 @@ function animateLinks() {
         const containerRect = container.getBoundingClientRect();
         const containerWidth = containerRect.width;
         const viewportHeight = window.innerHeight;
-        const margin = 60;
-        const bottomMargin = 140;
-        const minCollisionDistance = 200;
+        const margin = window.innerWidth < 600 ? 40 : 60;
+        const bottomMargin = window.innerWidth < 600 ? 100 : 140;
+        const minCollisionDistance = window.innerWidth < 600 ? 100 : 200;
         for (let i = 0; i < sectionArray.length; i++) {
             for (let j = i + 1; j < sectionArray.length; j++) {
                 const pos1 = positions.get(sectionArray[i]);
