@@ -7,35 +7,51 @@ style = "flowers.css"
 script = "flower-propagation.js"
 +++
 
-###### ✾
+{{< rawhtml >}}
+<div class="garden-container">
+  <div class="section-link" data-section="now">
+    <a href="/w/now1025/">now</a>
+    <p>what am i doing now</p>
+  </div>
 
-_This is a little garden where things grow at their own pace._
+  <div class="section-link" data-section="work">
+    <a href="/work/">work</a>
+    <p>what i do for work</p>
+  </div>
 
-_I try to keep everything hydrated,_
+  <div class="section-link" data-section="read">
+    <a href="/w/">read</a>
+    <p>things i wrote</p>
+  </div>
 
-_but there's only so much a watering can can hold._
+  <div class="section-link" data-section="apps">
+    <a href="/apps/">run</a>
+    <p>some small apps</p>
+  </div>
 
-###### ✽
+  <div class="section-link" data-section="music">
+    <a href="/music/">listen</a>
+    <p>music i made</p>
+  </div>
 
-There are some [thoughts](w) here and there.
-If knowing what I'm up to is interesting to you, here's my [most recent update](now).
+  <div class="section-link" data-section="listened">
+    <a href="/listened/">listened</a>
+    <p>silly music reviews</p>
+  </div>
 
-###### ❉
+  <div class="section-link" data-section="watched">
+    <a href="/watched/">watched</a>
+    <p>silly film reviews</p>
+  </div>
 
-I like technical writing, and engineering, [luckily that's what I do for work](work).
+  <div class="section-link contact" data-section="contact">
+    <a href="mailto:hey@stefanmiko.com">reach out</a>
+    <p>say hello</p>
+  </div>
 
-###### ⚜
-
-Recently i started building [small software](apps) again.
-
-###### ✾
-
-I also [make music](music), and sometimes [watch movies](watched).
-
-###### ✽
-
-So far, that's the only thing that have been able to grow here, but [I hope some more will join later](w/buildingahouse.md).
-
-###### ✾
-
-[i'm happy to chat](mailto:hey@stefanmiko.com)
+  <div class="section-link" data-section="rss">
+    <a href="/feed.xml">rss</a>
+    <p>feed me</p>
+  </div>
+</div>
+{{< /rawhtml >}}
