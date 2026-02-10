@@ -1,5 +1,5 @@
 // Garden Flower Propagation System
-const flowers = ['◦', '◉', '◈', '⁕'];
+const flowers = ['+', '*', '·', '-'];
 let flowerCount = 0;
 const MAX_FLOWERS = 500; // Way more flowers
 
