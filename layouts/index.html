@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $wPages := where site.RegularPages "Section" "w" }}
+{{ $latest := $wPages.ByDate.Reverse | first 3 }}
+
+<div class="garden-container">
+  <div class="section-link" data-section="read">
+    <a href="/w/">read</a>
+    <p>things i wrote</p>
+  </div>
+
+  {{ range $i, $page := $latest }}
+  <div class="article-branch">
+    <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+    <time>{{ $page.Date.Format "Jan 2006" }}</time>
+  </div>
+  {{ end }}
+
+  <div class="section-link" data-section="now">
+    <a href="/now/">now</a>
+    <p>what i'm doing now</p>
+  </div>
+
+  <div class="section-link" data-section="work">
+    <a href="/work/">work</a>
+    <p>what i do for work</p>
+  </div>
+</div>
+{{ end }}

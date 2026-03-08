@@ -1,0 +1,48 @@
+{{ $pages := where site.RegularPages "Section" "w" }}
+{{ $latest := $pages.ByDate.Reverse | first 3 }}
+
+<style>
+.recent-articles {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.recent-articles li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recent-articles li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.recent-articles a {
+  display: block;
+  font-weight: 500;
+  font-size: 1.05em;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+.recent-articles a:hover {
+  text-decoration: underline;
+}
+
+.recent-articles time {
+  font-size: 0.9em;
+  color: #666;
+}
+</style>
+
+<ul class="recent-articles">
+{{ range $latest }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+  </li>
+{{ end }}
+</ul>
