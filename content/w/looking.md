@@ -21,3 +21,4 @@ It is now an even lesser effort to look from the trees to the mountain behind th
 
 Looking at the other side of the valley, he can’t even think that life still goes on the same way there. All it seems is a beautiful painting, stuck in time, here for us to look at. Glancing over these fields is however glancing over hundreds of lives, animals or otherwise, going on about their day, and possibly also looking back at his direction, wondering if anyone is here and what they could be up to now. 
 
+![](../../assets/looking.jpg)
