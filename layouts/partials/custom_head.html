@@ -77,6 +77,12 @@ header {
   align-items: center !important;
   justify-content: space-between !important;
   gap: 2rem !important;
+  flex-wrap: wrap !important;
+}
+
+header .title {
+  flex: 0 0 auto !important;
+  width: max-content !important;
 }
 
 header nav {
@@ -90,19 +96,46 @@ header nav a {
   margin-right: 0 !important;
 }
 
-header nav a::before {
-  content: '· ';
-  opacity: 0.5;
+@media (max-width: 600px) {
+  body {
+    font-size: 20px !important;
+  }
+
+  header {
+    display: block !important;
+  }
+
+  header .title,
+  header .title h1 {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 !important;
+    vertical-align: baseline !important;
+    line-height: inherit !important;
+  }
+
+  header nav {
+    display: inline !important;
+    font-size: inherit !important;
+  }
 }
 
-.title h1 {
-  margin: 0 !important;
+header nav a::before {
+  content: '.';
+  opacity: 0.5;
 }
 
 .title h1 {
   font-family: 'Cormorant Garamond', serif !important;
   font-size: 26px !important;
   font-weight: normal !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 20px !important;
+  }
 }
 
 </style>
