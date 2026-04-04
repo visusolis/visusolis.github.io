@@ -1,6 +1,6 @@
 baseURL = 'https://stefanmiko.com/'
 languageCode = 'en-us'
-title = 'Stefan Mikolajczyk'
+title = 'stefan miko'
 theme = "hugo-bearcub"
 
 # Generate a nice robots.txt for SEO
@@ -31,7 +31,7 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Stefan Mikolajczyk"
+    title = "stefan miko"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"

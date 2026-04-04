@@ -3,10 +3,10 @@
   <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}
 
-<!-- Google Fonts: Source Serif Pro -->
+<!-- Google Fonts: Cormorant Garamond -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
 <!-- Custom fonts -->
 <style>
@@ -18,14 +18,91 @@
   font-display: swap;
 }
 
+html {
+  background-color: #3A494A;
+  background-image:
+    radial-gradient(ellipse at 0% 0%, #3A4A43 0%, transparent 55%),
+    radial-gradient(ellipse at 100% 0%, #3A414A 0%, transparent 55%),
+    radial-gradient(ellipse at 100% 100%, #3A4A43 0%, transparent 55%),
+    radial-gradient(ellipse at 0% 100%, #3A414A 0%, transparent 55%);
+  min-height: 100%;
+}
+
 body {
-  font-family: 'Source Serif 4', serif !important;
-  font-size: 22px !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 26px !important;
+  line-height: 1.5 !important;
+  color: #D7DFE0 !important;
+  background: transparent !important;
+}
+
+html::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='200' height='200' filter='url(%23noise)'/></svg>");
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #A4B6B7 !important;
+  text-align: right !important;
+}
+
+ul.blog-posts li {
+  justify-content: space-between !important;
+}
+
+ul.blog-posts li span {
+  flex: 0 0 auto !important;
+  text-align: right !important;
+}
+
+a {
+  color: #B8908D !important;
+  text-decoration: none !important;
+}
+
+.post-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 0.5rem !important;
+}
+
+header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 2rem !important;
+}
+
+header nav {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+header nav a {
+  margin-right: 0 !important;
+}
+
+header nav a::before {
+  content: '· ';
+  opacity: 0.5;
 }
 
 .title h1 {
-  font-family: 'Orangerie', serif !important;
-  font-size: 48px !important;
+  margin: 0 !important;
+}
+
+.title h1 {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 26px !important;
+  font-weight: normal !important;
 }
 
 </style>

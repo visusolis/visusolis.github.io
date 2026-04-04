@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #011D1B;
+  background: #3A494A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,8 +39,8 @@
   border: none;
   border-bottom: 1px solid #718054;
   background: #252525;
-  color: #e5e5e5;
-  font-family: 'source serif 4', serif;
+  color: #D7DFE0;
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
   transition: border-color 0.2s ease;
   box-sizing: border-box;
@@ -60,7 +60,7 @@
   margin-top: 1rem;
   color: #ff6b6b;
   font-size: 18px;
-  font-family: 'source serif 4', serif;
+  font-family: 'Cormorant Garamond', serif;
   min-height: 1.5rem;
 }
 
@@ -74,6 +74,6 @@
   margin: 0 auto;
   line-height: 1.7;
   font-size: 22px;
-  font-family: 'source serif 4', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #E5E5E5;
 }

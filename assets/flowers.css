@@ -3,25 +3,19 @@ body {
   position: relative;
 }
 
-/* Hide navigation but keep title visible on home page */
-header nav {
-  display: none;
-}
-
 footer {
   display: none;
 }
 
-header {
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
 .garden-container {
-  position: relative;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 2rem;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @media (max-width: 600px) {
@@ -88,12 +82,12 @@ header {
 /* Spawned flower styling */
 .flower {
   position: absolute;
-  color: #718054;
-  font-size: 0.67em;
+  color: #D7DFE0;
+  font-size: 0.9em;
   pointer-events: none;
   user-select: none;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 3s ease-in-out;
   z-index: 1;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-variant-emoji: text;
@@ -101,7 +95,7 @@ header {
 }
 
 .flower.visible {
-  opacity: 0.25 !important;
+  opacity: 0.15 !important;
 }
 
 /* Floating article branch nodes */

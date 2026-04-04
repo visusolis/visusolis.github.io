@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ if not .Params.menu }}
+<h1>{{ .Title }}</h1>
+{{ end }}
+<content>
+  {{ .Content }}
+</content>
+<p class="post-footer">
+  {{ range (.GetTerms "tags") }}
+    <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+  {{ end }}
+  {{ if not .Params.menu }}
+    <span class="byline">written in {{ .Date.Format "January 2006" | lower }}</span>
+  {{ end }}
+</p>
+{{ end }}
