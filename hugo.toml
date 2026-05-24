@@ -3,6 +3,11 @@ languageCode = 'en-us'
 title = 'stefan miko'
 theme = "hugo-bearcub"
 
+[[menus.main]]
+  name = "now"
+  url = "/w/now1025/"
+  weight = 2
+
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 

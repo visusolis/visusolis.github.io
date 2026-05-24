@@ -34,6 +34,15 @@ body {
   line-height: 1.5 !important;
   color: #D7DFE0 !important;
   background: transparent !important;
+  overflow-x: hidden !important;
+}
+
+content img {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: calc(50% - 50vw);
 }
 
 html::before {
@@ -135,6 +144,154 @@ header nav a::before {
 @media (max-width: 600px) {
   .title h1 {
     font-size: 20px !important;
+  }
+}
+
+/* ── Work page: vertical scroll timeline ────────────── */
+
+.work-section-title { display: none; }
+
+.v-timeline {
+  --spine: 0.6rem;          /* single source of truth */
+  --pad: 2rem;
+  position: relative;
+  padding-left: var(--pad);
+  margin: 1.5rem 0 3rem;
+}
+
+/* Spine */
+.v-timeline::before {
+  content: '';
+  position: absolute;
+  left: var(--spine);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(215,223,224,0.12);
+}
+
+/* TODAY marker */
+.tl-now {
+  position: relative;
+  font-size: 0.65em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin-bottom: 1.8rem;
+}
+/* 10px dot — center on spine: spine - pad - 5px */
+.tl-now::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--spine) - var(--pad) - 5px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(215,223,224,0.65);
+}
+
+/* Year divider — out of flow, rotated left of spine */
+.tl-year {
+  position: relative;
+  height: 0;
+  overflow: visible;
+  margin: 2.5rem 0 0;
+  border: none;
+  padding: 0;
+}
+.tl-year::before {
+  content: attr(data-year);
+  position: absolute;
+  /* sit just left of the spine */
+  left: calc(var(--spine) - var(--pad) - 1.8rem);
+  top: 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.58em;
+  letter-spacing: 0.1em;
+  opacity: 0.35;
+  white-space: nowrap;
+}
+
+/* Section label (Corporate / Education) */
+.tl-section {
+  font-size: 0.6em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.28;
+  margin: 3rem 0 1.2rem;
+  border-bottom: 1px solid rgba(215,223,224,0.08);
+  padding-bottom: 0.3rem;
+}
+
+/* Entry */
+.tl-entry {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+/* 8px dot — center on spine: spine - pad - 4px */
+.tl-entry::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--spine) - var(--pad) - 4px);
+  top: 0.48em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(215,223,224,0.3);
+  background: #3A494A;
+  box-sizing: border-box;
+}
+
+/* Filled accent dot for ongoing */
+.tl-entry.ongoing::before {
+  background: #B8908D;
+  border-color: #B8908D;
+}
+
+.tl-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.tl-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+  opacity: 0.85;
+  flex-shrink: 0;
+  order: 99;
+  margin-left: auto;
+}
+
+.tl-meta {
+  font-size: 0.78em;
+  opacity: 0.52;
+}
+
+
+.tl-desc {
+  font-size: 0.8em;
+  opacity: 0.55;
+  line-height: 1.45;
+}
+
+/* Scroll-reveal animation */
+@keyframes tl-reveal {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@supports (animation-timeline: scroll()) {
+  .tl-entry {
+    animation: tl-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 28%;
   }
 }
 
