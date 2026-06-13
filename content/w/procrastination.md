@@ -2,8 +2,6 @@
 title: 'procrastination'
 date: '2025-08-22T06:25:04+02:00'
 tags: ['haiku', 'self']
-style: "flowers.css"
-script: "flower-propagation.js"
 ---
 
 ###### ✾
