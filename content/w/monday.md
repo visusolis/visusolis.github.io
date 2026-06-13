@@ -20,4 +20,4 @@ I remember feeling bad on Sunday evenings. Work wasn’t so bad, but the idea of
 Choosing to have time for myself is a luxury I don’t acknowledge enough. I’ll start climbing later today. And all will be fine.
 
 
-Oh, and I watched [Old Joy](/watched#old-joy), it was perfect.
+Oh, and I watched [Old Joy](/films/old-joy/), it was perfect.

@@ -34,7 +34,7 @@
 {{- if .IsHome }}{{ $pctx = .Site }}{{ end }}
 {{- $pages := slice }}
 {{- if or $.IsHome $.IsSection }}
-{{- $pages = $pctx.RegularPages }}
+{{- $pages = where $pctx.RegularPages "Params.rss_exclude" "!=" true }}
 {{- else }}
 {{- $pages = $pctx.Pages }}
 {{- end }}

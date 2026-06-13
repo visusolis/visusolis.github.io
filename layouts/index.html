@@ -1,4 +1,51 @@
 {{ define "main" }}
-<div class="garden-container">
-</div>
+
+{{- $items := slice -}}
+
+{{- range where site.RegularPages "Section" "w" -}}
+  {{- $items = $items | append (dict "type" "post" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
+{{- end -}}
+
+{{- range where site.RegularPages "Section" "films" -}}
+  {{- $items = $items | append (dict "type" "film" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
+{{- end -}}
+
+{{- range where site.RegularPages "Section" "albums" -}}
+  {{- $items = $items | append (dict "type" "album" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
+{{- end -}}
+
+{{- $sorted := sort $items "ts" "desc" -}}
+{{- $total := float (len $sorted) -}}
+
+<style>
+.feed { list-style: none; padding: 0; margin: 2rem 0; position: relative; z-index: 2; }
+.feed li { display: flex; align-items: baseline; gap: 0.7rem; margin-bottom: 0.85rem; }
+.feed-tag { font-size: 0.52em; letter-spacing: 0.08em; text-transform: uppercase; color: #BECACC; flex: 0 0 3.5rem; }
+.feed-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.feed-date { font-size: 0.65em; color: #BECACC; flex-shrink: 0; }
+li.type-post .feed-title a { color: #D4AEAB !important; }
+li.type-film .feed-title a { color: #C8B8C8 !important; }
+li.type-album .feed-title a { color: #BEC8BC !important; }
+</style>
+
+{{ .Content }}
+<div class="garden-container"></div>
+
+<ul class="feed">
+  {{- range $i, $item := $sorted -}}
+  {{- $phase := mod $i 20 -}}
+  {{- $brightness := 0.0 -}}
+  {{- if le $phase 10 -}}
+    {{- $brightness = printf "%.2f" (sub 1.0 (mul (div (float $phase) 10.0) 0.25)) -}}
+  {{- else -}}
+    {{- $brightness = printf "%.2f" (add 0.75 (mul (div (float (sub $phase 10)) 10.0) 0.25)) -}}
+  {{- end -}}
+  <li class="type-{{ $item.type }}">
+    <span class="feed-tag">{{ $item.type }}</span>
+    <span class="feed-title"><a href="{{ $item.url }}" style="filter:brightness({{ $brightness }})">{{ $item.title }}</a></span>
+    <span class="feed-date">{{ $item.date.Format "Jan 2006" }}</span>
+  </li>
+  {{- end -}}
+</ul>
+
 {{ end }}
