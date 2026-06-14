@@ -8,3 +8,4 @@ director: 'Michael Angelo Covino'
 ---
 
 next couple therapy session, I'm quoting malcolm gladwell.
+

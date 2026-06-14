@@ -7,5 +7,15 @@ rating: '★★★★★'
 director: 'Mamoru Oshii'
 ---
 
-This review may contain spoilers. Absolutely filled with dread, my stomach dropped when she realized he broke the egg.Obviously barely processing yet. Pure, hopeless and honest.So much emotion absorbed through the overly long shots. 
-I can't see another shade of dark blue without thinking of this desolate unfair place.Keep strength in believing that we can protect eggs, for we have lost the capacity to be angels.
+This review may contain spoilers.
+
+ Absolutely filled with dread, my stomach dropped when she realized he broke the egg.
+
+Obviously barely processing yet. Pure, hopeless and honest.
+
+So much emotion absorbed through the overly long shots. 
+
+I can't see another shade of dark blue without thinking of this desolate unfair place.
+
+Keep strength in believing that we can protect eggs, for we have lost the capacity to be angels.
+

@@ -8,5 +8,8 @@ director: 'Richard Schenkman'
 ---
 
 cute times,
+
 a good reminder to aim for that leather jacket and soul patch look.
+
 eye-rolling quips but hey that's the 2000s.
+

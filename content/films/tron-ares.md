@@ -8,3 +8,4 @@ director: 'Joachim Rønning'
 ---
 
 Of course gary vee shills the army bot and of course that fuck ass leto ends up being a digital nomad.
+

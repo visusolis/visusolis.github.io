@@ -8,3 +8,4 @@ director: 'Hayao Miyazaki, Takeshi Inamura'
 ---
 
 A sweet moment, smiling throughout
+

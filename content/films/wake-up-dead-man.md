@@ -7,4 +7,7 @@ rating: '★★★½'
 director: 'Rian Johnson'
 ---
 
-I'll take it.Happy to move onwards knowing that glass onion is like tokyo drift (it doesn't exist).
+I'll take it.
+
+Happy to move onwards knowing that glass onion is like tokyo drift (it doesn't exist).
+

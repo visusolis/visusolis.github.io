@@ -14,3 +14,4 @@ didn't really know much getting into it,  somewhat thought it would crush me mor
 my sober ass can't help but read an addiction subtext to it.
 
 telling myself noooot to watch video essays about it and let it simmer.
+

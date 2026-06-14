@@ -10,6 +10,8 @@ director: 'Satoshi Kon'
 holy fuck
 
 haven't been slapped like this in so long. 
+
 dizzying twists and turns, gripping narrative over incredible animation, unnerving and so powerful.
 
 lost for words, this was surreal.
+

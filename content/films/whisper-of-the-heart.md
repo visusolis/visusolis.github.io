@@ -8,3 +8,4 @@ director: 'Yoshifumi Kondo'
 ---
 
 Sobbing at _sixteen times_ the rate of a regular ghibli wtf, i love artists.
+

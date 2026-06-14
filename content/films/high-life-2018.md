@@ -8,3 +8,4 @@ director: 'Claire Denis'
 ---
 
 a visual delight and worth watching just for the set and decor. i enjoyed the proposal without really wanting to look into it much more otherwise.
+

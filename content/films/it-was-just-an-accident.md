@@ -8,3 +8,4 @@ director: 'Jafar Panahi'
 ---
 
 Sure if you zoom out the message is a bit bland, but the execution was so good, loved the acting and the way this was shot, those loooooong scenes just make it so great+the comedy adds a lot, and that ending...
+

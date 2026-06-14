@@ -7,4 +7,11 @@ rating: '★½'
 director: 'Jeff Bleckner'
 ---
 
-i can't suspend my disbelief so much god this was ass.who wrote those dialogs, "you thinking about fooling around in cyberspace man?"replying "have fun" to "may i use your bathroom" is insaaannooooo.turbo lost it at the guy running down the stairs filling up his bowl of cereals tho.
+i can't suspend my disbelief so much god this was ass.
+
+who wrote those dialogs, "you thinking about fooling around in cyberspace man?"
+
+replying "have fun" to "may i use your bathroom" is insaaannooooo.
+
+turbo lost it at the guy running down the stairs filling up his bowl of cereals tho.
+

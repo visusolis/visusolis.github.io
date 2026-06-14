@@ -53,8 +53,11 @@ def fetch_director(film_url, cache):
 
 def strip_html(html):
     html = re.sub(r"<img[^>]*>", "", html)
-    html = re.sub(r"<br\s*/?>", "\n", html, flags=re.IGNORECASE)
+    html = re.sub(r"<br\s*/?>", "\n\n", html, flags=re.IGNORECASE)
+    html = re.sub(r"</p\s*>", "\n\n", html, flags=re.IGNORECASE)
     html = re.sub(r"<[^>]+>", "", html)
+    html = re.sub(r"(?<!\n)\n(?!\n)", "\n\n", html)
+    html = re.sub(r"\n{3,}", "\n\n", html)
     return html.strip()
 
 
@@ -81,6 +84,8 @@ def main():
     new_count = 0
     for item in root.findall(".//item"):
         link = item.findtext("link", "").strip()
+        if "/list/" in link:
+            continue
         slug = slug_from_url(link)
         out_path = CONTENT_DIR / f"{slug}.md"
 

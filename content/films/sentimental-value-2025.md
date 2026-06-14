@@ -8,3 +8,4 @@ director: 'Joachim Trier'
 ---
 
 nordics asking one another if they're alright for 120 minutes.
+

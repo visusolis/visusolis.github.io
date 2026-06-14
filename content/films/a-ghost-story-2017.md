@@ -8,4 +8,8 @@ director: 'David Lowery'
 ---
 
 i like slow and contemplative stuff so this was right up my alley.
-made me sad at times and not so much at others. the story told is ultimately not the thing i'll remember, what stood out for me were the visuals and audio.for the record i would never try to do a magic trick to kesha.
+
+made me sad at times and not so much at others. the story told is ultimately not the thing i'll remember, what stood out for me were the visuals and audio.
+
+for the record i would never try to do a magic trick to kesha.
+
