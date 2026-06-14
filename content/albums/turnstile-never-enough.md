@@ -6,4 +6,7 @@ image: "https://cdn.rcrd.club/releases/vge38j2n40wkn6md.jpg?width=480"
 rating: '★★★★★'
 ---
 
-loved. end to end.made me so happy.
+loved. end to end.
+
+made me so happy.
+

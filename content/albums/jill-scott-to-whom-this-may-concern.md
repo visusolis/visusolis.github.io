@@ -7,3 +7,4 @@ rating: '★★★★'
 ---
 
 Perfect for a good laydown after a long day in the sun. Slow down and enjoy.
+

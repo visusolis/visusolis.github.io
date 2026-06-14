@@ -21,8 +21,11 @@ def slug_from_url(url):
 def strip_html(html):
     html = re.sub(r"<img[^>]*>", "", html)
     html = re.sub(r"<p>\s*Listened:.*?</p>", "", html, flags=re.IGNORECASE)
-    html = re.sub(r"<br\s*/?>", "\n", html, flags=re.IGNORECASE)
+    html = re.sub(r"<br\s*/?>", "\n\n", html, flags=re.IGNORECASE)
+    html = re.sub(r"</p\s*>", "\n\n", html, flags=re.IGNORECASE)
     html = re.sub(r"<[^>]+>", "", html)
+    html = re.sub(r"(?<!\n)\n(?!\n)", "\n\n", html)
+    html = re.sub(r"\n{3,}", "\n\n", html)
     return html.strip()
 
 

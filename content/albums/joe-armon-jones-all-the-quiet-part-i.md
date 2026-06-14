@@ -7,3 +7,4 @@ rating: '★★★★½'
 ---
 
 This album (and its part II) just make me happy and put me in a good mind space.
+

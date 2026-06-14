@@ -7,4 +7,6 @@ rating: '★★★'
 ---
 
 first joji experience. 
+
 while there are no songs that really stick out, I caught myself enjoying the overall sound throughout. admittedly i was doing things at the same time but the mood was fitting to this rainy, sleep-deprived, morose afternoon.
+
