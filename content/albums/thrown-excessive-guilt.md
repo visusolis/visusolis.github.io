@@ -7,4 +7,3 @@ rating: '★★★★½'
 ---
 
 get edgy pissed for 20 minutes, feels good.
-

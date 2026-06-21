@@ -11,4 +11,3 @@ this was a good surprise.
 I've been on and off with j. cole, but this album felt really good to listen back to back. with so much content of course a few tracks are forgettable, but there are bops i'll happily go back to. 
 
 happy.
-

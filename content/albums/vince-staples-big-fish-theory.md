@@ -7,4 +7,3 @@ rating: '★★★★½'
 ---
 
 Adore this album, apart from a couple tracks that don't really connect, I happily fall back into this one for the productions, feels like a crossover that simply works.
-

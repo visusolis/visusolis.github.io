@@ -17,13 +17,13 @@ It would shift onto the second day to make you emerge mid-afternoon, and by suns
 
 I used to do this. Now I can’t. Well, it’s not that I can’t, more that I don’t want to ?
 
-![beautiful tree](../../assets/orga1.jpg)
+![beautiful tree](/photos/orga1.webp)
 
 Since going sober, my FOMO over not seeing certain artists or missing some moments of a party really died down. 
 I don’t care anymore for endless afterparties or for waiting until 3am for the headliner to come: If I have danced enough, I go home. 
 This applied again at the festival, where I was done done dancing by midnight usually. I’d happily went to bed at that time, feeling the faint bass rumble through the tent and leaving my intoxicated crew to figure out their night without me. 
 
-![beautiful tree](../../assets/orga2.jpeg)
+![beautiful tree](/photos/orga2.webp)
 
 This raised some eyebrows and expected questions from the friends, but hey, they understood. 
 What this opened though was a slew of other activities for me to do when _everyone_ was sleeping.
@@ -31,7 +31,7 @@ What this opened though was a slew of other activities for me to do when _everyo
 This festival was located on the most northern coast of Taiwan, about forty-five minutes outside of Taipei, and was surrounded by gorgeous beaches and trails. 
 Early morning I would then walk out of the festival and go for a little hike, breathe the fresh air (and the silence), as well as move my legs differently than side to side. 
 
-![beautiful tree](../../assets/orga3.jpeg)
+![beautiful tree](/photos/orga3.webp)
 
 It felt great to get the day started this way. I honestly wish hiking was a standard festival activity, but alas.
 By the time I’d be back at the camp, the crew was barely waking up and I was the asshole coming home with far too much energy while others suffered from the complications of their indulgence. 
@@ -45,4 +45,4 @@ This made me realize that I settled so much in the recent years while trying to 
 I settled by keeping habits I had before, by saying yes out without asking myself if I really wanted to. 
 I built a small stash of resentment towards myself for not being fully aligned with my desires. Today I understand more and more how not to add onto it, every win earning me some satisfaction that things are going in the right direction. 
 
-![beautiful tree](../../assets/orga4.jpeg)
+![beautiful tree](/photos/orga4.webp)

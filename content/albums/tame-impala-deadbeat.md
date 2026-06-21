@@ -13,4 +13,3 @@ kinda randomly decided to listen to that one, in good conditions and with open m
 The main question mark was those dance tracks honestly, i don't know if that's a usual spiel for him, but that didn't land for me, at all.
 
 the rest felt okay, a few tracks were catchy and good, but most are left behind in a samey cloudy blur on my mind, too bad...
-

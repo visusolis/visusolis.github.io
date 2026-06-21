@@ -7,4 +7,3 @@ rating: '★★★★½'
 ---
 
 that was so good, starts a bit slow but gets better and better along the way. sick album.
-

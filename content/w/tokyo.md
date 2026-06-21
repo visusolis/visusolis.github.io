@@ -19,4 +19,4 @@ I don’t seek shelter, and feel safe.
 The silence is only broken by the crows bickering.
 I tell myself that it is okay to pace around those trees one more time.
 
-![beautiful tree](../../assets/tokyo-park.jpg)
+![beautiful tree](/photos/tokyo-park.webp)

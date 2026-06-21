@@ -7,4 +7,3 @@ rating: '★★★'
 ---
 
 Pretty fun! Title track is definitely the standout otherwise sweet!
-

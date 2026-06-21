@@ -7,4 +7,3 @@ rating: '★★★½'
 ---
 
 Kinds loved it! Quirky and fun, made a road trip through sunny iowa super enjoyable.
-

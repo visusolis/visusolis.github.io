@@ -7,4 +7,3 @@ rating: '★★★★½'
 ---
 
 this album was such a fun listen, kept me grooving on a way too long train journey, happily putting that one in rotation, i feel like i need it.
-

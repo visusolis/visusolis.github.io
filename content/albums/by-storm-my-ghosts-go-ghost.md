@@ -7,4 +7,3 @@ rating: '★★★★'
 ---
 
 it's weird, it took a couple tracks, but those sounds got me hooked. the latter half of the project is really nice and the production smoothens, it closes beautifully. my first time listening to by storm, and i like it.
-

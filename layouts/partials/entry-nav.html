@@ -2,6 +2,7 @@
 {{- range where site.RegularPages "Section" "w" -}}{{- $all = $all | append . -}}{{- end -}}
 {{- range where site.RegularPages "Section" "films" -}}{{- $all = $all | append . -}}{{- end -}}
 {{- range where site.RegularPages "Section" "albums" -}}{{- $all = $all | append . -}}{{- end -}}
+{{- range where site.RegularPages "Section" "photos" -}}{{- $all = $all | append . -}}{{- end -}}
 {{- $sorted := sort $all "Date" "desc" -}}
 {{- $prev := false -}}
 {{- $next := false -}}

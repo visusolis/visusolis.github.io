@@ -37,7 +37,7 @@ A firetruck rolled in next to the shop, and through came out, you wouldn’t bel
 They kept on rolling out and into the cafe. The place is instantly loud, so loud, they must be talking about ladders and stuff. 
 I was semi-hopeful for an emergency and seeing all of them running out, leaving their oat latte on the spot, but alas, they just kept chatting, and I wanted out of the cosy anti-wifi coffeshop. 
 
-![beautiful tree](../../assets/nyc1.jpeg)
+![beautiful tree](/photos/nyc1.webp)
 
 The next few blocks brought me down to the famous Central Park, where I met, in droves, this aggressively healthy type of local: the runner.
 I don’t know where they were running, but boy were they all ready for it. 
@@ -45,7 +45,7 @@ They were packed to the gills with feeding gels and bone conducting headphones a
 Some were by themselves with the company of their headphones, some were running in groups, some were in groups with their headphones (rude).
 I wish I could briefly hear what all of them were listening to, it would be like skipping through TV channels quickly.
 
-![beautiful tree](../../assets/nyc2.jpeg)
+![beautiful tree](/photos/nyc2.webp)
 
 Some others were speaking on the phone (or to themselves, no judgement) while those in groups were conversing with their running partner. 
 I was walking in the opposite direction of them all, only catching a glimpse of their conversations and their faces.
@@ -64,4 +64,4 @@ I was tired, overwhelmed, needed to eat and stop.
 Only a few more parks and meeting spots made me wander around and slow down more.
 But that was mostly because people were being silly. 
 
-![beautiful tree](../../assets/nyc3.jpeg)
+![beautiful tree](/photos/nyc3.webp)

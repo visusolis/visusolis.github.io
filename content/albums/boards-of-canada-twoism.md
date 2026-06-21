@@ -9,4 +9,3 @@ rating: '★★★'
 relistening to boc in order.
 
 good vibe all around, a bit simple and no production really sticks out but easy and moody as desired.
-

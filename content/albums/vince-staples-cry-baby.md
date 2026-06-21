@@ -9,4 +9,3 @@ rating: '★★★★½'
 Hit so right. 
 
 Didn't know anything about this lp before getting into it and so pleasantly surprised by the production and direction. Vince Staples once again makes it work with bops all around and a coherent theme and sound. There are too many album of his I really love going back to, and this is just another one of them.
-

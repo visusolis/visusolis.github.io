@@ -7,4 +7,3 @@ rating: '★★★★'
 ---
 
 that was a worthy listen honestly, lots of emotion and pleasant throughout. good album.
-

@@ -14,6 +14,10 @@
   {{- $items = $items | append (dict "type" "album" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
 {{- end -}}
 
+{{- range where site.RegularPages "Section" "photos" -}}
+  {{- $items = $items | append (dict "type" "photo" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
+{{- end -}}
+
 {{- $sorted := sort $items "ts" "desc" -}}
 {{- $total := float (len $sorted) -}}
 
@@ -26,6 +30,7 @@
 li.type-post .feed-title a { color: #D4AEAB !important; }
 li.type-film .feed-title a { color: #C8B8C8 !important; }
 li.type-album .feed-title a { color: #BEC8BC !important; }
+li.type-photo .feed-title a { color: #C8BEA8 !important; }
 .feed-filters { display: flex; gap: 1rem; margin-bottom: 1rem; list-style: none; padding: 0; }
 .feed-filters button { background: none; border: none; cursor: pointer; font-size: 0.62em; letter-spacing: 0.1em; text-transform: uppercase; color: #BECACC; padding: 0; font-family: inherit; }
 .feed-filters button:hover { color: #fff; }
@@ -39,6 +44,7 @@ li.type-album .feed-title a { color: #BEC8BC !important; }
   <button onclick="filterFeed('post', this)">posts</button>
   <button onclick="filterFeed('film', this)">films</button>
   <button onclick="filterFeed('album', this)">albums</button>
+  <button onclick="filterFeed('photo', this)">photos</button>
 </div>
 
 <ul class="feed">

@@ -7,4 +7,3 @@ rating: '★★★★★'
 ---
 
 So much up my alley, unknowingly had heard some of his productions earlier. This album hits the right spot, excited to see him live this weekend.
-

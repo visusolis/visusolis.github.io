@@ -9,4 +9,3 @@ rating: '★★★★'
 That was really fun, hadn't listened to Thundercat before. 
 
 This album is a pleasure, quirky and simply funny while being super nice to listen to. Good stuff.
-

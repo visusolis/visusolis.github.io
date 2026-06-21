@@ -7,4 +7,3 @@ rating: '★★★'
 ---
 
 short and sweet and fun
-

@@ -20,4 +20,4 @@ I am reminded of the question a friend asked me the night before. We were discus
 
 Arriving at this place, sitting down, and watching the dogs, cats, and trees made me smile. It made me want to find a way to convey that this was my plan. This is why I came to this place: to find environments where I could just be. This was not the fruit of plans, aside from a quick maps search, just the result of a desire with a touch of curiosity. It had been the way I found myself doing well during the last few years of travel: bumping into places I couldn’t have planned to discover, getting lost among trees, and taking the time to sit down.
 
-![A day out](../../assets/adayout.jpeg)
+![A day out](/photos/adayout.webp)
