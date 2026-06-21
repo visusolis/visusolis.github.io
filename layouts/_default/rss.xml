@@ -75,7 +75,7 @@
       {{- with .Params.image }}
       <media:content url="{{ . }}" medium="image" />
       {{- end }}
-      <content:encoded>{{ `<![CDATA[` | safeHTML }}{{ with .Params.image }}<img src="{{ . }}" style="max-width:100%"><br>{{ end }}{{ .Content | safeHTML }}{{ `]]>` | safeHTML }}</content:encoded>
+      <content:encoded>{{ `<![CDATA[` | safeHTML }}{{ with .Params.image }}<img src="{{ . }}" style="max-width:100%"><br>{{ end }}{{ range .Params.images }}<img src="{{ absURL . }}" style="max-width:100%"><br>{{ end }}{{ .Content | safeHTML }}{{ `]]>` | safeHTML }}</content:encoded>
     </item>
     {{- end }}
   </channel>
