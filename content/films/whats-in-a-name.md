@@ -8,4 +8,3 @@ director: 'Alexandre de La Patellière, Matthieu Delaporte'
 ---
 
 lancement de hola lors de la sortie de scène de Babou.
-

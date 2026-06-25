@@ -8,4 +8,3 @@ director: 'Shane Black'
 ---
 
 didn't expect to laugh that much if I'm honest.
-

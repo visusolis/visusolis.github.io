@@ -10,4 +10,3 @@ director: 'Paul Thomas Anderson'
 the first 90 minutes were so so good honestly, the last act felt a bit off-beat though it ties up everything in ways one would expect. 
 
 really really fun time.
-

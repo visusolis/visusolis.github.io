@@ -7,4 +7,3 @@ director: 'Michael Haneke'
 ---
 
 my first haneke and i'm ready to end it.
-

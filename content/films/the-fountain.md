@@ -10,4 +10,3 @@ director: 'Darren Aronofsky'
 i liked what it was going for and the visuals were delightful when in trippy space. 
 
 some pretty meh moments but all in all it was a good experience.
-

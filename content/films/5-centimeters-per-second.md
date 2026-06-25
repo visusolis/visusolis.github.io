@@ -8,4 +8,3 @@ director: 'Makoto Shinkai'
 ---
 
 seriously can't comprehend how drawings can be this beautiful.
-

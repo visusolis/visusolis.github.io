@@ -18,4 +18,3 @@ So much emotion absorbed through the overly long shots.
 I can't see another shade of dark blue without thinking of this desolate unfair place.
 
 Keep strength in believing that we can protect eggs, for we have lost the capacity to be angels.
-

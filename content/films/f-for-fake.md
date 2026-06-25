@@ -10,4 +10,3 @@ director: 'Orson Welles'
 This review may contain spoilers.
 
  do not believe his lies.
-

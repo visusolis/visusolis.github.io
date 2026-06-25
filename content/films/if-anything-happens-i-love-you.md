@@ -14,4 +14,3 @@ but i so so wished it stopped before showing the flag. Everything was said and f
 Instead, with its messaging getting heavier, it left an odd aftertaste. 
 
 Less would've been more.
-

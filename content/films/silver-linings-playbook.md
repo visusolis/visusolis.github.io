@@ -26,4 +26,3 @@ It was a rough and pure struggle of a community dealing with mental health issue
 There were some really beautiful moments (some hard to watch and others less so), it was honest, and compassionate. In the end, it felt quite good to have experienced it. 
 
 I still wouldn't call it a Comedy though...
-

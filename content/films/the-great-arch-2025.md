@@ -8,4 +8,3 @@ director: 'Stéphane Demoustier'
 ---
 
 Ça donne envie de marcher les mains dans le dos, et d'admirer des jointures.
-

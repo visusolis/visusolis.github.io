@@ -8,4 +8,3 @@ director: 'Amalie Atkins'
 ---
 
 A gloomy sunday turned dreamy, this documentary made me pause, enjoy the sight and the ramblings of Agatha. Sweet.
-

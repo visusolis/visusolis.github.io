@@ -8,4 +8,3 @@ director: 'Phil Lord, Christopher Miller'
 ---
 
 just a great experience in theater for this one. gripping all the way throughout catch yourself crying over a rock and laughing over bad jokes it's just nice nice nice.
-

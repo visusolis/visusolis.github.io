@@ -10,4 +10,3 @@ director: 'Josh Safdie'
 juiced out of my mind coming out of this. 
 
 and fuck the honey scene.
-

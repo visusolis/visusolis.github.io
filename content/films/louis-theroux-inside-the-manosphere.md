@@ -8,4 +8,3 @@ director: 'Adrian Choa'
 ---
 
 yeah okay, nothing really new or groundbreaking here. upsetting characters, not really worth the watch.
-

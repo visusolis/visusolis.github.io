@@ -10,4 +10,3 @@ director: 'Park Chan-wook'
 The story i think didn't gripped me as much as i thought it would, but the cinematography and humor are incredible throughout, as expected from the director to be fair.
 
 The interior designs sets are continuously making me dream, I don't know why.
-

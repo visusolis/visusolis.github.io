@@ -10,4 +10,3 @@ director: 'Kelly Reichardt'
 a volvo, jorts, an old friend, and sitting in silence in the forest.
 
 perfect movie for a monday morning.
-
