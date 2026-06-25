@@ -1,77 +1,154 @@
 {{ define "main" }}
 
-{{- $items := slice -}}
+{{- $posts  := where site.RegularPages "Section" "w"      -}}
+{{- $films  := where site.RegularPages "Section" "films"  -}}
+{{- $albums := where site.RegularPages "Section" "albums" -}}
+{{- $photos := where site.RegularPages "Section" "photos" -}}
 
-{{- range where site.RegularPages "Section" "w" -}}
-  {{- $items = $items | append (dict "type" "post" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
-{{- end -}}
-
-{{- range where site.RegularPages "Section" "films" -}}
-  {{- $items = $items | append (dict "type" "film" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
-{{- end -}}
-
-{{- range where site.RegularPages "Section" "albums" -}}
-  {{- $items = $items | append (dict "type" "album" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
-{{- end -}}
-
-{{- range where site.RegularPages "Section" "photos" -}}
-  {{- $items = $items | append (dict "type" "photo" "title" .Title "url" .RelPermalink "ts" .Date.Unix "date" .Date) -}}
-{{- end -}}
-
-{{- $sorted := sort $items "ts" "desc" -}}
-{{- $total := float (len $sorted) -}}
+{{- $posts  = sort $posts  "Date" "desc" -}}
+{{- $films  = sort $films  "Date" "desc" -}}
+{{- $albums = sort $albums "Date" "desc" -}}
+{{- $photos = sort $photos "Date" "desc" -}}
 
 <style>
-.feed { list-style: none; padding: 0; margin: 2rem 0; position: relative; z-index: 2; }
-.feed li { display: flex; align-items: baseline; gap: 0.7rem; margin-bottom: 0.85rem; }
-.feed-tag { font-size: 0.52em; letter-spacing: 0.08em; text-transform: uppercase; color: #BECACC; flex: 0 0 3.5rem; }
-.feed-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.feed-date { font-size: 0.65em; color: #BECACC; flex-shrink: 0; }
-li.type-post .feed-title a { color: #D4AEAB !important; }
-li.type-film .feed-title a { color: #C8B8C8 !important; }
-li.type-album .feed-title a { color: #BEC8BC !important; }
-li.type-photo .feed-title a { color: #C8BEA8 !important; }
-.feed-filters { display: flex; gap: 1rem; margin-bottom: 1rem; list-style: none; padding: 0; }
-.feed-filters button { background: none; border: none; cursor: pointer; font-size: 0.62em; letter-spacing: 0.1em; text-transform: uppercase; color: #BECACC; padding: 0; font-family: inherit; }
-.feed-filters button:hover { color: #fff; }
-.feed-filters button.active { color: #fff; border-bottom: 1px solid #fff; }
+.cat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 3rem;
+  margin: 2rem 0;
+}
+@media (max-width: 600px) {
+  .cat-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.cat-panel {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.cat-heading {
+  font-size: 0.58em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8EA2A4;
+  margin: 0 0 0.7rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(190,202,204,0.18);
+}
+
+.cat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.65rem;
+}
+
+.cat-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cat-date {
+  font-size: 0.62em;
+  color: #8EA2A4;
+  flex-shrink: 0;
+}
+
+.cat-panel--posts  .cat-title a { color: #D4AEAB !important; }
+.cat-panel--films  .cat-title a { color: #C8B8C8 !important; }
+.cat-panel--albums .cat-title a { color: #BEC8BC !important; }
+.cat-panel--photos .cat-title a { color: #C8BEA8 !important; }
+
+.cat-more {
+  font-size: 0.55em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #BECACC !important;
+  display: block;
+  padding-top: 0.4rem;
+  opacity: 0.65;
+  transition: opacity 0.15s;
+}
+.cat-more:hover { opacity: 1; }
 </style>
 
 {{ .Content }}
 
-<div class="feed-filters">
-  <button class="active" onclick="filterFeed('all', this)">all</button>
-  <button onclick="filterFeed('post', this)">posts</button>
-  <button onclick="filterFeed('film', this)">films</button>
-  <button onclick="filterFeed('album', this)">albums</button>
-  <button onclick="filterFeed('photo', this)">photos</button>
+<div class="cat-grid">
+
+  {{/* ── Posts ── */}}
+  <div class="cat-panel cat-panel--posts">
+    <p class="cat-heading">posts</p>
+    <ul class="cat-list">
+      {{- range first 5 $posts -}}
+      <li>
+        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
+      </li>
+      {{- end -}}
+    </ul>
+    {{ if gt (len $posts) 5 }}
+    <a class="cat-more" href="/w/">all posts</a>
+    {{ end }}
+  </div>
+
+  {{/* ── Photos ── */}}
+  <div class="cat-panel cat-panel--photos">
+    <p class="cat-heading">photos</p>
+    <ul class="cat-list">
+      {{- range first 5 $photos -}}
+      <li>
+        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
+      </li>
+      {{- end -}}
+    </ul>
+    {{ if gt (len $photos) 5 }}
+    <a class="cat-more" href="/photos/">all photos</a>
+    {{ end }}
+  </div>
+
+  {{/* ── Films ── */}}
+  <div class="cat-panel cat-panel--films">
+    <p class="cat-heading">films</p>
+    <ul class="cat-list">
+      {{- range first 5 $films -}}
+      <li>
+        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
+      </li>
+      {{- end -}}
+    </ul>
+    {{ if gt (len $films) 5 }}
+    <a class="cat-more" href="/films/">all films</a>
+    {{ end }}
+  </div>
+
+  {{/* ── Albums ── */}}
+  <div class="cat-panel cat-panel--albums">
+    <p class="cat-heading">music</p>
+    <ul class="cat-list">
+      {{- range first 5 $albums -}}
+      <li>
+        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
+      </li>
+      {{- end -}}
+    </ul>
+    {{ if gt (len $albums) 5 }}
+    <a class="cat-more" href="/albums/">all music</a>
+    {{ end }}
+  </div>
+
 </div>
-
-<ul class="feed">
-  {{- range $i, $item := $sorted -}}
-  {{- $phase := mod $i 20 -}}
-  {{- $brightness := 0.0 -}}
-  {{- if le $phase 10 -}}
-    {{- $brightness = printf "%.2f" (sub 1.0 (mul (div (float $phase) 10.0) 0.25)) -}}
-  {{- else -}}
-    {{- $brightness = printf "%.2f" (add 0.75 (mul (div (float (sub $phase 10)) 10.0) 0.25)) -}}
-  {{- end -}}
-  <li class="type-{{ $item.type }}">
-    <span class="feed-tag">{{ $item.type }}</span>
-    <span class="feed-title"><a href="{{ $item.url }}" style="filter:brightness({{ $brightness }})">{{ $item.title }}</a></span>
-    <span class="feed-date">{{ $item.date.Format "Jan 2006" }}</span>
-  </li>
-  {{- end -}}
-</ul>
-
-<script>
-function filterFeed(type, btn) {
-  document.querySelectorAll('.feed-filters button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.feed li').forEach(li => {
-    li.style.display = (type === 'all' || li.classList.contains('type-' + type)) ? '' : 'none';
-  });
-}
-</script>
 
 {{ end }}

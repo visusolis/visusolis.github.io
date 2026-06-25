@@ -26,11 +26,22 @@
     {{ end }}
   </ul>
   {{ if not .Data.Singular }}
+    {{- $sectionTags := slice -}}
+    {{- range .Pages -}}
+      {{- range .Params.tags -}}
+        {{- $sectionTags = $sectionTags | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $sectionTags = $sectionTags | uniq -}}
+    {{ if $sectionTags }}
     <div>
-      {{ range .Site.Taxonomies.tags }}
-        <a class="blog-tags" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>
+      {{ range $sectionTags }}
+        {{ with $.Site.GetPage (printf "/tags/%s" (. | urlize)) }}
+          <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .Title }}</a>
+        {{ end }}
       {{ end }}
     </div>
+    {{ end }}
   {{ end }}
 </content>
 {{ end }}
