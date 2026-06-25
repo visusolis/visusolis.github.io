@@ -2,6 +2,7 @@
 title: 'korean travel cheatsheet'
 date: '2026-06-25'
 menu: true
+rss_exclude: true
 ---
 
 <style>
