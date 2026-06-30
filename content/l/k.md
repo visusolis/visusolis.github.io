@@ -43,7 +43,7 @@ rss_exclude: true
   .container header p { font-size: 0.875rem; color: var(--text2); margin-top: 4px; }
   .section { margin-bottom: 2rem; }
   .section-title {
-    font-size: 0.7rem;
+    font-size: 0.6em;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -61,18 +61,18 @@ rss_exclude: true
     background: var(--bg);
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
-    padding: 10px 14px;
+    padding: 12px 16px;
   }
-  .korean { font-size: 1.15rem; font-weight: 500; color: var(--text); line-height: 1.3; }
-  .roman { font-size: 0.8rem; color: var(--blue); margin-top: 2px; font-style: italic; }
-  .english { font-size: 0.8rem; color: var(--text2); margin-top: 4px; }
+  .korean { font-size: 1.1em; font-weight: 500; color: var(--text); line-height: 1.3; }
+  .roman { font-size: 0.92em; color: var(--blue); margin-top: 3px; font-style: italic; }
+  .english { font-size: 0.78em; color: var(--text2); margin-top: 5px; }
   .breakdown {
-    font-size: 0.7rem;
+    font-size: 0.66em;
     color: var(--text3);
-    margin-top: 6px;
-    line-height: 1.7;
+    margin-top: 7px;
+    line-height: 1.8;
     border-top: 0.5px solid var(--border);
-    padding-top: 5px;
+    padding-top: 6px;
   }
   .breakdown .kr { color: var(--text); }
   .breakdown .rom { color: var(--blue); font-style: italic; }
@@ -82,13 +82,13 @@ rss_exclude: true
     background: var(--bg2);
     border: 0.5px solid var(--border);
     border-radius: 20px;
-    padding: 4px 12px;
-    font-size: 0.8rem;
+    padding: 5px 14px;
+    font-size: 0.82em;
     color: var(--text);
   }
-  .num-pill span { color: var(--text3); font-size: 0.7rem; margin-left: 4px; font-style: italic; }
+  .num-pill span { color: var(--text3); font-size: 0.88em; margin-left: 4px; font-style: italic; }
   .tip {
-    font-size: 0.75rem;
+    font-size: 0.75em;
     color: var(--text2);
     background: var(--bg2);
     border-radius: var(--radius);
@@ -98,6 +98,15 @@ rss_exclude: true
   .tip b { color: var(--text); font-weight: 500; }
   @media (max-width: 600px) {
     .phrase-grid { grid-template-columns: 1fr; }
+    .phrase-card { padding: 12px 16px; }
+    .korean { font-size: 1.2em; }
+    .roman { font-size: 0.96em; margin-top: 4px; }
+    .english { font-size: 0.82em; margin-top: 6px; }
+    .breakdown { font-size: 0.7em; line-height: 1.8; margin-top: 8px; padding-top: 7px; }
+    .section-title { font-size: 0.62em; }
+    .num-pill { font-size: 0.85em; padding: 6px 14px; }
+    .num-pill span { font-size: 0.88em; }
+    .tip { font-size: 0.78em; padding: 8px 12px; }
   }
   @media print {
     .phrase-card { break-inside: avoid; }
