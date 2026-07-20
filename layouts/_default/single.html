@@ -1,20 +1,24 @@
 {{ define "main" }}
+<article class="h-entry">
 {{ if not .Params.menu }}
-<h1>{{ .Title }}</h1>
+<h1 class="p-name">{{ .Title }}</h1>
 {{ end }}
-<content>
+<content class="e-content">
   {{ .Content }}
 </content>
 <p class="post-footer">
   {{ range (.GetTerms "tags") }}
-    <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+    <a class="blog-tags p-category" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
   {{ end }}
   {{ if not .Params.menu }}
-    <span class="byline">written in {{ .Date.Format "January 2006" | lower }}</span>
+    <span class="byline">written in <time class="dt-published" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "January 2006" | lower }}</time></span>
   {{ end }}
 </p>
 
 {{ if not .Params.menu }}
+<a class="u-url" href="{{ .Permalink }}" style="display:none">{{ .Permalink }}</a>
+<a class="p-author h-card" href="https://stefanmiko.com" style="display:none">Stefan Mikolajczyk</a>
 {{ partial "entry-nav.html" . }}
 {{ end }}
+</article>
 {{ end }}
