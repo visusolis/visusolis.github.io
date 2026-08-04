@@ -97,7 +97,7 @@
       {{- $filmTitle := index . "letterboxd:filmTitle" -}}
       {{- $memberRating := index . "letterboxd:memberRating" -}}
       {{- $dateOnly := .pubDate | replaceRE " [0-9]{2}:[0-9]{2}:[0-9]{2} .*" "" -}}
-      {{- $ratingMatch := findRE "★+" .title -}}
+      {{- $ratingMatch := findRE "★+½?" .title -}}
       {{- $extractedRating := "" -}}
       {{- if $ratingMatch -}}
         {{- $extractedRating = index $ratingMatch 0 -}}
