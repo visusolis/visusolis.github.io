@@ -7,6 +7,6 @@ rating: '★★★★'
 director: 'Emmanuel Carrère'
 ---
 
-jouer aux sept différences avec les forces de l'ordre &gt;
+jouer aux sept différences avec les forces de l'ordre >
 
-regler ses prolèmes en achetant une veste eclatée &gt;
+regler ses prolèmes en achetant une veste eclatée >
