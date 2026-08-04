@@ -5,3 +5,4 @@ resources/_gen/
 data/
 rss.xhtml
 *.jpg_original
+static/photos/*.jpeg
