@@ -1,0 +1,29 @@
+{{ define "main" }}
+<style>
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  color: #6f8f8a;
+  margin-bottom: 1.5rem;
+}
+.note-place { font-style: italic; color: #c8bea8; }
+</style>
+
+<article class="h-entry">
+<h1 class="p-name">{{ .Title }}</h1>
+<content class="e-content">{{ .Content }}</content>
+<p class="note-meta">
+  <span class="byline">
+    <time class="dt-published" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "2006-01-02 15:04:05 -07:00" }}</time>
+  </span>
+  {{- with .Params.place }}<span class="note-place">{{ . }}</span>{{ end }}
+</p>
+<p><a href="{{ .Parent.RelPermalink }}">← all notes</a></p>
+<a class="u-url" href="{{ .Permalink }}" style="display:none">{{ .Permalink }}</a>
+<a class="p-author h-card" href="https://stefanmiko.com" style="display:none">Stefan Mikolajczyk</a>
+</article>
+{{ end }}

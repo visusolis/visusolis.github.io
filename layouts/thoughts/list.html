@@ -1,0 +1,38 @@
+{{ define "main" }}
+<style>
+.notes-list { list-style: none; padding: 0; }
+.notes-list li {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.08);
+}
+.notes-list li:first-child { padding-top: 0; }
+.notes-list li:last-child { border-bottom: none; }
+.note-content { margin: 0; }
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.45rem 0 0;
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  color: #6f8f8a;
+}
+.note-place { font-style: italic; color: #c8bea8; }
+</style>
+
+<h1>{{ .Title }}</h1>
+<content>
+  <ul class="notes-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+      <div class="note-content">{{ .Content }}</div>
+      <p class="note-meta">
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "2006-01-02 15:04:05 -07:00" }}</time>
+        {{- with .Params.place }}<span class="note-place">{{ . }}</span>{{ end }}
+      </p>
+    </li>
+    {{ end }}
+  </ul>
+</content>
+{{ end }}
