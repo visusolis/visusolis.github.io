@@ -1,7 +1,7 @@
 ---
 title: 'together silent'
 date: '2026-06-13T08:25:04+02:00'
-tags: ['travel', 'taipei']
+tags: ['travel']
 ---
 
 Silent cafés are the places I'll miss the most in Taipei, maybe. 

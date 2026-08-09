@@ -1,7 +1,7 @@
 ---
 title: 'silly people'
 date: '2026-04-19'
-tags: ['travel', 'usa']
+tags: ['travel']
 ---
 
 There are many ways to discover a place.

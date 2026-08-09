@@ -1,7 +1,7 @@
 ---
 title: 'mist'
 date: '2026-01-08T13:25:04+02:00'
-tags: ['taipei']
+tags: ['travel']
 ---
 
 Any bright morning light couldn’t reach this side of town.

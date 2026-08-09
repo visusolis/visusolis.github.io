@@ -1,7 +1,7 @@
 ---
 title: 'cold park'
 date: '2026-01-20T13:25:04+02:00'
-tags: ['travel', 'tokyo']
+tags: ['travel']
 ---
 
 The cold isn't as biting as I thought it would be.

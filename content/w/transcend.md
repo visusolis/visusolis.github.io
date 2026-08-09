@@ -1,7 +1,7 @@
 ---
 title: 'beyond'
 date: '2026-02-07T13:25:04+02:00'
-tags: ['music', 'art']
+tags: ['music']
 ---
 
 Last night I witnessed someone transcend the medium of their art. 

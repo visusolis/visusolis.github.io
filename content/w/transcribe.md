@@ -1,7 +1,7 @@
 ---
 title: 'a first summer tech experiment'
 date: '2025-08-16T06:25:04+02:00'
-tags: ['tech', 'llm']
+tags: ['tech']
 ---
 
 I’ve had some space in the past few weeks, and surprisingly, aside from the traditional creative efforts ([music](music) or [writing](w)), I got back into some tech work. 

@@ -1,7 +1,7 @@
 ---
 title: 'in a cafe'
 date: '2025-02-04T13:25:04+02:00'
-tags: ['vietnam']
+tags: ['travel']
 ---
 
 We’re in the week after the new year (Têt) holiday in Vietnam.

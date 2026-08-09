@@ -1,6 +1,7 @@
 ---
 title: 'the view'
 date: '2025-09-09T08:25:04+02:00'
+tags: ['life']
 ---
 
 Today, I’m just looking over the balcony, observing what the world has to offer.

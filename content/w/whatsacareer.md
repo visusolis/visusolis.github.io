@@ -1,7 +1,7 @@
 ---
 title: 'explaining my career'
 date: '2025-03-11T13:25:04+02:00'
-tags: ['freelance']
+tags: ['work']
 ---
 
 It’s hard to build a portfolio and put it on the internet. 

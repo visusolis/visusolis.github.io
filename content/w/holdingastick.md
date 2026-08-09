@@ -1,7 +1,7 @@
 ---
 title: 'how to hold a stick'
 date: '2025-04-30T13:25:04+02:00'
-tags: ['drums']
+tags: ['music']
 ---
 
 I started taking drumming lessons for the first time in March of 2025. Before that, I had never learned any instrument (school flute doesn't count). While this backstory is for another time, I want to make reflections on this newly found practice, how I lived it, and how it affected me. 

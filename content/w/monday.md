@@ -1,7 +1,7 @@
 ---
 title: 'a movie on a monday morning'
 date: '2026-02-16T04:25:04+02:00'
-tags: ['thought', 'self']
+tags: ['life']
 ---
 
 

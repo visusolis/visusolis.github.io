@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{- $subject := printf "Re: %s" .Title | urlquery | replaceRE "\\+" "%20" | safeURL -}}
 <article class="h-entry">
 {{ if not .Params.menu }}
 <h1 class="p-name">{{ .Title }}</h1>
@@ -12,6 +13,11 @@
   {{ end }}
   {{ if not .Params.menu }}
     <span class="byline">written in <time class="dt-published" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "January 2006" | lower }}</time></span>
+    {{ if not .Params.hideReply }}
+      {{ with site.Params.author.email }}
+      <span class="byline"><a href="mailto:{{ . }}?subject={{ $subject }}">reply by email</a></span>
+      {{ end }}
+    {{ end }}
   {{ end }}
 </p>
 

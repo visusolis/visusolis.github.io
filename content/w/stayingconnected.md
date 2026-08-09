@@ -1,7 +1,7 @@
 ---
 title: 'staying connected'
 date: '2025-04-22T13:19:44+02:00'
-tags: ['self']
+tags: ['life']
 ---
 
 _These thoughts were written over the early days of 2025. Whatever has been happening since then is not yet fully digested to be reflected here…_

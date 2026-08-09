@@ -1,7 +1,7 @@
 ---
 title: 'building a house'
 date: '2024-12-27T13:25:04+02:00'
-tags: ['meta']
+tags: ['life']
 ---
 
 Reading through [Kening Zhu's journal](https://keningzhu.com/journal) was a flash in the mirror moment.

@@ -1,7 +1,7 @@
 ---
 title: 'visualizing discovery'
 date: '2026-08-03T00:00:00+00:00'
-tags: ['personal']
+tags: ['life']
 ---
 
 There's one thing that has been on my mind a lot recently: I haven't found a good way to visualize what I know about a topic and what I should learn next. 

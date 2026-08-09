@@ -1,7 +1,7 @@
 ---
 title: 'a day out'
 date: '2025-09-08T13:25:04+02:00'
-tags: ['travel', 'vietnam']
+tags: ['travel']
 ---
 
 I woke up today with the sun blaring through the thick white shades of my room. My room is oriented east, I realized then. It is pretty rare for the sun to be out so vividly in the morning, for the mountains get shrouded in clouds so easily and rain becomes a constant. Though this morning, the sun woke me up. It woke me up despite my facemask, as it was not fully centered around my eyes after a night of tossing and turning. It’s okay. Its job is mainly helping me fall asleep first with the way it pushes on my skull, soothing me so much. I often wonder if there’s something deeper there, and I'm left wondering if there are ways to have more frequent head stimulation throughout the day...

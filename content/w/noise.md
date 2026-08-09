@@ -1,7 +1,7 @@
 ---
 title: 'acclimated to the noise'
 date: '2025-04-15T13:25:04+02:00'
-tags: ['self', 'meta']
+tags: ['life']
 ---
 
 I am acclimated, well, raised by internet noise. 

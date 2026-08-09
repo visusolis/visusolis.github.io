@@ -92,6 +92,11 @@
       {{- range first 5 $posts -}}
       <li>
         <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="cat-tags">
+          {{- range (.GetTerms "tags") -}}
+          <a class="cat-tag" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+          {{- end -}}
+        </span>
         <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
       </li>
       {{- end -}}

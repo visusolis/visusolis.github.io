@@ -1,7 +1,7 @@
 ---
 title: 'it only takes one event'
 date: '2026-03-08T05:25:04+02:00'
-tags: ['travel', 'internet']
+tags: ['travel']
 ---
 
 Last week I was flying back to Europe from Taipei, my flight was planned on the 1st of March. I was at the end of a 2 month period on the island where I felt quite at peace. Life was easy, the nicer days were coming back and I was enjoying a stable time before the next whirlwind of travel came. 

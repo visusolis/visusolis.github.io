@@ -12,6 +12,9 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ end }}
       <span>
+        {{ range (.GetTerms "tags") }}
+        <a class="cat-tag" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+        {{ end }}
         <i>
           <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
             {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}

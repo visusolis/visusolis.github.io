@@ -1,7 +1,7 @@
 ---
 title: 'sharpen'
 date: '2026-07-04T13:25:04+02:00'
-tags: ['tech', 'self']
+tags: ['tech']
 ---
 
 Sometimes you don't realize how blunt your knife is until you sharpen it a little bit. 

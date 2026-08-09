@@ -1,7 +1,7 @@
 ---
 title: 'own terms'
 date: '2026-05-19'
-tags: ['sober', '']
+tags: ['sobriety']
 ---
 
 Last month, I went for the fourth year in a row to this electronic music festival in Taiwan. I have my history with music festivals, as they used to be part of a routine. 

@@ -1,7 +1,7 @@
 ---
 title: 'different'
 date: '2025-11-26T13:25:04+02:00'
-tags: ['basketball', 'meditation']
+tags: ['life']
 ---
 
 Sometimes meditation looks different.

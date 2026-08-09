@@ -1,7 +1,7 @@
 ---
 title: 'learning to write in the age of llm'
 date: '2025-02-11'
-tags: ['writing', 'ai']
+tags: ['tech']
 ---
 
 Shifting career and getting into writing is hard. Doing so during the everlasting dawn of large language models is an interesting choice.

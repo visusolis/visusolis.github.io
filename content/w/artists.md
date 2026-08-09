@@ -1,7 +1,7 @@
 ---
 title: 'on supporting artists'
 date: '2025-11-17T13:25:04+02:00'
-tags: ['music', 'art']
+tags: ['music']
 ---
 
 I’ve been feeling ranty these past few weeks. 

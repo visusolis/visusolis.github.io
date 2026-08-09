@@ -1,7 +1,7 @@
 ---
 title: 'out of the loop'
 date: '2025-06-03T13:19:44+02:00'
-tags: ['self']
+tags: ['life']
 ---
 Failing to stay out of the social media hellscape has been a constant in the last five years of my life. I think I’ve finally made a breakthrough in the past month. 
 

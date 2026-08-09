@@ -1,7 +1,7 @@
 ---
 title: 'lesson in a whisper'
 date: '2025-09-26T10:25:04+02:00'
-tags: ['anime']
+tags: ['writing']
 ---
 
 After [watching Whisper of the Heart](../watched.md) recently, I wanted to find an excuse to write about it.
