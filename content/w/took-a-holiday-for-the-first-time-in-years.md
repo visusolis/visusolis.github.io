@@ -44,6 +44,6 @@ However, it also sucks for different reasons. Getting back into a rhythm after 1
 
 In some ways, this experience reminded me a lot of my non-sober days. It feels like I had been micro-dosing holidays for 4 years, never feeling so bad and being able to enjoy things quite often. Suddenly I took a big hit. It felt great, but now I have a big headache, I just want to lay in bed and not think about this hangover I need to recover from. 
 
-Anyway, I am now back from [honolulu](/photos/honolulu/) and the train of [thoughts](/thoughts/) is moving again. It will hopefully reach a steady pace of travel soon and I'll be able to continue my inner travel, happily. 
+Anyway, I am now back from [honolulu](/photos/honolulu/) and the train of [thoughts](/thoughts/) is moving again. It will hopefully reach a steady pace of living soon, and I'll be able to continue my inner travel, happily. 
 
 ![honolulu](/photos/honolulu5.webp)
