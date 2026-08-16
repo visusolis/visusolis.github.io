@@ -101,29 +101,25 @@
 }
 .thumb-name {
   position: absolute;
-  inset-inline: 0;
-  bottom: 0;
+  inset: 0; /* full cover — text sits mid-image, so contrast comes from a uniform scrim */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 0.1em;
   padding: 0.5em 0.75em;
   font-size: 0.62em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #F2F5F5;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
-  opacity: 0;
-  transition: opacity 0.15s ease;
+  background: rgba(0, 0, 0, 0.45);
 }
 .thumb-date {
   font-size: 0.85em;
   text-transform: none;
   letter-spacing: 0.02em;
   opacity: 0.75;
-}
-.photo-thumb:hover .thumb-name,
-.photo-thumb:focus-visible .thumb-name {
-  opacity: 1;
 }
 
 .cat-date {
