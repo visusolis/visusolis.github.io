@@ -26,6 +26,11 @@
   overflow: hidden;
 }
 
+/* group-level gap between the full-width sections (matches .cat-grid rhythm) */
+.cat-panel--photos {
+  margin-top: 2rem;
+}
+
 .cat-heading {
   font-size: 0.58em;
   letter-spacing: 0.14em;
@@ -34,6 +39,13 @@
   margin: 0 0 0.7rem;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid rgba(190,202,204,0.18);
+}
+.cat-heading a {
+  color: inherit !important; /* keep the muted heading look, not the global link color */
+}
+.cat-heading a:hover {
+  color: #BECACC !important;
+  text-decoration: underline !important;
 }
 
 .cat-list {
@@ -46,7 +58,8 @@
   display: flex;
   align-items: baseline;
   gap: 0.6rem;
-  margin-bottom: 0.65rem;
+  /* compact one-line row list: 0.3em inter-item gap (~8px @ 26px, ~6px @ mobile 20px) */
+  margin-bottom: 0.3em;
 }
 
 .cat-title {
@@ -55,6 +68,62 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* Photo thumbnail grid — 4 across, 3:2 (source ratio) */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+.photo-thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.photo-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumb-name {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  padding: 0.5em 0.75em;
+  font-size: 0.62em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #F2F5F5;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.thumb-date {
+  font-size: 0.85em;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  opacity: 0.75;
+}
+.photo-thumb:hover .thumb-name,
+.photo-thumb:focus-visible .thumb-name {
+  opacity: 1;
 }
 
 .cat-date {
@@ -66,65 +135,71 @@
 .cat-panel--posts  .cat-title a { color: #D4AEAB !important; }
 .cat-panel--films  .cat-title a { color: #C8B8C8 !important; }
 .cat-panel--albums .cat-title a { color: #BEC8BC !important; }
-.cat-panel--photos .cat-title a { color: #C8BEA8 !important; }
 
 .cat-more {
+  display: block;
+  width: fit-content;
+  margin: 1.2rem auto 0; /* centered; auto side margins */
   font-size: 0.55em;
-  letter-spacing: 0.12em;
+  line-height: 1.7; /* keeps the touch target >= 24px at the smaller font */
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #BECACC !important;
-  display: block;
-  padding-top: 0.4rem;
-  opacity: 0.65;
-  transition: opacity 0.15s;
+  transition: color 0.15s;
 }
-.cat-more:hover { opacity: 1; }
+.cat-more:hover {
+  color: #F2F5F5 !important;
+  text-decoration: underline !important;
+}
 </style>
 
 {{ .Content }}
 
-<div class="cat-grid">
+{{/* ── Posts: 10 newest ── */}}
+<section class="cat-panel cat-panel--posts">
+  <p class="cat-heading"><a href="/w/">posts</a></p>
+  <ul class="cat-list">
+    {{- range first 10 $posts -}}
+    <li>
+      <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+      <span class="cat-tags">
+        {{- range (.GetTerms "tags") -}}
+        <a class="cat-tag" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+        {{- end -}}
+      </span>
+      <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
+    </li>
+    {{- end -}}
+  </ul>
+  {{ if gt (len $posts) 10 }}
+  <a class="cat-more" href="/w/">older entries</a>
+  {{ end }}
+</section>
 
-  {{/* ── Posts ── */}}
-  <div class="cat-panel cat-panel--posts">
-    <p class="cat-heading">posts</p>
-    <ul class="cat-list">
-      {{- range first 5 $posts -}}
-      <li>
-        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        <span class="cat-tags">
-          {{- range (.GetTerms "tags") -}}
-          <a class="cat-tag" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
-          {{- end -}}
+{{/* ── Photos: 4-across thumbnails, name on hover/focus ── */}}
+<section class="cat-panel cat-panel--photos">
+  <p class="cat-heading"><a href="/photos/">photos</a></p>
+  <ul class="photo-grid">
+    {{- range $photos -}}
+    <li>
+      <a class="photo-thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
+        {{- with index .Params.images 0 -}}
+        <img src="{{ . }}" alt="" loading="lazy">
+        {{- end -}}
+        <span class="thumb-name">
+          <span class="thumb-title">{{ .Title }}</span>
+          <span class="thumb-date">{{ .Date.Format "Jan 06" }}</span>
         </span>
-        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
-      </li>
-      {{- end -}}
-    </ul>
-    {{ if gt (len $posts) 5 }}
-    <a class="cat-more" href="/w/">all posts</a>
-    {{ end }}
-  </div>
+      </a>
+    </li>
+    {{- end -}}
+  </ul>
+  <a class="cat-more" href="/photos/">all photos</a>
+</section>
 
-  {{/* ── Photos ── */}}
-  <div class="cat-panel cat-panel--photos">
-    <p class="cat-heading">photos</p>
-    <ul class="cat-list">
-      {{- range first 5 $photos -}}
-      <li>
-        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
-      </li>
-      {{- end -}}
-    </ul>
-    {{ if gt (len $photos) 5 }}
-    <a class="cat-more" href="/photos/">all photos</a>
-    {{ end }}
-  </div>
-
-  {{/* ── Films ── */}}
+<div class="cat-grid">
   <div class="cat-panel cat-panel--films">
-    <p class="cat-heading">films</p>
+    <p class="cat-heading"><a href="/films/">movies i watched</a></p>
     <ul class="cat-list">
       {{- range first 5 $films -}}
       <li>
@@ -140,7 +215,7 @@
 
   {{/* ── Albums ── */}}
   <div class="cat-panel cat-panel--albums">
-    <p class="cat-heading">music</p>
+    <p class="cat-heading"><a href="/albums/">albums i listened to</a></p>
     <ul class="cat-list">
       {{- range first 5 $albums -}}
       <li>
