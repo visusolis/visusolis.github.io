@@ -12,4 +12,6 @@ Some others it is sitting in a park, looking at squirrels.
 
 Today, it was shooting the ball at sunset, stopping every few minutes to look at the clouds pass by.
 
-![Ball Sunset](../../assets/ball.gif)
+<video autoplay muted loop playsinline poster="../../assets/ball-poster.jpg">
+  <source src="../../assets/ball.mp4" type="video/mp4">
+</video>

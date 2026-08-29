@@ -232,7 +232,7 @@
     <li>
       <a class="photo-thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
         {{- with index .Params.images 0 -}}
-        <img src="{{ . }}" alt="" loading="lazy">
+        <img src="{{ replace . ".webp" "-thumb.webp" }}" alt="" loading="lazy">
         {{- end -}}
         <span class="thumb-name">
           <span class="thumb-title">{{ .Title }}</span>

@@ -15,18 +15,8 @@
 <style>
 .entry-nav { display: flex; justify-content: space-between; margin-top: 3rem; font-size: 0.75em; }
 .entry-nav a { color: #8EA2A4 !important; }
-.entry-nav-random { text-align: center; flex: 1; }
 </style>
 <nav class="entry-nav">
   <span>{{ with $prev }}<a href="{{ .RelPermalink }}">← prev</a>{{ end }}</span>
-  <span class="entry-nav-random"><a href="/" id="random-link">random</a></span>
   <span>{{ with $next }}<a href="{{ .RelPermalink }}">next →</a>{{ end }}</span>
 </nav>
-<script>
-const allPages = [{{ range $sorted }}"{{ .RelPermalink }}",{{ end }}];
-document.getElementById('random-link').addEventListener('click', function(e) {
-  e.preventDefault();
-  const others = allPages.filter(p => p !== window.location.pathname);
-  if (others.length) window.location.href = others[Math.floor(Math.random() * others.length)];
-});
-</script>
