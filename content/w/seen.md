@@ -1,7 +1,7 @@
 ---
 title: 'seen'
 date: '2025-09-05T06:25:04+02:00'
-tags: ['writing']
+tags: ['fiction']
 ---
 
 They were working as one. A cohesive network of connections beneath the ground, all sprawling from the same base, Mother.

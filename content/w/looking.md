@@ -1,7 +1,7 @@
 ---
 title: 'looking'
 date: '2026-03-12T13:25:04+02:00'
-tags: ['life']
+tags: ['fiction']
 ---
 
 He’s looking at the screen quite intensely today.

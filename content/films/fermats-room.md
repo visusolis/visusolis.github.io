@@ -3,6 +3,7 @@ title: 'Fermat''s Room by Luis Piedrahita, Rodrigo Sopeña (2007)'
 date: 2026-01-29T15:32:46+13:00
 externalUrl: "https://letterboxd.com/ebua/film/fermats-room/"
 image: "https://a.ltrbxd.com/resized/film-poster/4/8/7/8/3/48783-fermat-s-room-0-600-0-900-crop.jpg?v=c46ab610d4"
+thumb: "/thumbs/films/fermats-room.webp"
 rating: '★★★'
 director: 'Luis Piedrahita, Rodrigo Sopeña'
 ---

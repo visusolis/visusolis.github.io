@@ -3,6 +3,7 @@ title: 'Big Fish Theory by Vince Staples'
 date: 2026-02-27T10:03:36+00:00
 externalUrl: "https://record.club/nm/releases/albums/vince-staples-big-fish-theory"
 image: "https://cdn.rcrd.club/releases/3qe68y6qynwlrv01.jpg?width=480"
+thumb: "/thumbs/albums/vince-staples-big-fish-theory.webp"
 rating: '★★★★½'
 ---
 

@@ -3,6 +3,7 @@ title: 'Casino by Martin Scorsese (1995)'
 date: 2025-10-11T00:00:00+00:00
 externalUrl: "https://letterboxd.com/ebua/film/casino/"
 image: "https://a.ltrbxd.com/resized/sm/upload/6p/om/dp/mc/casino-original-0-230-0-345-crop.jpg?v=4bb9a2596f"
+thumb: "/thumbs/films/casino.webp"
 rating: '★★★★'
 director: 'Martin Scorsese'
 ---

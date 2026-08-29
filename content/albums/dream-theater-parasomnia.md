@@ -3,6 +3,7 @@ title: 'Parasomnia by Dream Theater'
 date: 2026-02-03T07:02:46+00:00
 externalUrl: "https://record.club/nm/releases/albums/dream-theater-parasomnia"
 image: "https://cdn.rcrd.club/releases/2gpqkxyzxeol3r45.jpg?width=480"
+thumb: "/thumbs/albums/dream-theater-parasomnia.webp"
 rating: '★★★★'
 ---
 

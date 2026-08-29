@@ -3,6 +3,7 @@ title: 'My Ghosts Go Ghost by By Storm'
 date: 2026-02-01T12:58:09+00:00
 externalUrl: "https://record.club/nm/releases/albums/by-storm-my-ghosts-go-ghost"
 image: "https://cdn.rcrd.club/releases/ry7v83xezev8x9z0.jpg?width=480"
+thumb: "/thumbs/albums/by-storm-my-ghosts-go-ghost.webp"
 rating: '★★★★'
 ---
 

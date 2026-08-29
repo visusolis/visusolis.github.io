@@ -3,12 +3,13 @@
 {{- $posts  := where site.RegularPages "Section" "w"      -}}
 {{- $films  := where site.RegularPages "Section" "films"  -}}
 {{- $albums := where site.RegularPages "Section" "albums" -}}
+{{- $books  := where site.RegularPages "Section" "books"  -}}
 {{- $photos := where site.RegularPages "Section" "photos" -}}
 
 {{- $posts  = sort $posts  "Date" "desc" -}}
-{{- $films  = sort $films  "Date" "desc" -}}
-{{- $albums = sort $albums "Date" "desc" -}}
 {{- $photos = sort $photos "Date" "desc" -}}
+{{- $media  := $films | append $albums | append $books -}}
+{{- $media  = sort $media  "Date" "desc" -}}
 
 <style>
 .cat-grid {
@@ -113,7 +114,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #F2F5F5;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.28);
 }
 .thumb-date {
   font-size: 0.85em;
@@ -129,8 +130,6 @@
 }
 
 .cat-panel--posts  .cat-title a { color: #D4AEAB !important; }
-.cat-panel--films  .cat-title a { color: #C8B8C8 !important; }
-.cat-panel--albums .cat-title a { color: #BEC8BC !important; }
 
 .cat-more {
   display: block;
@@ -147,13 +146,66 @@
   color: #F2F5F5 !important;
   text-decoration: underline !important;
 }
+
+/* Recent-media shelf: full-width row of square covers, like the photos grid */
+.media-row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.6rem;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .media-row { grid-template-columns: repeat(5, 1fr); }
+}
+.media-item {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgba(190,202,204,0.08);
+}
+.media-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.media-name {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.12em;
+  padding: 0.5em 0.5em;
+  font-size: 0.6em;
+  letter-spacing: 0.04em;
+  color: #F2F5F5;
+  background: rgba(0,0,0,0.55);
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.media-item:hover .media-name,
+.media-item:focus-visible .media-name { opacity: 1; }
+.media-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.media-rating { font-size: 1.05em; }
 </style>
 
 {{ .Content }}
 
 {{/* ── Posts: 10 newest ── */}}
 <section class="cat-panel cat-panel--posts">
-  <p class="cat-heading"><a href="/w/">posts</a></p>
+  <p class="cat-heading"><a href="/w/">I try to write a lot, some pages make it out of drafts</a></p>
   <ul class="cat-list">
     {{- range first 10 $posts -}}
     <li>
@@ -174,7 +226,7 @@
 
 {{/* ── Photos: 4-across thumbnails, name on hover/focus ── */}}
 <section class="cat-panel cat-panel--photos">
-  <p class="cat-heading"><a href="/photos/">photos</a></p>
+  <p class="cat-heading"><a href="/photos/">Some things I stop and look at</a></p>
   <ul class="photo-grid">
     {{- range $photos -}}
     <li>
@@ -193,38 +245,28 @@
   <a class="cat-more" href="/photos/">all photos</a>
 </section>
 
-<div class="cat-grid">
-  <div class="cat-panel cat-panel--films">
-    <p class="cat-heading"><a href="/films/">movies i watched</a></p>
-    <ul class="cat-list">
-      {{- range first 5 $films -}}
-      <li>
-        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
-      </li>
-      {{- end -}}
-    </ul>
-    {{ if gt (len $films) 5 }}
-    <a class="cat-more" href="/films/">all films</a>
-    {{ end }}
-  </div>
-
-  {{/* ── Albums ── */}}
-  <div class="cat-panel cat-panel--albums">
-    <p class="cat-heading"><a href="/albums/">albums i listened to</a></p>
-    <ul class="cat-list">
-      {{- range first 5 $albums -}}
-      <li>
-        <span class="cat-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        <span class="cat-date">{{ .Date.Format "Jan 06" }}</span>
-      </li>
-      {{- end -}}
-    </ul>
-    {{ if gt (len $albums) 5 }}
-    <a class="cat-more" href="/albums/">all music</a>
-    {{ end }}
-  </div>
-
-</div>
+{{/* ── Recent media: one row of the latest films/albums/books ── */}}
+<section class="cat-panel cat-panel--media">
+  <p class="cat-heading"><a href="/library/">top of the library</a></p>
+  <ul class="media-row">
+    {{- range first 8 $media -}}
+    <li>
+      <a class="media-item" href="{{ .RelPermalink }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
+        {{- with .Params.thumb -}}
+          <img src="{{ . }}" alt="" loading="lazy">
+        {{- else -}}
+          {{- with .Params.image -}}<img src="{{ . }}" alt="" loading="lazy">{{- end -}}
+        {{- end -}}
+        <span class="media-name">
+          {{- $short := .Title | replaceRE " [(][0-9]{4}[)]$" "" | replaceRE " by .+$" "" -}}
+          <span class="media-title" title="{{ .Title }}">{{ $short }}</span>
+          {{- with .Params.rating }}<span class="media-rating">{{ . }}</span>{{- end }}
+        </span>
+      </a>
+    </li>
+    {{- end -}}
+  </ul>
+  <a class="cat-more" href="/library/">open library</a>
+</section>
 
 {{ end }}

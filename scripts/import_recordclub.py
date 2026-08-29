@@ -6,6 +6,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from thumbs import THUMBS_ROOT, fetch_thumb, thumb_path
 
 RECORDCLUB_USER = "nm"
 RSS_URL = f"https://record.club/{RECORDCLUB_USER}/reviews/rss"
@@ -81,6 +82,11 @@ def main():
             image_url = img_match.group(1) if img_match else ""
             review = strip_html(encoded_el.text).strip()
 
+        existing_thumb = ""
+        if out_path.exists():
+            m = re.search(r'^thumb:\s*"([^"]+)"', out_path.read_text(), re.MULTILINE)
+            existing_thumb = m.group(1) if m else ""
+
         lines = [
             "---",
             f"title: '{yaml_str(title)}'",
@@ -89,6 +95,11 @@ def main():
         ]
         if image_url:
             lines.append(f'image: "{image_url}"')
+            thumb_url = existing_thumb or thumb_path("albums", slug)
+            if existing_thumb:
+                lines.append(f'thumb: "{thumb_url}"')
+            elif fetch_thumb(image_url, THUMBS_ROOT / "albums" / f"{slug}.webp"):
+                lines.append(f'thumb: "{thumb_url}"')
         if rating:
             lines.append(f"rating: '{rating}'")
         lines += ["---", ""]

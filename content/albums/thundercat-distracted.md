@@ -3,6 +3,7 @@ title: 'Distracted by Thundercat'
 date: 2026-04-18T06:05:57+00:00
 externalUrl: "https://record.club/nm/releases/albums/thundercat-distracted"
 image: "https://cdn.rcrd.club/releases/nvj0kz3o54pld3rm.jpg?width=480"
+thumb: "/thumbs/albums/thundercat-distracted.webp"
 rating: '★★★★'
 ---
 

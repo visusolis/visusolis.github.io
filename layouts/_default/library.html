@@ -1,0 +1,141 @@
+{{ define "main" }}
+
+{{- $films  := where site.RegularPages "Section" "films"  -}}
+{{- $albums := where site.RegularPages "Section" "albums" -}}
+{{- $books  := where site.RegularPages "Section" "books"  -}}
+{{- $all    := $films | append $albums | append $books -}}
+{{- $all = sort $all "Date" "desc" -}}
+
+<style>
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-auto-flow: dense;
+  gap: 0.9rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.shelf > li { position: relative; }
+.shelf-item {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgba(190,202,204,0.08);
+}
+.shelf-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shelf-name {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.15em;
+  padding: 0.5em 0.6em;
+  font-size: 0.6em;
+  letter-spacing: 0.05em;
+  color: #F2F5F5;
+  background: rgba(0,0,0,0.55);
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.shelf-item:hover .shelf-name,
+.shelf-item:focus-visible .shelf-name { opacity: 1; }
+.shelf-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.shelf-rating { font-size: 1.05em; }
+.shelf-date { font-size: 0.8em; opacity: 0.75; }
+
+/* In-place review: a cell whose cover is replaced by its review when targeted */
+.review-detail { display: none; padding: 1.4rem 0 0.8rem; position: relative; }
+.shelf > li:target { grid-column: 1 / -1; }
+.shelf > li:target .shelf-item { display: none; }
+.shelf > li:target .review-detail { display: block; }
+.review-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0;
+  color: #8EA2A4;
+  font-size: 1.4em;
+  line-height: 1;
+  text-decoration: none;
+}
+.review-close:hover { color: #F2F5F5; }
+.review-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (max-width: 600px) {
+  .review-grid { grid-template-columns: 1fr; }
+}
+.review-art { min-width: 0; }
+.review-text { min-width: 0; }
+.review-text h1 { margin-top: 0.2rem; }
+.review-image {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 3px;
+  display: block;
+}
+.review-meta { font-size: 0.65em; color: #BECACC; margin-top: 0.8rem; }
+.review-rating { font-size: 0.9em; color: #BECACC; margin-top: 0.4rem; }
+.review-footer { font-size: 0.65em; color: #8EA2A4; margin-top: 1.5rem; }
+</style>
+
+{{ .Content }}
+
+<ul class="shelf">
+  {{- range $all -}}
+  <li id="review-{{ .File.ContentBaseName }}" class="cell">
+    <a class="shelf-item" href="#review-{{ .File.ContentBaseName }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
+      {{- with .Params.thumb -}}
+        <img src="{{ . }}" alt="" loading="lazy">
+      {{- else -}}
+        {{- with .Params.image -}}<img src="{{ . }}" alt="" loading="lazy">{{- end -}}
+      {{- end -}}
+      <span class="shelf-name">
+        {{- $short := .Title | replaceRE " [(][0-9]{4}[)]$" "" | replaceRE " by .+$" "" -}}
+        <span class="shelf-title" title="{{ .Title }}">{{ $short }}</span>
+        {{- with .Params.rating }}<span class="shelf-rating">{{ . }}</span>{{- end }}
+        <span class="shelf-date">{{ .Date.Format "Jan 06" }}</span>
+      </span>
+    </a>
+    <div class="review-detail">
+      <a class="review-close" href="#main-content" aria-label="Close review">×</a>
+      <div class="review-grid">
+        <div class="review-art">
+          {{- with .Params.thumb -}}
+            <img class="review-image" src="{{ . }}" alt="{{ $.Title }}">
+          {{- else -}}
+            {{- with .Params.image -}}<img class="review-image" src="{{ . }}" alt="{{ $.Title }}">{{- end -}}
+          {{- end -}}
+          <p class="review-meta">{{ .Date.Format "January 2006" }}</p>
+          {{- with .Params.rating }}<p class="review-rating">{{ . }}</p>{{ end }}
+        </div>
+        <div class="review-text">
+          <h1>{{ .Title }}</h1>
+          <content>{{ .Content }}</content>
+          {{ with .Params.externalUrl }}<p class="review-footer"><a href="{{ . }}" target="_blank" rel="noopener">external source →</a></p>{{ end }}
+        </div>
+      </div>
+    </div>
+  </li>
+  {{- end -}}
+</ul>
+
+{{ end }}

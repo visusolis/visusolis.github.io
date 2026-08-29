@@ -1,7 +1,7 @@
 ---
 title: 'not for me'
 date: '2024-08-26T13:19:44+02:00'
-tags: ['work']
+tags: ['tech']
 ---
 
 

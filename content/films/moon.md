@@ -3,6 +3,7 @@ title: 'Moon by Duncan Jones (2009)'
 date: 2025-04-16T00:00:00+00:00
 externalUrl: "https://letterboxd.com/ebua/film/moon/"
 image: "https://a.ltrbxd.com/resized/sm/upload/1z/15/kh/dw/ydmC5WsPEhMZKV7VwQ8jT8hQLlc-0-230-0-345-crop.jpg?v=4343a06e20"
+thumb: "/thumbs/films/moon.webp"
 rating: '★★★'
 director: 'Duncan Jones'
 ---

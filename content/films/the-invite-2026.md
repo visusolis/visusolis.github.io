@@ -3,6 +3,7 @@ title: 'The Invite by Olivia Wilde (2026)'
 date: 2026-07-17T02:09:16+12:00
 externalUrl: "https://letterboxd.com/ebua/film/the-invite-2026/"
 image: "https://a.ltrbxd.com/resized/film-poster/8/5/4/8/3/1/854831-the-invite-2026-0-600-0-900-crop.jpg?v=ee72905e48"
+thumb: "/thumbs/films/the-invite-2026.webp"
 rating: '★★★★½'
 director: 'Olivia Wilde'
 ---

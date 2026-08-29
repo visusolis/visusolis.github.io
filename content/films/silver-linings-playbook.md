@@ -3,6 +3,7 @@ title: 'Silver Linings Playbook by David O. Russell (2012)'
 date: 2026-04-17T21:42:28+12:00
 externalUrl: "https://letterboxd.com/ebua/film/silver-linings-playbook/"
 image: "https://a.ltrbxd.com/resized/film-poster/6/9/1/5/1/69151-silver-linings-playbook-0-600-0-900-crop.jpg?v=dabe98e003"
+thumb: "/thumbs/films/silver-linings-playbook.webp"
 rating: '★★★★'
 director: 'David O. Russell'
 ---

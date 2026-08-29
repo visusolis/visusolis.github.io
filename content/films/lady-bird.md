@@ -3,6 +3,7 @@ title: 'Lady Bird by Greta Gerwig (2017)'
 date: 2026-07-26T01:17:48+12:00
 externalUrl: "https://letterboxd.com/ebua/film/lady-bird/"
 image: "https://a.ltrbxd.com/resized/film-poster/3/2/6/2/7/9/326279-lady-bird-0-600-0-900-crop.jpg?v=754ff28eb4"
+thumb: "/thumbs/films/lady-bird.webp"
 rating: '★★½'
 director: 'Greta Gerwig'
 ---

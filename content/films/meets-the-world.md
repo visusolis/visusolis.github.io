@@ -3,6 +3,7 @@ title: 'Meets the World by Daigo Matsui (2025)'
 date: 2026-07-19T16:22:22+12:00
 externalUrl: "https://letterboxd.com/ebua/film/meets-the-world/"
 image: "https://a.ltrbxd.com/resized/film-poster/1/2/9/8/0/2/0/1298020-meets-the-world-0-600-0-900-crop.jpg?v=6a49d1fac5"
+thumb: "/thumbs/films/meets-the-world.webp"
 rating: '★★★★'
 director: 'Daigo Matsui'
 ---

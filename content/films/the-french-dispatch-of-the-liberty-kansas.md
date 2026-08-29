@@ -3,6 +3,7 @@ title: 'The French Dispatch of the Liberty, Kansas Evening Sun by Wes Anderson (
 date: 2026-01-12T15:35:03+13:00
 externalUrl: "https://letterboxd.com/ebua/film/the-french-dispatch-of-the-liberty-kansas/"
 image: "https://a.ltrbxd.com/resized/film-poster/4/7/1/2/0/7/471207-the-french-dispatch-of-the-liberty-kansas-0-600-0-900-crop.jpg?v=e344a82574"
+thumb: "/thumbs/films/the-french-dispatch-of-the-liberty-kansas.webp"
 rating: '★★★'
 director: 'Wes Anderson'
 ---

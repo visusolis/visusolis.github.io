@@ -3,6 +3,7 @@ title: 'True Blue by blanket'
 date: 2026-01-30T11:25:16+00:00
 externalUrl: "https://record.club/nm/releases/albums/blanket-true-blue"
 image: "https://cdn.rcrd.club/releases/ox4n877q5ez8dpez.jpg?width=480"
+thumb: "/thumbs/albums/blanket-true-blue.webp"
 rating: '★★★½'
 ---
 

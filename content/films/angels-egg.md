@@ -3,6 +3,7 @@ title: 'Angel''s Egg by Mamoru Oshii (1985)'
 date: 2026-02-08T20:16:54+13:00
 externalUrl: "https://letterboxd.com/ebua/film/angels-egg/"
 image: "https://a.ltrbxd.com/resized/film-poster/4/1/9/9/0/41990-angel-s-egg-0-600-0-900-crop.jpg?v=98f9bf2def"
+thumb: "/thumbs/films/angels-egg.webp"
 rating: '★★★★★'
 director: 'Mamoru Oshii'
 ---

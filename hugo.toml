@@ -4,9 +4,9 @@ title = 'stefan miko'
 theme = "hugo-bearcub"
 
 [[menus.main]]
-  name = "thoughts"
-  url = "/thoughts/"
-  weight = 3
+  name = "library"
+  url = "/library/"
+  weight = 4
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
@@ -18,7 +18,18 @@ enableRobotsTXT = true
     baseName = "feed"
     
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "blog", "tech", "fiction"]
+
+# Split feeds: /blog.xml, /tech.xml, /fiction.xml
+[outputFormats.blog]
+  mediatype = "application/rss"
+  baseName = "blog"
+[outputFormats.tech]
+  mediatype = "application/rss"
+  baseName = "tech"
+[outputFormats.fiction]
+  mediatype = "application/rss"
+  baseName = "fiction"
 
 # Setup syntax highlighting without inline styles. For more information about
 # why you'd want to avoid inline styles, see

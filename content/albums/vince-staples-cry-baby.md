@@ -3,6 +3,7 @@ title: 'Cry Baby by Vince Staples'
 date: 2026-06-14T09:48:34+00:00
 externalUrl: "https://record.club/nm/releases/albums/vince-staples-cry-baby"
 image: "https://cdn.rcrd.club/releases/0592lpz216n841r6.jpg?width=480"
+thumb: "/thumbs/albums/vince-staples-cry-baby.webp"
 rating: '★★★★½'
 ---
 

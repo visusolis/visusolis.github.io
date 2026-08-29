@@ -3,6 +3,7 @@ title: 'Deadbeat by Tame Impala'
 date: 2026-03-02T16:36:38+00:00
 externalUrl: "https://record.club/nm/releases/albums/tame-impala-deadbeat"
 image: "https://cdn.rcrd.club/releases/1dezk91oodwlxyq9.jpg?width=480"
+thumb: "/thumbs/albums/tame-impala-deadbeat.webp"
 rating: '★★½'
 ---
 

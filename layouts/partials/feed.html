@@ -1,0 +1,78 @@
+{{- /* Renders a full RSS document. Context: dict "page" (the page the feed hangs off) and "pages" (the pre-filtered page collection). */ -}}
+{{- $page := .page }}
+{{- $pages := .pages }}
+{{- $format := .format | default "RSS" }}
+{{- /* Deprecate site.Author.email in favor of site.Params.author.email */}}
+{{- $authorEmail := "" }}
+{{- with site.Params.author }}
+  {{- if reflect.IsMap . }}
+    {{- with .email }}
+      {{- $authorEmail = . }}
+    {{- end }}
+  {{- end }}
+{{- else }}
+  {{- with site.Author.email }}
+    {{- $authorEmail = . }}
+    {{- warnf "The author key in site configuration is deprecated. Use params.author.email instead." }}
+  {{- end }}
+{{- end }}
+
+{{- /* Deprecate site.Author.name in favor of site.Params.author.name */}}
+{{- $authorName := "" }}
+{{- with site.Params.author }}
+  {{- if reflect.IsMap . }}
+    {{- with .name }}
+      {{- $authorName = . }}
+    {{- end }}
+  {{- else }}
+    {{- $authorName  = . }}
+  {{- end }}
+{{- else }}
+  {{- with site.Author.name }}
+    {{- $authorName = . }}
+    {{- warnf "The author key in site configuration is deprecated." }}
+  {{- end }}
+{{- end }}
+
+{{- $limit := site.Config.Services.RSS.Limit }}
+{{- if ge $limit 1 }}
+{{- $pages = $pages | first $limit }}
+{{- end }}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<!--FEEDPARTIAL--><!--FEEDPARTIAL--><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>{{ if $page.IsHome }}{{ site.Title }}{{ else }}{{ with $page.Title }}{{ . }} on {{ end }}{{ site.Title }}{{ end }}</title>
+    <link>{{ $page.Permalink }}</link>
+    <description>Recent content {{ if not $page.IsHome }}{{ with $page.Title }}in {{ . }} {{ end }}{{ end }}on {{ site.Title }}</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
+    <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
+    <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
+    <copyright>{{ . }}</copyright>{{ end }}{{ if not $page.Date.IsZero }}
+    <lastBuildDate>{{ $page.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{- with $page.OutputFormats.Get $format }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- with site.Params.favicon }}
+    <image>
+      <url>{{ absURL . }}</url>
+      <title>{{ site.Title }}</title>
+      <link>{{ site.BaseURL }}</link>
+    </image>
+    {{- end }}
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      {{- with .Params.image }}
+      <media:content url="{{ . }}" medium="image" />
+      {{- end }}
+      <content:encoded>{{ `<![CDATA[` | safeHTML }}{{ with .Params.image }}<img src="{{ . }}" style="max-width:100%"><br>{{ end }}{{ range .Params.images }}<img src="{{ absURL . }}" style="max-width:100%"><br>{{ end }}{{ .Content | safeHTML }}{{ `]]>` | safeHTML }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>
+UNIQUEMARKER123

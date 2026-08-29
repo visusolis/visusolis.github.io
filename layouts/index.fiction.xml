@@ -1,0 +1,3 @@
+{{- /* Fiction feed: posts tagged 'fiction'. */ -}}
+{{- $pages := where site.RegularPages "Params.tags" "intersect" (slice "fiction") }}
+{{- partial "feed.html" (dict "page" . "pages" $pages "format" "fiction") -}}

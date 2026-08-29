@@ -6,3 +6,4 @@ data/
 rss.xhtml
 *.jpg_original
 static/photos/*.jpeg
+scripts/__pycache__/

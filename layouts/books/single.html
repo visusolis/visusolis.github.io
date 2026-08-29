@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<style>
+.entry-image {
+  width: 480px;
+  max-width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+.entry-meta { font-size: 0.65em; color: #BECACC; margin-bottom: 1.2rem; }
+.entry-rating { font-size: 0.9em; color: #BECACC; margin-bottom: 1rem; }
+.entry-source { font-size: 0.65em; color: #8EA2A4; margin-top: 2rem; }
+</style>
+
+<h1>{{ .Title }}</h1>
+
+{{ with .Params.image }}
+<img class="entry-image" src="{{ . }}" alt="{{ $.Title }}">
+{{ end }}
+
+{{ with .Params.author }}
+<p class="entry-meta">by {{ . }}</p>
+{{ end }}
+
+{{ with .Params.rating }}
+<p class="entry-rating">{{ . }}</p>
+{{ end }}
+
+<p class="entry-meta">{{ .Date.Format "January 2006" }}</p>
+
+<content>{{ .Content }}</content>
+
+{{ with .Params.externalUrl }}
+<p class="entry-source"><a href="{{ . }}" target="_blank" rel="noopener">→ open library</a></p>
+{{ end }}
+
+{{ partial "entry-nav.html" . }}
+
+{{ end }}
