@@ -4,6 +4,11 @@ title = 'stefan miko'
 theme = "hugo-bearcub"
 
 [[menus.main]]
+  name = "posts"
+  url = "/w/"
+  weight = 2
+
+[[menus.main]]
   name = "library"
   url = "/library/"
   weight = 4

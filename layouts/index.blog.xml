@@ -3,4 +3,4 @@
 {{- $wpages = where $wpages "Section" "eq" "w" }}
 {{- $tagged := where $wpages "Params.tags" "intersect" (slice "tech" "fiction") }}
 {{- $blog := complement $tagged $wpages | union (where site.RegularPages "Section" "eq" "photos") }}
-<!--BLOGTPL-->{{- partial "feed.html" (dict "page" . "pages" $blog "format" "blog") -}}
+{{- partial "feed.html" (dict "page" . "pages" $blog "format" "blog") -}}

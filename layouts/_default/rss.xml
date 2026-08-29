@@ -1,4 +1,4 @@
-<!--MAINRSSTPL-->
+{{- /* MAIN RSS feed */ -}}
 {{- $pages := slice }}
 {{- if or $.IsHome $.IsSection }}
 {{- $pages = where site.RegularPages "Params.rss_exclude" "!=" true }}
