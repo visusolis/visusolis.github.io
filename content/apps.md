@@ -2,7 +2,7 @@
 title = 'projects'
 date = 2025-08-05T21:05:58+02:00
 menu = 'main'
-weight = 4
+weight = 6
 rss_exclude = true
 +++
 
