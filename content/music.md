@@ -1,5 +1,5 @@
 +++
-title = 'listen'
+title = 'music'
 date = 2025-01-26
 menu = 'main'
 weight = 7

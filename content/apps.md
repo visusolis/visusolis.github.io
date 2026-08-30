@@ -1,5 +1,5 @@
 +++
-title = 'projects'
+title = 'software'
 date = 2025-08-05T21:05:58+02:00
 menu = 'main'
 weight = 6

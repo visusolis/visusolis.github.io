@@ -1,0 +1,52 @@
+{{ define "main" }}
+<style>
+.visual-piece {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.visual-piece h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6em;
+  font-weight: normal;
+  margin: 0 0 0.5rem;
+  color: #D7DFE0;
+}
+.visual-video {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  position: relative;
+  left: calc(50% - 50vw);
+  z-index: 10000;
+  background: #000;
+}
+.visual-piece p {
+  font-size: 0.75em;
+  color: #BECACC;
+  margin: 0.75rem 0 0;
+  font-style: italic;
+}
+</style>
+
+<content class="e-content">
+  {{ range .Params.visuals }}
+  <div class="visual-piece">
+    <h2>{{ .title }}</h2>
+    <video
+      class="visual-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="{{ .poster }}"
+    >
+      <source src="{{ .video }}" type="video/mp4">
+    </video>
+    {{ with .desc }}<p>{{ . }}</p>{{ end }}
+  </div>
+  {{ end }}
+</content>
+{{ end }}
