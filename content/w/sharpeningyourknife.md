@@ -18,7 +18,7 @@ University was a wonderful forcing function to get into LInux, where showing how
 
 We would spend weekends fighting with our school-provided laptops to setup the perfect distribution, window manager, shell, configs for all the tools we needed to do our school work. It's a moment of discovery I hadn't really felt before, there's only so much you can brag about with fountain pens in middle-school (while you brag about not doing the work at all in high school).
 
-I have found memories of installing and re-installing systems, taking the time to pixel adjust border-padding between windows and recompiling [dwm](https://dwm.suckless.org/) when I needed to. Having a beautiful environment felt right, did it make me work better ? maybe. At least it brought some happiness anytime I'd open that brick of a laptop. 
+I have found memories of installing and re-installing systems, taking the time to pixel adjust border-padding between windows and recompiling ~~dwm~~ a window manager that shall not be named when I needed to. Having a beautiful environment felt right, did it make me work better ? maybe. At least it brought some happiness anytime I'd open that brick of a laptop. 
 
 The other consequence of caring so much about your tool was the curiosity to discover better ways to set things up. I'd naturally look at other setups online, keep an eye out for new releases or features, stay interested in what was possible. Crossing the barrier of accepting the default becomes a slight burden, as the quest for tools never really finishes. 
 
