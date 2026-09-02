@@ -31,6 +31,9 @@
 .cat-panel--photos {
   margin-top: 2rem;
 }
+.cat-panel--media {
+  margin-top: 2rem;
+}
 
 .cat-heading {
   font-size: 0.58em;
@@ -115,7 +118,11 @@
   text-transform: uppercase;
   color: #F2F5F5;
   background: rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  transition: opacity 0.12s ease;
 }
+.photo-thumb:hover .thumb-name,
+.photo-thumb:focus-visible .thumb-name { opacity: 1; }
 .thumb-date {
   font-size: 0.85em;
   text-transform: none;
@@ -164,8 +171,13 @@
   display: block;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 2px;
   background: rgba(190,202,204,0.08);
+  /* directional key light (from right) + tight contact base + deep ambient falloff */
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.45),
+    -10px 0 22px rgba(0, 0, 0, 0.28),
+    0 14px 32px rgba(0, 0, 0, 0.42);
 }
 .media-item img {
   display: block;
