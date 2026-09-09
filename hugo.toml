@@ -68,13 +68,14 @@ unsafe = true
   description = "stefan mikolajczyk"
 
   # The path to your favicon
-  favicon = "images/favicon.svg"
+  favicon = "s.svg"
+  rssImage = "s.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
   # about previews, see https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph
-  images = ["images/share.webp"]
+  images = ["s.png"]
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template

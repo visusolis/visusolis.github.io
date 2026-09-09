@@ -53,7 +53,7 @@
     {{- with $page.OutputFormats.Get $format }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}
-    {{- with site.Params.favicon }}
+    {{- with site.Params.rssImage | default site.Params.favicon }}
     <image>
       <url>{{ absURL . }}</url>
       <title>{{ site.Title }}</title>

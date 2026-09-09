@@ -1,0 +1,7 @@
+<a class="skip-link" href="#main-content">{{ i18n "skip-link" }}</a>
+
+<a href="{{ relURL .Site.Home.RelPermalink }}" class="title">
+  <img src="/s.svg" alt="" class="site-logo" />
+  <h1>{{ .Site.Title }}</h1>
+</a>
+<nav>{{- partial "nav.html" . -}}</nav>
