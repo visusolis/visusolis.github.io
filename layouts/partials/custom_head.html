@@ -122,6 +122,29 @@ header .title {
   object-fit: contain;
 }
 
+header .title h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+  text-align: left !important;
+}
+header .title:hover h1 {
+  max-width: 300px;
+  opacity: 1;
+}
+
+/* Lift images above the grain overlay */
+.photo-thumb,
+.media-item,
+.entry-image,
+.photo-entry img,
+content img:not(.tl-logo):not(.entry-image) {
+  position: relative;
+  z-index: 10000;
+}
+
 header nav {
   display: flex !important;
   flex-wrap: wrap !important;
