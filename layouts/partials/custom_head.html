@@ -161,22 +161,44 @@ header nav a {
     font-size: 20px !important;
   }
 
+  /* The theme flows .title and nav inline at this width, which let the 48px
+     logo distort the line box and pushed the first menu row sideways. Keep both
+     on one flex line instead: the mark leads the menu, centred on its first
+     line, and the menu wraps in the space that is left. */
   header {
-    display: block !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    gap: 0.6rem !important;
   }
 
-  header .title,
-  header .title h1 {
-    display: inline !important;
+  header .title {
+    display: flex !important;
     width: auto !important;
     margin: 0 !important;
-    vertical-align: baseline !important;
-    line-height: inherit !important;
+  }
+
+  /* No pointer to hover: the mark stands in for the wordmark. */
+  header .title h1 {
+    display: none !important;
+  }
+
+  .site-logo {
+    --logo: 28px;
+    width: var(--logo);
+    height: var(--logo);
+    /* centre the mark on the menu's first line box, not on the whole block */
+    margin-top: calc((1.5em - var(--logo)) / 2);
+    /* the glyph has ~18% dead space on its left edge; pull the box back so the
+       ink lands on the menu's left margin instead of floating inside it */
+    margin-left: calc(var(--logo) * -0.177);
   }
 
   header nav {
-    display: inline !important;
-    font-size: inherit !important;
+    display: flex !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    gap: 0.15rem 0.4rem !important;
   }
 }
 
