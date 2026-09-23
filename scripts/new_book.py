@@ -31,7 +31,7 @@ from thumbs import THUMBS_ROOT, fetch_thumb, thumb_path
 ROOT = Path(__file__).resolve().parent.parent
 BOOKS = ROOT / "content" / "books"
 
-OL_BOOKS = "https://openlibrary.org/api/books?bibkeys=ISBN:{isbn}&format=json&jscmd=data"
+OL_BOOKS = "https://openlibrary.org/api/books.json?bibkeys=ISBN:{isbn}&format=json&jscmd=data"
 HEADERS = {"User-Agent": "Mozilla/5.0 (visusolis book importer)"}
 
 
