@@ -240,7 +240,7 @@
 <section class="cat-panel cat-panel--photos">
   <p class="cat-heading"><a href="/photos/">Some things I stop and look at</a></p>
   <ul class="photo-grid">
-    {{- range $photos -}}
+    {{- range first 4 $photos -}}
     <li>
       <a class="photo-thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
         {{- with index .Params.images 0 -}}
