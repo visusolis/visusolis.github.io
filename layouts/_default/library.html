@@ -17,6 +17,17 @@
   margin: 0;
 }
 .shelf > li { position: relative; }
+/* Year divider: spans the whole grid row so the dense flow keeps grouping intact */
+.shelf-year {
+  grid-column: 1 / -1;
+  font-size: 0.6em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8EA2A4;
+  border-bottom: 1px solid rgba(190,202,204,0.18);
+  padding-bottom: 0.25rem;
+}
+.shelf > li.shelf-year:not(:first-child) { margin-top: 1rem; }
 .shelf-item {
   position: relative;
   display: block;
@@ -105,7 +116,9 @@
 {{ .Content }}
 
 <ul class="shelf">
-  {{- range $all -}}
+  {{- range $all.GroupByDate "2006" "desc" -}}
+  <li class="shelf-year">{{ .Key }}</li>
+  {{- range .Pages -}}
   <li id="review-{{ .File.ContentBaseName }}" class="cell">
     <a class="shelf-item" href="#review-{{ .File.ContentBaseName }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
       {{- with .Params.thumb -}}
@@ -140,6 +153,7 @@
       </div>
     </div>
   </li>
+  {{- end -}}
   {{- end -}}
 </ul>
 

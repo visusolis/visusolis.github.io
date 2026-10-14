@@ -36,9 +36,10 @@
 }
 
 .cat-heading {
-  font-size: 0.58em;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: 0.88em;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   color: #8EA2A4;
   margin: 0 0 0.7rem;
   padding-bottom: 0.25rem;
@@ -259,7 +260,7 @@
 
 {{/* ── Recent media: one row of the latest films/albums/books ── */}}
 <section class="cat-panel cat-panel--media">
-  <p class="cat-heading"><a href="/library/">top of the library</a></p>
+  <p class="cat-heading"><a href="/library/">Recently seen, heard, read...</a></p>
   <ul class="media-row">
     {{- range first 8 $media -}}
     <li>
