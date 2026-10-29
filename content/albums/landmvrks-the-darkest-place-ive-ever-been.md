@@ -2,7 +2,7 @@
 title: 'The Darkest Place I’ve Ever Been by LANDMVRKS'
 date: 2026-09-08T06:52:55+00:00
 externalUrl: "https://record.club/nm/releases/albums/landmvrks-the-darkest-place-ive-ever-been"
-image: "https://cdn.rcrd.club/releases/nvj0kz5e1djkd3rm.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/nvj0kz5e1djkd3rm.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/landmvrks-the-darkest-place-ive-ever-been.webp"
 rating: '★★★★½'
 ---

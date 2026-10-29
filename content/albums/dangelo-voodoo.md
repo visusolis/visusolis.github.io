@@ -2,7 +2,7 @@
 title: 'Voodoo by D’Angelo'
 date: 2026-03-07T17:17:08+00:00
 externalUrl: "https://record.club/nm/releases/albums/dangelo-voodoo"
-image: "https://cdn.rcrd.club/releases/7yze2k1z26yl40wq.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/7yze2k1z26yl40wq.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/dangelo-voodoo.webp"
 rating: '★★★★½'
 ---

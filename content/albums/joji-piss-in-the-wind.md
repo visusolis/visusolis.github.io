@@ -2,7 +2,7 @@
 title: 'Piss in the Wind by Joji'
 date: 2026-02-07T09:12:11+00:00
 externalUrl: "https://record.club/nm/releases/albums/joji-piss-in-the-wind"
-image: "https://cdn.rcrd.club/releases/zgrel4j252wlv319.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/zgrel4j252wlv319.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/joji-piss-in-the-wind.webp"
 rating: '★★★'
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'reliving a museum visit'
 date: '2026-09-02T12:00:00+02:00'
-tags: ['life', 'tech']
+tags: ['life']
 ---
 
 Last Sunday, I woke up with some kind of creative energy and got into a little bit of a rabbit hole. I took my laptop to a cat café for breakfast, but then thought about the museum experience I had recently, it prompted me to make some art!

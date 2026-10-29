@@ -2,7 +2,7 @@
 title: 'Who Loves the Sun by Chat Pile'
 date: 2026-09-16T04:03:08+00:00
 externalUrl: "https://record.club/nm/releases/albums/chat-pile-who-loves-the-sun"
-image: "https://cdn.rcrd.club/releases/vge38jdd76z8n6md.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/vge38jdd76z8n6md.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/chat-pile-who-loves-the-sun.webp"
 rating: '★★★★'
 ---

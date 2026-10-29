@@ -2,7 +2,7 @@
 title: 'I Let It In and It Took Everything by Loathe'
 date: 2026-09-09T03:40:18+00:00
 externalUrl: "https://record.club/nm/releases/albums/loathe-i-let-it-in-and-it-took-everything"
-image: "https://cdn.rcrd.club/releases/znp5kgqn0vjlvx3q.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/znp5kgqn0vjlvx3q.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/loathe-i-let-it-in-and-it-took-everything.webp"
 rating: '★★★★★'
 ---

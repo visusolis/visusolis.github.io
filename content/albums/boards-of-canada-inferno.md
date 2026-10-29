@@ -2,7 +2,7 @@
 title: 'Inferno by Boards of Canada'
 date: 2026-06-09T12:09:53+00:00
 externalUrl: "https://record.club/nm/releases/albums/boards-of-canada-inferno"
-image: "https://cdn.rcrd.club/releases/z59oke95y70lv6wq.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/z59oke95y70lv6wq.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/boards-of-canada-inferno.webp"
 rating: '★★★★½'
 ---

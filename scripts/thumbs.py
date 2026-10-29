@@ -8,9 +8,22 @@ to the repo, so the grids stay dependency-free and fast.
 
 import io
 import urllib.request
+import os
+import sys
 from pathlib import Path
 
+# The repo ships a venv with Pillow; re-exec under it if the current
+# interpreter cannot import PIL (e.g. invoked via system python3).
+try:
+    import PIL  # noqa: F401
+except ModuleNotFoundError:
+    _venv_python = Path(__file__).resolve().parent.parent / "venv" / "bin" / "python"
+    if _venv_python.is_file() and Path(sys.executable).resolve() != _venv_python.resolve():
+        os.execv(str(_venv_python), [str(_venv_python), *sys.argv])
+    raise
+
 from PIL import Image
+
 
 THUMBS_ROOT = Path(__file__).resolve().parent.parent / "static" / "thumbs"
 

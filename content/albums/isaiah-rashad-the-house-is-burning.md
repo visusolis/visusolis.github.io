@@ -2,7 +2,7 @@
 title: 'The House Is Burning by Isaiah Rashad'
 date: 2026-10-21T03:34:47+00:00
 externalUrl: "https://record.club/nm/releases/albums/isaiah-rashad-the-house-is-burning"
-image: "https://cdn.rcrd.club/releases/ox4n87njyo1kdpez.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/ox4n87njyo1kdpez.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/isaiah-rashad-the-house-is-burning.webp"
 rating: '★★★★½'
 ---

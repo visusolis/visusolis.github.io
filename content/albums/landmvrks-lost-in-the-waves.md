@@ -2,7 +2,7 @@
 title: 'Lost in the Waves by LANDMVRKS'
 date: 2026-09-08T06:45:39+00:00
 externalUrl: "https://record.club/nm/releases/albums/landmvrks-lost-in-the-waves"
-image: "https://cdn.rcrd.club/releases/nvj0kzvm6p58d3rm.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/nvj0kzvm6p58d3rm.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/landmvrks-lost-in-the-waves.webp"
 rating: '★★★★'
 ---

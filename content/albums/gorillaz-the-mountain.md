@@ -2,7 +2,7 @@
 title: 'The Mountain by Gorillaz'
 date: 2026-02-28T07:20:01+00:00
 externalUrl: "https://record.club/nm/releases/albums/gorillaz-the-mountain"
-image: "https://cdn.rcrd.club/releases/mv6nkndge4g8qxod.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/mv6nkndge4g8qxod.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/gorillaz-the-mountain.webp"
 rating: '★★½'
 ---

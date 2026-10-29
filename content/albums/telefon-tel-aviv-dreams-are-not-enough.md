@@ -2,7 +2,7 @@
 title: 'Dreams Are Not Enough by Telefon Tel Aviv'
 date: 2026-09-02T02:48:07+00:00
 externalUrl: "https://record.club/nm/releases/albums/telefon-tel-aviv-dreams-are-not-enough"
-image: "https://cdn.rcrd.club/releases/2j5gkrp3q6yl1yp4.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/2j5gkrp3q6yl1yp4.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/telefon-tel-aviv-dreams-are-not-enough.webp"
 rating: '★★★★★'
 ---

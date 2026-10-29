@@ -2,7 +2,7 @@
 title: 'Before the World Blows by Erykah Badu & The Alchemist'
 date: 2026-09-08T06:43:45+00:00
 externalUrl: "https://record.club/nm/releases/albums/erykah-badu-the-alchemist-before-the-world-blows"
-image: "https://cdn.rcrd.club/releases/9321859qw06kpo7m.jpg?width=480"
+image: "https://cdn.rcrd.club/releases/9321859qw06kpo7m.jpg?width=480&placeholder=light"
 thumb: "/thumbs/albums/erykah-badu-the-alchemist-before-the-world-blows.webp"
 rating: '★★★★'
 ---
