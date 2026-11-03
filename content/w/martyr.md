@@ -14,7 +14,7 @@ Once that realization came through, I put the book down and asked myself why thi
 
 ## The past
 
-Cyrus here portrays their addict self as a total stranger, an unidentifiable tenant of the flat you just moved in. They also portray the newly sober person as a baby, someone walking through life for the first time, having to learn everything for the first time.
+Cyrus here portrays their addict self as a total stranger, an unidentifiable tenant of the flat you just moved in. They also frame the newly sober person as a baby, someone walking through life for the first time, having to learn everything for the first time.
 
 In the same chapter, Cyrus characterizes their past drunk self as follows:
 
@@ -34,7 +34,7 @@ One of the reasons I struggle to identify with this strict vision of before and 
 
 Looking back, I now realized the importance of this transition. One of the things I was coping with during this period is the fact that I would become a different person once this transition was done. I wasn't really reinventing myself as a sober person as much as I was progressively saying goodbye to the person I used to be.
 
-This isn't to say that this period wasn't productive in my journey. During those five years, I took all the steps that led me to take the final step of committing fully to sobriety. What dragged on in this transition was the realization that sobriety is not only a change in my personal habits but also a change in everything that is related to it.
+This isn't to say that this period wasn't productive in my journey. During those five years, I took all the steps that led me to take the final step of committing fully to sobriety. What dragged on in this transition was the realization that sobriety is not only a change in my personal habits but also a change in everything that is related to it (relationships, work, hobbies, ...).
 
 In the end, I think that it took five years to gestate the new sober person I would become. And this is a realization I'm just making now.
 
@@ -48,6 +48,6 @@ Learning how to be from a blank slate is scary. It is way too easy to default ba
 
 The process I am going through right now is one of acceptance of being someone different than I was before.
 
-Digesting this separation is central to taking the next step, and this is where I am now. 
+I am digesting this separation, and it is helping me take the next step. This is where I am now.
 
-And though much anxiety is stirred up, I need to remember to be kind to both of me.
+And though much anxiety is stirred up, I need to remember to be kind to the both of me.
