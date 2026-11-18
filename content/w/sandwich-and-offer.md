@@ -59,6 +59,6 @@ After driving through small villages, we finally got to the river. We unpacked o
 
 My friend told me that sometimes locals would try to stop her from releasing the fish, so we had to act quickly.
 
-The deed was done, and indeed, as we walked back up the pier, a couple of villagers came up to us. Too late to stop us, they instead came with plastic bags full of fish. They offered to sell us fish to release, but we declined this time.
+The deed was done, and indeed, as we walked back up the pier, a couple of villagers came up to us. Too late to stop us, they instead came with plastic bags full of fish. They asked us to buy them for release, but we declined at this time.
 
 Seeing the eels swim back into the river was a relief. I couldn't help but imagine how they felt: stuck in a box for who knows how long, then freed again, back to an unknown river, back in the comfort of their home.
