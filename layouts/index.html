@@ -264,7 +264,7 @@
   <ul class="media-row">
     {{- range first 8 $media -}}
     <li>
-      <a class="media-item" href="{{ .RelPermalink }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
+      <a class="media-item" href="/library/#review-{{ .File.ContentBaseName }}" aria-label="{{ .Title }}, {{ .Date.Format "Jan 06" }}">
         {{- with .Params.thumb -}}
           <img src="{{ . }}" alt="" loading="lazy">
         {{- else -}}
