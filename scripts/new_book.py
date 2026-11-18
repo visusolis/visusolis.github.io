@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Create a new book review in content/books/.
 
-Queries Open Library by ISBN to pull title, author and cover URL, writes a
-Hugo markdown file (matching the films/albums front-matter shape), fetches a
-lightweight local WebP thumbnail, and opens $EDITOR for the review body.
+Queries Open Library by ISBN to pull title, author and cover URL, falls back to
+Goodreads then Google Books when the ISBN is missing, writes a Hugo markdown
+file (matching the films/albums front-matter shape), fetches a lightweight local
+WebP thumbnail, and opens $EDITOR for the review body.
 
 Usage:
     python3 scripts/new_book.py --isbn 9780141036144 [--rating "★★★★"] [--body B]
@@ -12,16 +13,20 @@ Usage:
     --rating   star string, e.g. '★★★★' or '★★★½' (prompted if omitted)
     --title    override the title Open Library returns
     --author   override the author Open Library returns
+    --image    override the cover URL
+    --url      override the external book URL
     --body     write the review body directly, skipping the editor
 """
 
 import argparse
+import html
 import json
 import os
 import re
 import subprocess
 import sys
 import tempfile
+import unicodedata
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,10 +37,19 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOKS = ROOT / "content" / "books"
 
 OL_BOOKS = "https://openlibrary.org/api/books.json?bibkeys=ISBN:{isbn}&format=json&jscmd=data"
+GR_SEARCH = "https://www.goodreads.com/search?q={isbn}"
+GB_BOOKS = "https://books.google.com/books?vid=ISBN{isbn}"
 HEADERS = {"User-Agent": "Mozilla/5.0 (visusolis book importer)"}
+GR_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+    )
+}
 
 
 def slugify(text):
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
     return slug or datetime.now().strftime("%Y-%m-%d")
 
@@ -56,6 +70,91 @@ def query_openlibrary(isbn):
     with urllib.request.urlopen(req, timeout=30) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     return data.get(f"ISBN:{isbn}")
+
+
+def query_goodreads(isbn):
+    """Scrape title, author and cover from a Goodreads ISBN search."""
+    req = urllib.request.Request(GR_SEARCH.format(isbn=isbn), headers=GR_HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            page = resp.read().decode("utf-8", errors="replace")
+    except Exception:
+        return None
+
+    canonical = re.search(r'<link rel="canonical" href="([^"]+)"', page)
+    url = canonical.group(1) if canonical else ""
+
+    for block in re.findall(
+        r'<script type="application/ld\+json">(.*?)</script>', page, re.S
+    ):
+        try:
+            data = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        for item in data if isinstance(data, list) else [data]:
+            if item.get("@type") != "Book":
+                continue
+            authors = item.get("author") or []
+            if isinstance(authors, dict):
+                authors = [authors]
+            image = item.get("image") or ""
+            return {
+                "title": item.get("name") or "",
+                "authors": [
+                    {"name": a.get("name", "")} for a in authors if a.get("name")
+                ],
+                "cover": {"large": image},
+                "url": url,
+                "publish_date": "",
+            }
+
+    og_title = re.search(r'<meta property="og:title" content="([^"]+)"', page)
+    og_image = re.search(r'<meta property="og:image" content="([^"]+)"', page)
+    if not og_title:
+        return None
+    return {
+        "title": og_title.group(1),
+        "authors": [],
+        "cover": {"large": og_image.group(1) if og_image else ""},
+        "url": url,
+        "publish_date": "",
+    }
+
+
+def query_google_books(isbn):
+    """Scrape title, author and cover from the Google Books ISBN page."""
+    req = urllib.request.Request(GB_BOOKS.format(isbn=isbn), headers=GR_HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            page = resp.read().decode("utf-8", errors="replace")
+    except Exception:
+        return None
+
+    title_tag = re.search(r"<title>(.*?)</title>", page, re.S)
+    if not title_tag:
+        return None
+    title = html.unescape(re.sub(r"\s+", " ", title_tag.group(1))).strip()
+
+    author = ""
+    parts = title.rsplit(" - ", 2)
+    if len(parts) == 3 and parts[2].startswith("Google"):
+        title, author = parts[0], parts[1]
+    elif len(parts) >= 2 and parts[-1].startswith("Google"):
+        title = parts[0]
+
+    og_image = re.search(r'<meta property="og:image" content="([^"]+)"', page)
+    image = html.unescape(og_image.group(1)) if og_image else ""
+    og_url = re.search(r'<meta property="og:url" content="([^"]+)"', page)
+    canonical = re.search(r'<link rel="canonical" href="([^"]+)"', page)
+    url = og_url.group(1) if og_url else (canonical.group(1) if canonical else "")
+
+    return {
+        "title": title,
+        "authors": [{"name": author}] if author else [],
+        "cover": {"large": image},
+        "url": html.unescape(url),
+        "publish_date": "",
+    }
 
 
 def edit_body():
@@ -89,6 +188,8 @@ def main():
     parser.add_argument("--rating")
     parser.add_argument("--title")
     parser.add_argument("--author")
+    parser.add_argument("--image")
+    parser.add_argument("--url")
     parser.add_argument("--body")
     parser.add_argument("--no-edit", action="store_true")
     args = parser.parse_args()
@@ -96,7 +197,13 @@ def main():
     isbn = args.isbn or input("ISBN: ").strip()
     meta = query_openlibrary(isbn)
     if meta is None:
-        print(f"Open Library: no result for ISBN {isbn}", file=sys.stderr)
+        print(f"Open Library: no result for ISBN {isbn}, trying Goodreads", file=sys.stderr)
+        meta = query_goodreads(isbn)
+    if meta is None:
+        print(f"Goodreads: no result for ISBN {isbn}, trying Google Books", file=sys.stderr)
+        meta = query_google_books(isbn)
+    if meta is None:
+        print(f"No book metadata found for ISBN {isbn}", file=sys.stderr)
         sys.exit(1)
 
     title = args.title or meta.get("title") or input("Title: ").strip()
@@ -105,8 +212,8 @@ def main():
     rating = to_stars(args.rating or input("Rating (stars, e.g. 4 or 4.5): ").strip() or "4")
 
     cover = meta.get("cover") or {}
-    image = cover.get("large") or cover.get("medium") or meta.get("thumbnail_url") or ""
-    external = meta.get("url") or meta.get("info_url") or ""
+    image = args.image or cover.get("large") or cover.get("medium") or meta.get("thumbnail_url") or ""
+    external = args.url or meta.get("url") or meta.get("info_url") or ""
     year = meta.get("publish_date") or meta.get("first_publish_year") or ""
 
     BOOKS.mkdir(parents=True, exist_ok=True)
