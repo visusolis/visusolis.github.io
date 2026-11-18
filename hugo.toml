@@ -69,7 +69,7 @@ unsafe = true
 
   # The path to your favicon
   favicon = "s.svg"
-  rssImage = "s.png"
+  rssImage = "s-rss.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
