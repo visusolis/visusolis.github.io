@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<style>
+.photos-stream { margin-top: 1rem; }
+.album { margin: 0 0 3.5rem; }
+.album + .album { padding-top: 1rem; }
+.album-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 0 0 1rem;
+  font-size: 0.88em;
+  font-style: italic;
+  color: #8EA2A4;
+}
+.album-head a { color: inherit !important; }
+.album-head time { font-size: 0.7em; font-style: normal; color: #BECACC; }
+.album figure { margin: 0 0 1.6rem; }
+.album figure img {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin-left: calc(50% - 50vw);
+}
+.album figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.58em;
+  letter-spacing: 0.06em;
+  color: #8EA2A4;
+}
+</style>
+
+<div class="photos-stream">
+{{- range .Pages.ByDate.Reverse }}
+  <section class="album">
+    <p class="album-head">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "January 2006" | lower }}</time>
+    </p>
+    {{- $title := .Title -}}
+    {{- range $i, $img := .Params.images }}
+    <figure>
+      <img src="{{ $img }}" alt="{{ $title }}" {{ if eq $i 0 }}loading="eager"{{ else }}loading="lazy"{{ end }} decoding="async">
+      <figcaption>{{ $title }}</figcaption>
+    </figure>
+    {{- end }}
+  </section>
+{{- end }}
+</div>
+
+{{ end }}

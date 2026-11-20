@@ -17,7 +17,7 @@
         {{ end }}
         <i>
           <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-            {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+            {{ .Date.Format "Monday, 2 January 2006" | lower }}
           </time>
         </i>
       </span>

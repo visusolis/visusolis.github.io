@@ -1,3 +1,38 @@
+<link rel="canonical" href="{{ .Permalink }}">
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" "Stefan Mikolajczyk"
+  "alternateName" "Stefan Miko"
+  "url" "https://stefanmiko.com/"
+  "jobTitle" "Technical writer and documentation engineer"
+  "email" "hey@stefanmiko.com"
+  "worksFor" (dict "@type" "Organization" "name" "Visusolis" "url" "https://visusolis.com")
+  "sameAs" (slice "https://www.linkedin.com/in/stefan-mikolajczyk/" "https://github.com/snmkl")
+  "knowsAbout" (slice "Mintlify" "technical writing" "developer documentation" "API documentation" "MDX" "OpenAPI")
+}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- if eq .RelPermalink "/mintlify/" }}
+{{- $service := dict
+  "@context" "https://schema.org"
+  "@type" "Service"
+  "name" "Mintlify documentation services"
+  "serviceType" "Mintlify documentation implementation and migration"
+  "url" "https://stefanmiko.com/mintlify/"
+  "description" "Mintlify documentation implementation: docs.json information architecture, MDX, OpenAPI references, migrations and CI checks. Currently docs.orq.ai."
+  "provider" (dict "@type" "Person" "name" "Stefan Mikolajczyk" "url" "https://stefanmiko.com/")
+  "areaServed" "Worldwide"
+}}
+{{- $faq := slice
+  (dict "@type" "Question" "name" "Do you write the documentation or only set up the structure?" "acceptedAnswer" (dict "@type" "Answer" "text" "Both. I can build the site and hand over a writing system with a style guide, or own the writing for a product area and work with your engineers directly."))
+  (dict "@type" "Question" "name" "Can you migrate our existing docs to Mintlify?" "acceptedAnswer" (dict "@type" "Answer" "text" "Yes, from GitBook, ReadMe, Docusaurus, MkDocs or a custom static site. The plan covers a page-level URL map, redirects, preserved anchors and a side-by-side cutover."))
+  (dict "@type" "Question" "name" "Do you work with OpenAPI?" "acceptedAnswer" (dict "@type" "Answer" "text" "Yes. I treat the specification as the source of truth for the API reference and the playground, and fix the spec instead of post-processing the generated pages."))
+  (dict "@type" "Question" "name" "How do engagements start?" "acceptedAnswer" (dict "@type" "Answer" "text" "A short call, then a written scope with a fixed price for audits and migrations, or a monthly retainer. Audits usually run one to two weeks; migrations three to six."))
+}}
+{{- $faqPage := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $faq }}
+<script type="application/ld+json">{{ $service | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ $faqPage | jsonify | safeJS }}</script>
+{{- end }}
 {{ with .Params.script }}
   {{ $js := resources.Get . | minify }}
   <script src="{{ $js.RelPermalink }}"></script>
@@ -82,7 +117,7 @@
 
 body {
   max-width: 1500px !important;
-  padding: 20px clamp(24px, 6vw, 96px) !important;
+  padding: 20px clamp(24px, 4vw, 64px) !important;
 }
 
 html {
@@ -126,11 +161,12 @@ html::before {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cormorant Garamond', serif !important;
   color: #A4B6B7 !important;
-  text-align: right !important;
+  text-align: left !important;
 }
 
 ul.blog-posts li {
-  justify-content: space-between !important;
+  justify-content: flex-start !important;
+  gap: 0.6rem;
   /* compact one-line row list: 0.3em inter-item gap (~8px @ 26px, ~6px @ mobile 20px);
      overrides theme's 15px margin-bottom */
   margin-bottom: 0.3em !important;
@@ -138,7 +174,7 @@ ul.blog-posts li {
 
 ul.blog-posts li span {
   flex: 0 0 auto !important;
-  text-align: right !important;
+  text-align: left !important;
 }
 
 a {
@@ -149,7 +185,7 @@ a {
 .post-footer {
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-end !important;
+  justify-content: flex-start !important;
   gap: 0.5rem !important;
 }
 
@@ -285,16 +321,16 @@ header nav a::before {
 .tags span {
   font-size: 0.58em;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #BECACC;
   padding: 0.15em 0.5em 0.15em 0;
 }
 
 .cat-tag {
-  font-size: 0.8em;
-  letter-spacing: 0.06em;
-  color: #BECACC;
-  opacity: 0.7;
+  font-size: 0.58em;
+  letter-spacing: 0.04em;
+  color: #7E9E96 !important;
+  opacity: 0.9;
   flex-shrink: 0;
   transition: opacity 0.15s;
 }
@@ -328,7 +364,7 @@ header nav a::before {
   position: relative;
   font-size: 0.65em;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #8EA2A4;
   margin-bottom: 1.8rem;
 }
@@ -371,10 +407,10 @@ header nav a::before {
 .tl-section {
   font-size: 0.6em;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #8EA2A4;
   margin: 3rem 0 1.2rem;
-  border-bottom: 1px solid #4A5A5B;
+  border-bottom: none;
   padding-bottom: 0.3rem;
 }
 
@@ -447,4 +483,38 @@ header nav a::before {
   }
 }
 
+/* left-aligned rows: title, tags and date run together */
+.cat-title { flex: 0 1 auto !important; }
+.cat-more { margin-left: 0 !important; margin-right: auto !important; }
+.tl-logo { order: -1 !important; margin-left: 0 !important; margin-right: 0.5rem !important; }
+
+@media (max-width: 900px) {
+  body { padding-right: clamp(24px, 6vw, 96px) !important; }
+  header { margin-right: 0 !important; }
+}
+
+/* narrow screens: title on its own line, tag + date beneath it */
+.blog-tags {
+  font-size: 0.58em !important;
+  letter-spacing: 0.04em !important;
+  color: #7E9E96 !important;
+  opacity: 0.9;
+}
+/* posts index: same rhythm as the home list */
+ul.blog-posts li { display: block !important; margin-bottom: 0.3em !important; }
+ul.blog-posts li > span { display: inline !important; }
+ul.blog-posts li > span a.cat-tag { margin-left: 0.9rem; }
+ul.blog-posts li i { font-style: normal !important; font-size: 0.62em !important; color: #8EA2A4 !important; margin-left: 1rem; }
+@media (max-width: 700px) {
+  .cat-list li { display: flex !important; flex-wrap: wrap; gap: 0 0.5rem; }
+  .cat-panel--posts .cat-title { flex: 1 1 100% !important; }
+  .cat-date { white-space: nowrap; }
+  ul.blog-posts li { display: block !important; margin-bottom: 0.7rem !important; }
+  ul.blog-posts li > span { display: block !important; margin-top: 0.15rem; }
+  ul.blog-posts li > span a.cat-tag { margin-left: 0; }
+  ul.blog-posts li i { margin-left: 0.5rem; white-space: nowrap; }
+}
+
+hr { display: none !important; }
 </style>
+
